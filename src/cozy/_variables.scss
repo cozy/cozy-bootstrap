@@ -1,3 +1,9 @@
+// Use Lato
+$font-family-sans-serif: lato;
+
 // Reduce the number of breakpoints as each breakpoint increase the size of the
 // generated CSS.
 $grid-breakpoints: (xs: 0, md: 768px);
+
+// Do not underline links by default
+$link-decoration: none;
