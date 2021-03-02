@@ -6,9 +6,10 @@
   "author": "Cozy <contact@cozycloud.cc>",
   "license": "MIT",
   "scripts": {
-    "build": "npm-run-all css-*",
+    "build": "npm-run-all css-compile css-lint css-prefix css-minify",
     "css-compile": "sass -I node_modules/ --embed-sources src/:dist/",
     "css-lint": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache --rd",
+    "css-minify": "cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/cozy-bs.min.css dist/cozy-bs.css",
     "css-prefix": "postcss --replace dist/cozy-bs.css --use autoprefixer --map",
     "docs": "ln -sf ../dist/cozy-bs.css docs/ && npm-run-all --parallel docs-serve watch",
     "docs-serve": "serve --symlinks --listen 3000 docs/",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "autoprefixer": "10.2.4",
     "browserslist-config-cozy": "0.4.0",
+    "clean-css-cli": "5.2.0",
     "npm-run-all": "4.1.5",
     "postcss": "8.2.6",
     "postcss-cli": "8.3.1",
