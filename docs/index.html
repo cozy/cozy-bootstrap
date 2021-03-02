@@ -10,12 +10,20 @@
   </head>
   <body>
     <main>
-      <h1>Cozy Bootstrap documentation</h1>
+      <h1 class="display-1">Cozy Bootstrap documentation</h1>
       <p>Cozy Bootstrap is a theme for <a href="https://getbootstrap.com/">Bootstrap</a> with Cozy look and colors.</p>
 
       <h2>Tools used</h2>
       <ul>
         <li>Autoprefixer with the browserslist from Cozy to help for the compatibility with old browsers</li>
+      </ul>
+
+      <h2>Differences with vanilla bootstrap</h2>
+      <p>We want to have a Cozy look and to reduce the weight of the generated CSS.</p>
+      <ul>
+        <li>Most components are not included</li>
+        <li>Only <tt>-md</tt> breakpoint</li>
+        <li><tt>img</tt> have a <tt>max-width: 100%</tt> by default</li>
       </ul>
     </main>
   </body>
