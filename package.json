@@ -1,0 +1,30 @@
+{
+  "name": "cozy-bootstrap",
+  "version": "0.1.0",
+  "description": "A cozy theme for bootstrap",
+  "repository": "https://github.com/cozy/cozy-bootstrap",
+  "author": "Cozy <contact@cozycloud.cc>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all css-*",
+    "css-compile": "sass -I node_modules/ --embed-sources src/:dist/",
+    "css-prefix": "postcss --replace dist/cozy-bs.css --use autoprefixer --map",
+    "watch": "yarn css-compile --watch"
+  },
+  "style": "dist/cozy-bs.css",
+  "sass": "src/cozy-bs.scss",
+  "browserslist": [
+    "extends browserslist-config-cozy"
+  ],
+  "dependencies": {
+    "bootstrap": "5.0.0-beta2"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.2.4",
+    "browserslist-config-cozy": "0.4.0",
+    "npm-run-all": "4.1.5",
+    "postcss": "8.2.6",
+    "postcss-cli": "8.3.1",
+    "sass": "1.32.8"
+  }
+}
