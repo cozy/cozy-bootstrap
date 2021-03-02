@@ -9,6 +9,8 @@
     "build": "npm-run-all css-*",
     "css-compile": "sass -I node_modules/ --embed-sources src/:dist/",
     "css-prefix": "postcss --replace dist/cozy-bs.css --use autoprefixer --map",
+    "docs": "ln -sf ../dist/cozy-bs.css docs/ && npm-run-all --parallel docs-serve watch",
+    "docs-serve": "serve --symlinks --listen 3000 docs/",
     "watch": "yarn css-compile --watch"
   },
   "style": "dist/cozy-bs.css",
@@ -25,6 +27,7 @@
     "npm-run-all": "4.1.5",
     "postcss": "8.2.6",
     "postcss-cli": "8.3.1",
-    "sass": "1.32.8"
+    "sass": "1.32.8",
+    "serve": "11.3.2"
   }
 }
