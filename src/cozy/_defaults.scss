@@ -1,3 +1,17 @@
+h1 {
+  line-height: 1.087;
+  letter-spacing: -.8px;
+}
+
+h2 {
+  letter-spacing: -.4px;
+}
+
+h5,
+h6 {
+  line-height: $line-height-base;
+}
+
 img {
   @include img-fluid();
 }

@@ -1,12 +1,31 @@
+// Do not use the bootstrap system for dynamically sizing fonts according to
+// the browser width.
+$enable-rfs: false;
+
 // Use Lato
 html {
   --primaryFont: lato, sans-serif;
 }
 $font-family-sans-serif: var(--primaryFont);
 
+// Normal texts
+$font-size-root: 1rem;
+$font-size-base: .875rem;
+$line-height-base: 1.313;
+$lead-font-size: 1rem;
+$small-font-size: .75rem;
+
+// Headings
+$headings-line-height: 1.167;
+$headings-font-weight: bold;
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1.125rem;
+$h6-font-size: 1rem;
+$display-font-sizes: (1: 5rem);
+
 // Reduce the number of breakpoints as each breakpoint increase the size of the
 // generated CSS.
 $grid-breakpoints: (xs: 0, md: 768px);
-
-// Do not underline links by default
-$link-decoration: none;
