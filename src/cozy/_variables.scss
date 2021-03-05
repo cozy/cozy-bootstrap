@@ -1,5 +1,8 @@
 // Use Lato
-$font-family-sans-serif: lato;
+html {
+  --primaryFont: lato, sans-serif;
+}
+$font-family-sans-serif: var(--primaryFont);
 
 // Reduce the number of breakpoints as each breakpoint increase the size of the
 // generated CSS.

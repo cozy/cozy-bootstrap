@@ -1,11 +1,12 @@
 // https://getbootstrap.com/docs/5.0/customize/optimize/
 
 // Configuration
+@import "cozy/colors";
+@import "cozy/variables";
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
-@import "cozy/variables";
 
 // Global
 @import "bootstrap/scss/root";
