@@ -2,11 +2,12 @@ $utilities: () !default;
 
 $utilities: map-merge(
   (
-    "align": (
-      property: vertical-align,
-      class: align,
-      values: baseline top middle bottom text-bottom text-top
-    ),
+    // Not needed for Cozy
+    // "align": (
+    //   property: vertical-align,
+    //   class: align,
+    //   values: baseline top middle bottom text-bottom text-top
+    // ),
     "float": (
       responsive: true,
       property: float,
@@ -18,22 +19,25 @@ $utilities: map-merge(
     ),
     "overflow": (
       property: overflow,
-      values: auto hidden visible scroll,
+      // Removed values for Cozy: visible scroll
+      values: auto hidden,
     ),
     "display": (
       responsive: true,
-      print: true,
+      // print: true,
       property: display,
       class: d,
-      values: inline inline-block block grid table table-row table-cell flex inline-flex none
+      // Removed values for Cozy: table table-row table-cell inline-flex
+      values: inline inline-block block grid flex none
     ),
     "shadow": (
       property: box-shadow,
       class: shadow,
       values: (
         null: $box-shadow,
-        sm: $box-shadow-sm,
-        lg: $box-shadow-lg,
+        // Not needed for Cozy:
+        // sm: $box-shadow-sm,
+        // lg: $box-shadow-lg,
         none: none,
       )
     ),
@@ -60,15 +64,16 @@ $utilities: map-merge(
       class: end,
       values: $position-values
     ),
-    "translate-middle": (
-      property: transform,
-      class: translate-middle,
-      values: (
-        null: translate(-50%, -50%),
-        x: translateX(-50%),
-        y: translateY(-50%),
-      )
-    ),
+    // Not needed for Cozy
+    // "translate-middle": (
+    //   property: transform,
+    //   class: translate-middle,
+    //   values: (
+    //     null: translate(-50%, -50%),
+    //     x: translateX(-50%),
+    //     y: translateY(-50%),
+    //   )
+    // ),
     "border": (
       property: border,
       values: (
@@ -402,12 +407,13 @@ $utilities: map-merge(
       values: $spacers
     ),
     // Text
-    "font-size": (
-      rfs: true,
-      property: font-size,
-      class: fs,
-      values: $font-sizes
-    ),
+    // Not needed for Cozy
+    // "font-size": (
+    //   rfs: true,
+    //   property: font-size,
+    //   class: fs,
+    //   values: $font-sizes
+    // ),
     "font-style": (
       property: font-style,
       class: fst,
@@ -417,11 +423,11 @@ $utilities: map-merge(
       property: font-weight,
       class: fw,
       values: (
-        light: $font-weight-light,
-        lighter: $font-weight-lighter,
+        // light: $font-weight-light,
+        // lighter: $font-weight-lighter,
         normal: $font-weight-normal,
         bold: $font-weight-bold,
-        bolder: $font-weight-bolder
+        // bolder: $font-weight-bolder
       )
     ),
     "text-transform": (
@@ -480,11 +486,12 @@ $utilities: map-merge(
       )
     ),
     // scss-docs-end utils-bg-color
-    "gradient": (
-      property: background-image,
-      class: bg,
-      values: (gradient: var(--#{$variable-prefix}gradient))
-    ),
+    // Not needed for Cozy
+    // "gradient": (
+    //   property: background-image,
+    //   class: bg,
+    //   values: (gradient: var(--#{$variable-prefix}gradient))
+    // ),
     "white-space": (
       property: white-space,
       class: text,
@@ -509,15 +516,15 @@ $utilities: map-merge(
     //   class: font,
     //   values: (monospace: var(--#{$variable-prefix}font-monospace))
     // ),
-    "user-select": (
-      property: user-select,
-      values: all auto none
-    ),
-    "pointer-events": (
-      property: pointer-events,
-      class: pe,
-      values: none auto,
-    ),
+    // "user-select": (
+    //   property: user-select,
+    //   values: all auto none
+    // ),
+    // "pointer-events": (
+    //   property: pointer-events,
+    //   class: pe,
+    //   values: none auto,
+    // ),
     "rounded": (
       property: border-radius,
       class: rounded,
