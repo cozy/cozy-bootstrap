@@ -29,3 +29,5 @@ $display-font-sizes: (1: 5rem);
 // Reduce the number of breakpoints as each breakpoint increase the size of the
 // generated CSS.
 $grid-breakpoints: (xs: 0, md: 768px);
+
+$box-shadow: 0 .25rem .75rem 0 rgba(0, 0, 0, 0.08);
