@@ -1,38 +1,12 @@
 /*
- * Use the Cozy palette of colors for sass variables.
+ * For colors, we use CSS variables. It allows to override them with a theme at
+ * runtime by injecting another CSS file that change the values of those CSS
+ * variables. Bootstrap has some sass variables to change the colors, but we
+ * can't use CSS variables here, as some colors are computed with sass
+ * functions. So, we keep the default colors of bootstrap when running sass,
+ * and later we replace the color values with CSS variables with a postcss
+ * plugin (postcss-cozy-vars).
  *
- * TODO: First define the CSS variables and then use it for sass variables
- * (like $success: var(--validColor)). Currently, it doesn't work, as Bootstrap
- * is doing some computation on sass variables (shade-color($primary, 10%)).
- */
-$grey-100: #f4f5f6;
-$grey-200: #eceff1;
-$grey-300: #dde0e3;
-$grey-400: #bfc3c7;
-$grey-500: #9da2a6;
-$grey-600: #7c8086;
-$grey-700: #5d6169;
-$grey-800: #3e424a;
-$grey-900: #1d212a;
-
-$primary-light: #579eff;
-$primary: #297ef2;
-$primary-dark: #0f5cc7;
-
-$secondary-light: #c27ae3;
-$secondary: #a346cd;
-$secondary-dark: #7a349a;
-
-$success: #38c949;
-$info: $grey-500;
-$warning: #efa82d;
-$danger: #f96b6b;
-$light: $grey-100;
-$dark: $grey-900;
-
-$body-color: rgba($grey-900, .9);
-
-/*
  * html targets the same element as :root but its specificity is lower.
  * This allows us to use html to define our CSS custom properties inside
  * bootstrap (or cozy-ui), and use :root in the custom CSS injected by the
@@ -42,16 +16,31 @@ $body-color: rgba($grey-900, .9);
  * Cf https://github.com/cozy/cozy-ui/blob/master/stylus/settings/palette.styl
  */
 html {
-  --primaryColor: $primary;
-  --primaryColorDark: $primary-dark;
-  --primaryColorLight: $primary-light;
-  --secondaryColor: $secondary;
-  --secondaryColorDark: $secondary-dark;
-  --secondaryColorLight: $secondary-light;
-  --primaryTextColor: $body-color;
-  --secondaryTextColor: rgba($grey-900, .48);
-  --validColor: $success;
-  --warnColor: $warning;
-  --errorColor: $danger;
-  --neutralBackground: $light;
+  /* Also used by cozy-ui */
+  --primaryColor: #297ef2;
+  --primaryColorDark: #0f5cc7;
+  --primaryColorLight: #579eff;
+  --secondaryColor: #a346cd;
+  --secondaryColorDark: #7a349a;
+  --secondaryColorLight: #c27ae3;
+  --primaryTextColor: rgba(29, 33, 42, .9);
+  --secondaryTextColor: rgba(39, 33, 42, .48);
+  --validColor: #38c949;
+  --warnColor: #efa82d;
+  --errorColor: #f96b6b;
+  --neutralBackground: #f4f5f6;
+
+  /* Only for bootstrap theme */
+  --alertPrimaryColor: #081d39;
+  --alertPrimaryBackgroundColor: #eaf3ff;
+  --alertSecondaryColor: #230c2e;
+  --alertSecondaryBackgroundColor: #f8eefd;
+  --alertErrorColor: #340b0b;
+  --alertErrorBackgroundColor: #ffecec;
+  --alertWarningColor: #281c07;
+  --alertWarningBackgroundColor: #fff3dd;
+  --alertSuccessColor: #08250b;
+  --alertSuccessBackgroundColor: #e3ffe7;
+  --alertInfoColor: #1d212a;
+  --alertInfoBackgroundColor: #f4f5f6;
 }

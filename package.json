@@ -6,11 +6,12 @@
   "author": "Cozy <contact@cozycloud.cc>",
   "license": "MIT",
   "scripts": {
-    "build": "npm-run-all css-compile css-lint css-prefix css-minify",
+    "build": "npm-run-all css-compile css-lint css-vars css-prefix css-minify",
     "css-compile": "sass -I node_modules/ --embed-sources src/:dist/",
     "css-lint": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache --rd",
     "css-minify": "cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/cozy-bs.min.css dist/cozy-bs.css",
     "css-prefix": "postcss --replace dist/cozy-bs.css --use autoprefixer --map",
+	"css-vars": "postcss --replace dist/cozy-bs.css --config ./postcss-cozy-vars/postcss.config.js",
     "docs": "ln -sf ../dist/cozy-bs.css docs/ && npm-run-all --parallel docs-serve watch",
     "docs-serve": "serve --symlinks --listen 3000 docs/",
     "watch": "yarn css-compile --watch"
