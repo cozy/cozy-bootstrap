@@ -9,12 +9,20 @@ h1 {
 }
 
 h2 {
+  line-height: $headings-line-height;
   letter-spacing: -.4px;
+}
+
+h3,
+h4 {
+  line-height: $headings-line-height;
+  letter-spacing: 0;
 }
 
 h5,
 h6 {
   line-height: $line-height-base;
+  letter-spacing: 0;
 }
 
 img {
