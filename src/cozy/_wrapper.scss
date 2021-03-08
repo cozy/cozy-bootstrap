@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 34rem;
+  min-height: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@include media-breakpoint-up(md) {
+  .wrapper {
+    justify-content: center;
+  }
+}
+
+/* https://piccalil.li/tutorial/creating-a-full-bleed-css-utility/ */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
