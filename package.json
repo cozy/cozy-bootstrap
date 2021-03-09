@@ -6,7 +6,7 @@
   "author": "Cozy <contact@cozycloud.cc>",
   "license": "MIT",
   "scripts": {
-    "build": "npm-run-all css-compile css-vars css-prefix css-lint css-minify",
+    "build": "npm-run-all css-compile css-vars css-prefix css-minify",
     "css-compile": "sass -I node_modules/ --embed-sources src/:dist/",
     "css-lint": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache --rd",
     "css-minify": "cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/cozy-bs.min.css dist/cozy-bs.css",
@@ -15,6 +15,7 @@
     "docs": "ln -sf ../dist/cozy-bs.css docs/ && npm-run-all --parallel docs-serve watch",
 	"docs-lint": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html --Werror docs",
     "docs-serve": "serve --symlinks --listen 3000 docs/",
+	"gh-pages": "cp -r docs gh-pages && cp dist/cozy-bs.css* docs/",
 	"lint": "npm-run-all css-lint docs-lint",
     "watch": "yarn css-compile --watch"
   },

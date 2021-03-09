@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Build
+        run: yarn build
+      - name: Lint
+        run: yarn lint
+      - name: Docs
+        run: yarn gh-pages
