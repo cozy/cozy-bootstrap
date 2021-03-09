@@ -1,23 +1,23 @@
 .alert-primary .alert-heading {
-  color: var(--primaryColor);
+  color: var(--alert-primary-title-color);
 }
 
 .alert-secondary .alert-heading {
-  color: var(--secondaryColor);
+  color: var(--alert-secondary-title-color);
 }
 
 .alert-success .alert-heading {
-  color: var(--successColor);
+  color: var(--alert-success-title-color);
 }
 
 .alert-info .alert-heading {
-  color: var(--primaryTextColor);
+  color: var(--alert-info-title-color);
 }
 
 .alert-warning .alert-heading {
-  color: var(--warningColor);
+  color: var(--alert-warning-title-color);
 }
 
 .alert-danger .alert-heading {
-  color: var(--errorColor);
+  color: var(--alert-error-title-color);
 }

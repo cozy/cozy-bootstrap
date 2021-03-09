@@ -6,6 +6,8 @@
   min-height: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+  color: var(--primaryTextColor);
+  background-color: var(--paperBackgroundColor);
 }
 
 @include media-breakpoint-up(md) {

@@ -159,10 +159,17 @@ function changeBorder(decl) {
     case ".border-danger":
       decl.value = "var(--errorColor)";
       break;
+    case ".alert-primary":
+    case ".alert-secondary":
+    case ".alert-success":
+    case ".alert-info":
+    case ".alert-warning":
+    case ".alert-danger":
+      decl.remove();
+      break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);
   }
 }
-
 
 module.exports.postcss = true;

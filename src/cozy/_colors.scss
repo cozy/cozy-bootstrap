@@ -39,14 +39,46 @@ html {
   /* Only for bootstrap theme */
   --alert-primary-color: #081d39;              // Primary 900
   --alert-primary-background-color: #eaf3ff;   // Primary 100
+  --alert-primary-title-color: var(--primaryColor);
   --alert-secondary-color: #230c2e;            // Secondary 900
   --alert-secondary-background-color: #f8eefd; // Secondary 100
+  --alert-secondary-title-color: var(--secondaryColor);
   --alert-error-color: #340b0b;                // Error 900
   --alert-error-background-color: #ffecec;     // Error 100
+  --alert-error-title-color: var(--errorColor);
   --alert-warning-color: #281c07;              // Warning 900
   --alert-warning-background-color: #fff3dd;   // Warning 100
+  --alert-warning-title-color: var(--warningColor);
   --alert-success-color: #08250b;              // Success 900
   --alert-success-background-color: #e3ffe7;   // Success 100
+  --alert-success-title-color: var(--successColor);
   --alert-info-color: var(--primaryTextColor);
   --alert-info-background-color: #f4f5f6;      // Grey 100
+  --alert-info-title-color: var(--primaryTextColor);
+}
+
+.theme-inverted {
+  /* Also used by cozy-ui */
+  --primaryTextColor: #fff;
+  --paperBackgroundColor: #297ef2;
+
+  /* Only for bootstrap theme */
+  --alert-primary-color: #fff;
+  --alert-primary-background-color: #579eff;
+  --alert-primary-title-color: #fff;
+  --alert-secondary-color: rgba(29, 33, 42, .9);
+  --alert-secondary-background-color: #fff;
+  --alert-secondary-title-color: var(--alert-secondary-color);
+  --alert-error-color: #fff;
+  --alert-error-background-color: #f96b6b;
+  --alert-error-title-color: #fff;
+  --alert-warning-color: #fff;
+  --alert-warning-background-color: #efa82d;
+  --alert-warning-title-color: #fff;
+  --alert-success-color: #fff;
+  --alert-success-background-color: #38c949;
+  --alert-success-title-color: #fff;
+  --alert-info-color: #fff;
+  --alert-info-background-color: #579eff;
+  --alert-info-title-color: #fff;
 }
