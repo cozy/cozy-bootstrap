@@ -11,9 +11,11 @@
     "css-lint": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache --rd",
     "css-minify": "cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/cozy-bs.min.css dist/cozy-bs.css",
     "css-prefix": "postcss --replace dist/cozy-bs.css --use autoprefixer --map",
-	"css-vars": "postcss --replace dist/cozy-bs.css --config ./postcss-cozy-vars/postcss.config.js",
+    "css-vars": "postcss --replace dist/cozy-bs.css --config ./postcss-cozy-vars/postcss.config.js",
     "docs": "ln -sf ../dist/cozy-bs.css docs/ && npm-run-all --parallel docs-serve watch",
+	"docs-lint": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html --Werror docs",
     "docs-serve": "serve --symlinks --listen 3000 docs/",
+	"lint": "npm-run-all css-lint docs-lint",
     "watch": "yarn css-compile --watch"
   },
   "style": "dist/cozy-bs.css",
@@ -34,6 +36,7 @@
     "sass": "1.32.8",
     "serve": "11.3.2",
     "stylelint": "13.11.0",
-    "stylelint-config-twbs-bootstrap": "2.1.0"
+    "stylelint-config-twbs-bootstrap": "2.1.0",
+    "vnu-jar": "21.2.5"
   }
 }

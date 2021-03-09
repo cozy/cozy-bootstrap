@@ -2759,6 +2759,11 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
+vnu-jar@21.2.5:
+  version "21.2.5"
+  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-21.2.5.tgz#fa695237f112e2d4e8539b1d9539767ad612ea79"
+  integrity sha512-mVBXRui9jAkZwXyiqofprrDIAB91F5S0xRic49elb5sutx/L3JFICVut4rMlOoX5Jwqv7lAMHGnl7RMOFdSkVA==
+
 which-boxed-primitive@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz#13757bc89b209b049fe5d86430e21cf40a89a8e6"
