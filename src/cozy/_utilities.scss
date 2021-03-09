@@ -237,8 +237,8 @@ $utilities: map-merge(
         start: flex-start,
         end: flex-end,
         center: center,
-        baseline: baseline,
-        stretch: stretch,
+        // baseline: baseline,
+        // stretch: stretch,
       )
     ),
     "align-content": (
@@ -248,9 +248,9 @@ $utilities: map-merge(
         start: flex-start,
         end: flex-end,
         center: center,
-        between: space-between,
-        around: space-around,
-        stretch: stretch,
+        // between: space-between,
+        // around: space-around,
+        // stretch: stretch,
       )
     ),
     "align-self": (
@@ -261,8 +261,8 @@ $utilities: map-merge(
         start: flex-start,
         end: flex-end,
         center: center,
-        baseline: baseline,
-        stretch: stretch,
+        // baseline: baseline,
+        // stretch: stretch,
       )
     ),
     "order": (
@@ -437,16 +437,16 @@ $utilities: map-merge(
       class: text,
       values: lowercase uppercase capitalize
     ),
-    "text-align": (
-      responsive: true,
-      property: text-align,
-      class: text,
-      values: (
-        start: left,
-        end: right,
-        center: center,
-      )
-    ),
+    // "text-align": (
+    //   responsive: true,
+    //   property: text-align,
+    //   class: text,
+    //   values: (
+    //     start: left,
+    //     end: right,
+    //     center: center,
+    //   )
+    // ),
     // scss-docs-start utils-color
     "color": (
       property: color,
@@ -507,13 +507,13 @@ $utilities: map-merge(
       property: text-decoration,
       values: none underline line-through
     ),
-    "word-wrap": (
-      property: word-wrap word-break,
-      class: text,
-      values: (break: break-word),
-      rtl: false
-    ),
     // Not needed for Cozy
+    // "word-wrap": (
+    //   property: word-wrap word-break,
+    //   class: text,
+    //   values: (break: break-word),
+    //   rtl: false
+    // ),
     // "font-family": (
     //   property: font-family,
     //   class: font,
