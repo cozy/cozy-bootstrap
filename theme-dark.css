@@ -1,0 +1,26 @@
+.theme-dark {
+  /* Also used by cozy-ui */
+  --primaryTextColor: #fff;
+  --paperBackgroundColor: #2c3039;
+  --defaultBackgroundColor: #5d6169;
+
+  /* Only for bootstrap theme */
+  --alert-primary-color: #eaf3ff;
+  --alert-primary-background-color: #081d39;
+  --alert-primary-title-color: #91bfff;
+  --alert-secondary-color: #f8eefd;
+  --alert-secondary-background-color: #230c2e;
+  --alert-secondary-title-color: #d79df2;
+  --alert-error-color: #ffecec;
+  --alert-error-background-color: #340b0b;
+  --alert-error-title-color: #ff9b9b;
+  --alert-warning-color: #fff3dd;
+  --alert-warning-background-color: #281c07;
+  --alert-warning-title-color: #ffc35c;
+  --alert-success-color: #e3ffe7;
+  --alert-success-background-color: #08250b;
+  --alert-success-title-color: #66e475;
+  --alert-info-color: #fff;
+  --alert-info-background-color: #1d212a;
+  --alert-info-title-color: #fff;
+}
