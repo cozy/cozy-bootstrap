@@ -1,3 +1,5 @@
+$theme-colors: map-remove($theme-colors, "light", "dark");
+
 $utilities: () !default;
 
 $utilities: map-merge(
@@ -452,11 +454,11 @@ $utilities: map-merge(
       values: map-merge(
         $theme-colors,
         (
-          "white": $white,
+          // "white": $white,
           "body": $body-color,
           "muted": $text-muted,
-          "black-50": rgba($black, .5),
-          "white-50": rgba($white, .5),
+          // "black-50": rgba($black, .5),
+          // "white-50": rgba($white, .5),
           "reset": inherit,
         )
       )
@@ -480,7 +482,8 @@ $utilities: map-merge(
         $theme-colors,
         (
           "body": $body-bg,
-          "white": $white,
+          "paper": $white,
+          // "white": $white,
           "transparent": transparent
         )
       )

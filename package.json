@@ -6,7 +6,7 @@
   "author": "Cozy <contact@cozycloud.cc>",
   "license": "MIT",
   "scripts": {
-    "build": "npm-run-all css-compile css-lint css-vars css-prefix css-minify",
+    "build": "npm-run-all css-compile css-vars css-prefix css-lint css-minify",
     "css-compile": "sass -I node_modules/ --embed-sources src/:dist/",
     "css-lint": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache --rd",
     "css-minify": "cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/cozy-bs.min.css dist/cozy-bs.css",

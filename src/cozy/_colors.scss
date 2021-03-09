@@ -24,23 +24,29 @@ html {
   --secondaryColorDark: #7a349a;
   --secondaryColorLight: #c27ae3;
   --primaryTextColor: rgba(29, 33, 42, .9);
-  --secondaryTextColor: rgba(39, 33, 42, .48);
-  --validColor: #38c949;
-  --warnColor: #efa82d;
+  --primaryTextContrastColor: #fff;
+  --secondaryTextColor: rgba(29, 33, 42, .48);
+  --secondaryTextContrastColor: #fff;
+  --disabledTextColor: rgba(29, 33, 42, .32)
+  --successColor: #38c949;
+  --infoColor: #9da2a6;
+  --warningColor: #efa82d;
   --errorColor: #f96b6b;
-  --neutralBackground: #f4f5f6;
+  --defaultBackgroundColor: #f4f5f6;
+  --paperBackgroundColor: #fff;
+  --dividerColor: rgba(29, 33, 42, .12)
 
   /* Only for bootstrap theme */
-  --alertPrimaryColor: #081d39;
-  --alertPrimaryBackgroundColor: #eaf3ff;
-  --alertSecondaryColor: #230c2e;
-  --alertSecondaryBackgroundColor: #f8eefd;
-  --alertErrorColor: #340b0b;
-  --alertErrorBackgroundColor: #ffecec;
-  --alertWarningColor: #281c07;
-  --alertWarningBackgroundColor: #fff3dd;
-  --alertSuccessColor: #08250b;
-  --alertSuccessBackgroundColor: #e3ffe7;
-  --alertInfoColor: #1d212a;
-  --alertInfoBackgroundColor: #f4f5f6;
+  --alert-primary-color: #081d39;
+  --alert-primary-background-color: #eaf3ff;
+  --alert-secondary-color: #230c2e;
+  --alert-secondary-background-color: #f8eefd;
+  --alert-error-color: #340b0b;
+  --alert-error-background-color: #ffecec;
+  --alert-warning-color: #281c07;
+  --alert-warning-background-color: #fff3dd;
+  --alert-success-color: #08250b;
+  --alert-success-background-color: #e3ffe7;
+  --alert-info-color: #1d212a;
+  --alert-info-background-color: #f4f5f6;
 }
