@@ -1,0 +1,23 @@
+.alert-primary .alert-heading {
+  color: var(--primaryColor);
+}
+
+.alert-secondary .alert-heading {
+  color: var(--secondaryColor);
+}
+
+.alert-success .alert-heading {
+  color: var(--successColor);
+}
+
+.alert-info .alert-heading {
+  color: var(--primaryTextColor);
+}
+
+.alert-warning .alert-heading {
+  color: var(--warningColor);
+}
+
+.alert-danger .alert-heading {
+  color: var(--errorColor);
+}
