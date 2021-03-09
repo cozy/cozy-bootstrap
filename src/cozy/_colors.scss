@@ -17,36 +17,36 @@
  */
 html {
   /* Also used by cozy-ui */
-  --primaryColor: #297ef2;
-  --primaryColorDark: #0f5cc7;
-  --primaryColorLight: #579eff;
-  --secondaryColor: #a346cd;
-  --secondaryColorDark: #7a349a;
-  --secondaryColorLight: #c27ae3;
-  --primaryTextColor: rgba(29, 33, 42, .9);
-  --primaryTextContrastColor: #fff;
-  --secondaryTextColor: rgba(29, 33, 42, .48);
-  --secondaryTextContrastColor: #fff;
-  --disabledTextColor: rgba(29, 33, 42, .32)
-  --successColor: #38c949;
-  --infoColor: #9da2a6;
-  --warningColor: #efa82d;
-  --errorColor: #f96b6b;
-  --defaultBackgroundColor: #f4f5f6;
-  --paperBackgroundColor: #fff;
-  --dividerColor: rgba(29, 33, 42, .12)
+  --primaryColor: #297ef2;                     // Primary 600
+  --primaryColorDark: #0f5cc7;                 // Primary 700
+  --primaryColorLight: #579eff;                // Primary 500
+  --secondaryColor: #a346cd;                   // Secondary 600
+  --secondaryColorDark: #7a349a;               // Secondary 700
+  --secondaryColorLight: #c27ae3;              // Secondary 500
+  --primaryTextColor: rgba(29, 33, 42, .9);    // Grey 900 + alpha 0.9
+  --primaryTextContrastColor: #fff;            // Primary contrastText
+  --secondaryTextColor: rgba(29, 33, 42, .48); // Grey 900 + alpha 0.48
+  --secondaryTextContrastColor: #fff;          // Secondary contrastText
+  --disabledTextColor: rgba(29, 33, 42, .32);  // Grey 900 + alpha 0.32
+  --successColor: #38c949;                     // Success 600
+  --infoColor: #7c8086;                        // Grey 600
+  --warningColor: #efa82d;                     // Warning 600
+  --errorColor: #f96b6b;                       // Error 600
+  --defaultBackgroundColor: #f4f5f6;           // Grey 100
+  --paperBackgroundColor: #fff;                // White
+  --dividerColor: rgba(29, 33, 42, .12);       // Grey 900 + alpha 0.12
 
   /* Only for bootstrap theme */
-  --alert-primary-color: #081d39;
-  --alert-primary-background-color: #eaf3ff;
-  --alert-secondary-color: #230c2e;
-  --alert-secondary-background-color: #f8eefd;
-  --alert-error-color: #340b0b;
-  --alert-error-background-color: #ffecec;
-  --alert-warning-color: #281c07;
-  --alert-warning-background-color: #fff3dd;
-  --alert-success-color: #08250b;
-  --alert-success-background-color: #e3ffe7;
-  --alert-info-color: #1d212a;
-  --alert-info-background-color: #f4f5f6;
+  --alert-primary-color: #081d39;              // Primary 900
+  --alert-primary-background-color: #eaf3ff;   // Primary 100
+  --alert-secondary-color: #230c2e;            // Secondary 900
+  --alert-secondary-background-color: #f8eefd; // Secondary 100
+  --alert-error-color: #340b0b;                // Error 900
+  --alert-error-background-color: #ffecec;     // Error 100
+  --alert-warning-color: #281c07;              // Warning 900
+  --alert-warning-background-color: #fff3dd;   // Warning 100
+  --alert-success-color: #08250b;              // Success 900
+  --alert-success-background-color: #e3ffe7;   // Success 100
+  --alert-info-color: var(--primaryTextColor);
+  --alert-info-background-color: #f4f5f6;      // Grey 100
 }
