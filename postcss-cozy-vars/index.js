@@ -18,34 +18,43 @@ module.exports = (opts = {}) => {
         changeBackground(decl);
         decl[processed] = true;
       },
+      "border-color": (decl) => {
+        if (decl[processed]) {
+          return;
+        }
+        changeBorder(decl);
+        decl[processed] = true;
+      },
     },
   };
 };
 
 function changeColor(decl) {
   switch (decl.parent.selector) {
-    case "body", ".text-body":
+    case "body":
+    case ".text-body":
       decl.value = "var(--primaryTextColor)";
       break;
-    case "a", ".border-primary", ".text-primary":
+    case "a":
+    case ".text-primary":
       decl.value = "var(--primaryColor)";
       break;
     case "a:hover":
       decl.value = "var(--primaryColorDark)";
       break;
-    case ".border-secondary", ".text-secondary":
+    case ".text-secondary":
       decl.value = "var(--secondaryColor)";
       break;
-    case ".border-success", ".text-success":
+    case ".text-success":
       decl.value = "var(--successColor)";
       break;
-    case ".border-info", ".text-info":
+    case ".text-info":
       decl.value = "var(--infoColor)";
       break;
-    case ".border-warning", ".text-warning":
+    case ".text-warning":
       decl.value = "var(--warningColor)";
       break;
-    case ".border-danger", ".text-danger":
+    case ".text-danger":
       decl.value = "var(--errorColor)";
       break;
     case ".text-muted":
@@ -70,7 +79,7 @@ function changeColor(decl) {
       decl.value = "var(--alert-info-color)";
       break;
     // default:
-    //   console.log(decl.parent.selector);
+    //   console.log(`- "${decl.parent.selector}"`);
   }
 }
 
@@ -79,7 +88,8 @@ function changeBackground(decl) {
     case "body":
       decl.value = "var(--defaultBackgroundColor)";
       break;
-    case ".bg-primary", ".progress-bar":
+    case ".bg-primary":
+    case ".progress-bar":
       decl.value = "var(--primaryColor)";
       break;
     case ".bg-secondary":
@@ -120,9 +130,39 @@ function changeBackground(decl) {
       break;
     case ".alert-info":
       decl.value = "var(--alert-info-background-color)";
+      break;
+    case ".card":
+      decl.value = "var(--paper-color)";
+      break;
     // default:
-    //   console.log(decl.parent.selector);
+    //   console.log(`- "${decl.parent.selector}"`);
   }
 }
+
+function changeBorder(decl) {
+  switch (decl.parent.selector) {
+    case ".border-primary":
+      decl.value = "var(--primaryColor)";
+      break;
+    case ".border-secondary":
+      decl.value = "var(--secondaryColor)";
+      break;
+    case ".border-success":
+      decl.value = "var(--successColor)";
+      break;
+    case ".border-info":
+      decl.value = "var(--infoColor)";
+      break;
+    case ".border-warning":
+      decl.value = "var(--warningColor)";
+      break;
+    case ".border-danger":
+      decl.value = "var(--errorColor)";
+      break;
+    // default:
+    //   console.log(`- "${decl.parent.selector}"`);
+  }
+}
+
 
 module.exports.postcss = true;
