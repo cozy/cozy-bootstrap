@@ -14,9 +14,21 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: yarn install
       - name: Build
         run: yarn build
       - name: Lint
         run: yarn lint
       - name: Docs
         run: yarn gh-pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.event_name == 'push'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages
