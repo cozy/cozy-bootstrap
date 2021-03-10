@@ -3,8 +3,8 @@
 }
 
 .btn-outline-primary {
-  border-style: dashed;
   background-color: var(--btn-ghost-background-color);
+  border-style: dashed;
 }
 
 .btn-outline-primary:disabled,
@@ -26,6 +26,6 @@
 .btn-outline-info:disabled,
 .btn-outline-info.disabled {
   color: var(--btn-disabled-text-color);
-  border-color: var(--dividerColor);
   background-color: var(--paperBackgroundColor);
+  border-color: var(--dividerColor);
 }
