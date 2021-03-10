@@ -3,6 +3,11 @@ body {
   height: 100%;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1 {
   line-height: 1.087;
   letter-spacing: -.8px;
