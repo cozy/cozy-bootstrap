@@ -29,3 +29,16 @@
   background-color: var(--paperBackgroundColor);
   border-color: var(--dividerColor);
 }
+
+.btn-icon {
+  padding: 1rem;
+}
+
+// https://twitter.com/chriscoyier/status/1124064712067624960
+.icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primaryTextColor);
+  mask-size: cover;
+}

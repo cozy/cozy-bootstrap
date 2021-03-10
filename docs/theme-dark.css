@@ -14,7 +14,7 @@
   --btn-disabled-text-color: rgba(255, 255, 255, .4);
   --btn-secondary-border-color: rgba(255, 255, 255, .24);
   --btn-secondary-hover-color: rgba(255, 255, 255, .08);
-  --btn-ghost-border-color: rgba(255, 255, 255, .5);
+  --btn-ghost-border-color: rgba(145, 191, 255, .5);
   --btn-ghost-background-color: #081d39;
   --btn-ghost-hover-color: #0a2447;
   --btn-intent-text-color: #000;
