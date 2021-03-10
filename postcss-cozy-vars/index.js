@@ -25,11 +25,20 @@ module.exports = (opts = {}) => {
         changeBorder(decl);
         decl[processed] = true;
       },
+      "box-shadow": (decl) => {
+        if (decl.parent.selector.match(/\.btn-check/)) {
+          decl.parent.remove();
+        }
+      },
     },
   };
 };
 
 function changeColor(decl) {
+  if (decl.parent.selector.match(/\.btn-check:active/)) {
+    decl.remove();
+    return;
+  }
   switch (decl.parent.selector) {
     case "body":
     case ".text-body":
@@ -121,7 +130,14 @@ function changeColor(decl) {
 }
 
 function changeBackground(decl) {
-  switch (decl.parent.selector) {
+  let selector = decl.parent.selector;
+  let matched = selector.match(
+    /\.btn(-outline)?-(primary|secondary|success|info|warning|danger):active/
+  );
+  if (matched) {
+    selector = matched[0].replace(":active", ":hover");
+  }
+  switch (selector) {
     case "body":
     case ".bg-paper":
     case ".btn-outline-secondary":
@@ -217,6 +233,10 @@ function changeBackground(decl) {
 }
 
 function changeBorder(decl) {
+  if (decl.parent.selector.match(/\.btn-check:active/)) {
+    decl.remove();
+    return;
+  }
   switch (decl.parent.selector) {
     case ".border-primary":
       decl.value = "var(--primaryColor)";

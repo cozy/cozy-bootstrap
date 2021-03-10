@@ -1,7 +1,3 @@
-.btn {
-  text-transform: uppercase;
-}
-
 .btn-outline-primary {
   background-color: var(--btn-ghost-background-color);
   border-style: dashed;
@@ -41,4 +37,35 @@
   height: 1rem;
   background: var(--primaryTextColor);
   mask-size: cover;
+}
+
+// https://github.com/mladenplavsic/css-ripple-effect
+.btn {
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  transform: translate3d(0, 0, 0);
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    content: "";
+    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+    transform: scale(10, 10);
+  }
+
+  &:active::after {
+    opacity: .2;
+    transition: 0s;
+    transform: scale(0, 0);
+  }
 }
