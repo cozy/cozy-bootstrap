@@ -133,7 +133,7 @@ body {
   font-weight: 400;
   line-height: 1.313;
   color: var(--primaryTextColor);
-  background-color: var(--defaultBackgroundColor);
+  background-color: var(--paperBackgroundColor);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -306,7 +306,7 @@ pre code {
 
 code {
   font-size: 0.75rem;
-  color: #d63384;
+  color: #0b3672;
   word-wrap: break-word;
 }
 a > code {
@@ -1812,6 +1812,10 @@ img {
 
 .text-danger {
   color: var(--errorColor) !important;
+}
+
+.text-white {
+  color: #fff !important;
 }
 
 .text-body {
