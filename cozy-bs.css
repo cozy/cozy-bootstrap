@@ -1072,6 +1072,19 @@ img {
   border-color: var(--dividerColor);
 }
 
+.btn-icon {
+  padding: 1rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primaryTextColor);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+
 .card {
   position: relative;
   display: flex;
