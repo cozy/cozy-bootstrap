@@ -39,6 +39,9 @@ function changeColor(decl) {
     case ".text-primary":
       decl.value = "var(--primaryColor)";
       break;
+    case "code":
+      decl.value = "#0b3672"; // Primary 800
+      break;
     case "a:hover":
       decl.value = "var(--primaryColorDark)";
       break;
@@ -86,7 +89,8 @@ function changeColor(decl) {
 function changeBackground(decl) {
   switch (decl.parent.selector) {
     case "body":
-      decl.value = "var(--defaultBackgroundColor)";
+    case ".bg-paper":
+      decl.value = "var(--paperBackgroundColor)";
       break;
     case ".bg-primary":
     case ".progress-bar":
@@ -109,9 +113,6 @@ function changeBackground(decl) {
       break;
     case ".bg-body":
       decl.value = "var(--defaultBackgroundColor)";
-      break;
-    case ".bg-paper":
-      decl.value = "var(--paperBackgroundColor)";
       break;
     case ".alert-primary":
       decl.value = "var(--alert-primary-background-color)";

@@ -454,7 +454,7 @@ $utilities: map-merge(
       values: map-merge(
         $theme-colors,
         (
-          // "white": $white,
+          "white": $white,
           "body": $body-color,
           "muted": $text-muted,
           // "black-50": rgba($black, .5),
