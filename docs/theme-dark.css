@@ -1,10 +1,28 @@
 .theme-dark {
   /* Also used by cozy-ui */
+  --primaryColor: #91bfff;
+  --primaryColorDark: #579eff;
   --primaryTextColor: #fff;
+  --primaryTextContrastColor: rgba(8, 29, 57, .9);
+  --errorColor: #ff9b9b;
+  --errorColorDark: #f96b6b;
   --paperBackgroundColor: #2c3039;
   --defaultBackgroundColor: #5d6169;
+  --dividerColor: rgba(255, 255, 255, .12);
 
-  /* Only for bootstrap theme */
+  /* Buttons */
+  --btn-disabled-text-color: rgba(255, 255, 255, .4);
+  --btn-secondary-border-color: rgba(255, 255, 255, .24);
+  --btn-secondary-hover-color: rgba(255, 255, 255, .08);
+  --btn-ghost-border-color: rgba(255, 255, 255, .5);
+  --btn-ghost-background-color: #081d39;
+  --btn-ghost-hover-color: #0a2447;
+  --btn-intent-text-color: #000;
+  --btn-intent-outlined-border-color: rgba(255, 211, 211, .32);
+  --btn-intent-outlined-text-color: #ff9b9b;
+  --btn-intent-outlined-hover-color: rgba(255, 155, 155, .08);
+
+  /* Alerts */
   --alert-primary-color: #eaf3ff;
   --alert-primary-background-color: #081d39;
   --alert-primary-title-color: #91bfff;

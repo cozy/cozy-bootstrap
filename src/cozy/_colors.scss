@@ -32,11 +32,24 @@ html {
   --infoColor: #7c8086;                        // Grey 600
   --warningColor: #cb8100;                     // Warning 600
   --errorColor: #ea3f3f;                       // Error 600
+  --errorColorDark: #d31f1f;                   // Error 700
   --defaultBackgroundColor: #f4f5f6;           // Grey 100
   --paperBackgroundColor: #fff;                // White
   --dividerColor: rgba(29, 33, 42, .12);       // Grey 900 + alpha 0.12
 
-  /* Only for bootstrap theme */
+  /* Buttons */
+  --btn-disabled-text-color: rgba(29, 33, 42, .32);           // Grey 900 + alpha 0.32
+  --btn-secondary-border-color: rgba(29, 33, 42, .16);        // Grey 900 + alpha 0.16
+  --btn-secondary-hover-color: rgba(29, 33, 42, .04);         // Grey 900 + alpha 0.04
+  --btn-ghost-border-color: rgba(41, 126, 242, .5);           // Primary 600 + alpha 0.5
+  --btn-ghost-background-color: #eaf3ff;                      // Primary 100
+  --btn-ghost-hover-color: #e3efff;                           // Primary 100 + Primary 600, alpha 0.04
+  --btn-intent-text-color: #fff;
+  --btn-intent-outlined-border-color: rgba(234, 63, 63, .24); // Error 600 + alpha 0.24
+  --btn-intent-outlined-text-color: #ea3f3f;                  // Error 600
+  --btn-intent-outlined-hover-color: rgba(234, 63, 63, .04);  // Error 600 + alpha 0.04
+
+  /* Alerts */
   --alert-primary-color: #081d39;              // Primary 900
   --alert-primary-background-color: #eaf3ff;   // Primary 100
   --alert-primary-title-color: var(--primaryColor);
@@ -59,10 +72,28 @@ html {
 
 .theme-inverted {
   /* Also used by cozy-ui */
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
   --primaryTextColor: #fff;
+  --primaryTextContrastColor: #297ef2;
+  --errorColor: #ea3f3f;
+  --errorColorDark: #d31f1f;
   --paperBackgroundColor: #297ef2;
+  --dividerColor: rgba(255, 255, 255, .12);
 
-  /* Only for bootstrap theme */
+  /* Buttons */
+  --btn-disabled-text-color: rgba(255, 255, 255, .4);
+  --btn-secondary-border-color: rgba(255, 255, 255, .24);
+  --btn-secondary-hover-color: rgba(255, 255, 255, .08);
+  --btn-ghost-border-color: rgba(255, 255, 255, .5);
+  --btn-ghost-background-color: #579eff;
+  --btn-ghost-hover-color: #64a6ff;
+  --btn-intent-text-color: #fff;
+  --btn-intent-outlined-border-color: rgba(255, 211, 211, .32);
+  --btn-intent-outlined-text-color: #ffd3d3;
+  --btn-intent-outlined-hover-color: rgba(255, 211, 211, .08);
+
+  /* Alerts */
   --alert-primary-color: #fff;
   --alert-primary-background-color: #579eff;
   --alert-primary-title-color: #fff;

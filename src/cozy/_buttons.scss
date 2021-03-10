@@ -1,0 +1,31 @@
+.btn {
+  text-transform: uppercase;
+}
+
+.btn-outline-primary {
+  border-style: dashed;
+  background-color: var(--btn-ghost-background-color);
+}
+
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+  border-style: solid;
+}
+
+.btn:disabled,
+.btn.disabled {
+  color: var(--btn-disabled-text-color);
+  background-color: var(--dividerColor);
+  border-color: transparent;
+}
+
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled,
+.btn-outline-danger:disabled,
+.btn-outline-danger.disabled,
+.btn-outline-info:disabled,
+.btn-outline-info.disabled {
+  color: var(--btn-disabled-text-color);
+  border-color: var(--dividerColor);
+  background-color: var(--paperBackgroundColor);
+}

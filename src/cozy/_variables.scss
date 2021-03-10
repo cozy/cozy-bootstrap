@@ -30,11 +30,27 @@ $display-font-sizes: (1: 5rem);
 // generated CSS.
 $grid-breakpoints: (xs: 0, md: 768px);
 
-// Alerts
-$alert-border-width: 0;
+// Buttons
+$btn-padding-x: 1rem;
+$btn-padding-y: .688rem;
+$btn-border-radius: .125rem;
+$btn-font-weight: bold;
+
+$btn-font-size-sm: .8125rem;
+$btn-padding-x-sm: .75rem;
+$btn-padding-y-sm: .5rem;
+$btn-border-radius-sm: .125rem;
+
+$btn-font-size-lg: .9375rem;
+$btn-padding-x-lg: 1.25rem;
+$btn-padding-y-lg: .875rem;
+$btn-border-radius-lg: .125rem;
 
 // Cards
 $card-border-color: rgba(0, 0, 0, .08);
+
+// Alerts
+$alert-border-width: 0;
 
 // Utility
 $box-shadow: 0 .25rem .75rem 0 rgba(0, 0, 0, .08);
