@@ -29,8 +29,9 @@ $utilities: map-merge(
       // print: true,
       property: display,
       class: d,
+      // Added value: contents
       // Removed values for Cozy: table table-row table-cell inline-flex
-      values: inline inline-block block grid flex none
+      values: inline inline-block block grid flex none contents
     ),
     "shadow": (
       property: box-shadow,
@@ -484,6 +485,7 @@ $utilities: map-merge(
           "body": $body-bg,
           "paper": $white,
           // "white": $white,
+          "dark": var(--dark-color),
           "transparent": transparent
         )
       )
