@@ -28,6 +28,11 @@
 
 .btn-icon {
   padding: 1rem;
+  border-radius: 50%;
+}
+
+.btn-icon:hover {
+  background-color: rgba(0, 0, 0, .06);
 }
 
 // https://twitter.com/chriscoyier/status/1124064712067624960
