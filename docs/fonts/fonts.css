@@ -2,13 +2,11 @@
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  src: url("Lato-Regular.woff2") format("woff2"),
-    url("Lato-Regular.woff") format("woff");
+  src: url("Lato-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  src: url("Lato-Bold.woff2") format("woff2"),
-    url("Lato-Bold.woff") format("woff");
+  src: url("Lato-Bold.woff2") format("woff2");
 }
