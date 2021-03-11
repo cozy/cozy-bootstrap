@@ -4,12 +4,17 @@ module.exports = (opts = {}) => {
   return {
     postcssPlugin: "postcss-cozy-vars",
     Declaration: {
-      color: (decl) => {
+      "color": (decl) => {
         if (decl[processed]) {
           return;
         }
         changeColor(decl);
         decl[processed] = true;
+      },
+      "background-image": (decl) => {
+        if (decl.parent.selector.match(/\.form-switch/)) {
+          decl.parent.remove();
+        }
       },
       "background-color": (decl) => {
         if (decl[processed]) {
@@ -19,6 +24,13 @@ module.exports = (opts = {}) => {
         decl[processed] = true;
       },
       "border-color": (decl) => {
+        if (decl[processed]) {
+          return;
+        }
+        changeBorderColor(decl);
+        decl[processed] = true;
+      },
+      "border": (decl) => {
         if (decl[processed]) {
           return;
         }
@@ -44,6 +56,11 @@ function changeColor(decl) {
     case ".text-body":
     case ".btn-outline-info":
     case ".btn-outline-info:hover":
+    case ".form-control":
+    case ".form-control:focus":
+    case ".form-select":
+    case ".form-select:focus":
+    case ".input-group-text":
       decl.value = "var(--primaryTextColor)";
       break;
     case ".btn":
@@ -82,6 +99,7 @@ function changeColor(decl) {
     case ".text-success":
     case ".btn-outline-success":
     case ".btn-outline-success:hover":
+    case ".valid-feedback":
       decl.value = "var(--successColor)";
       break;
     case ".text-info":
@@ -93,6 +111,7 @@ function changeColor(decl) {
       decl.value = "var(--warningColor)";
       break;
     case ".text-danger":
+    case ".invalid-feedback":
       decl.value = "var(--errorColor)";
       break;
     case ".btn-outline-danger":
@@ -104,6 +123,7 @@ function changeColor(decl) {
       decl.value = "var(--btn-intent-text-color)";
       break;
     case ".text-muted":
+    case ".form-text":
       decl.value = "var(--disabledTextColor)";
       break;
     case ".alert-primary":
@@ -145,6 +165,12 @@ function changeBackground(decl) {
     case ".btn-outline-info":
     case ".btn-outline-warning":
     case ".btn-outline-danger":
+    case ".form-control":
+    case ".form-control:focus":
+    case ".form-select":
+    case ".form-select:focus":
+    case ".form-check-input":
+    case ".card":
       decl.value = "var(--paperBackgroundColor)";
       break;
     case ".btn-outline-primary":
@@ -159,6 +185,7 @@ function changeBackground(decl) {
     case ".bg-primary":
     case ".progress-bar":
     case ".btn-primary":
+    case ".form-check-input:checked":
       decl.value = "var(--primaryColor)";
       break;
     case ".btn-primary:hover":
@@ -177,6 +204,7 @@ function changeBackground(decl) {
       break;
     case ".bg-info":
     case ".btn-info":
+    case ".input-group-text":
       decl.value = "var(--infoColor)";
       break;
     case ".btn-info:hover":
@@ -191,6 +219,7 @@ function changeBackground(decl) {
       break;
     case ".btn-success:hover":
     case ".btn-warning:hover":
+    case ".form-control::placeholder":
       decl.value = "var(--secondaryTextColor)";
       break;
     case ".btn-danger":
@@ -224,21 +253,22 @@ function changeBackground(decl) {
     case ".alert-info":
       decl.value = "var(--alert-info-background-color)";
       break;
-    case ".card":
-      decl.value = "var(--paper-color)";
-      break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);
   }
 }
 
-function changeBorder(decl) {
+function changeBorderColor(decl) {
   if (decl.parent.selector.match(/\.btn-check:active/)) {
     decl.remove();
     return;
   }
   switch (decl.parent.selector) {
     case ".border-primary":
+    case ".form-control:focus":
+    case ".form-select:focus":
+    case ".form-check-input:focus":
+    case ".form-check-input:checked":
       decl.value = "var(--primaryColor)";
       break;
     case ".btn-outline-primary":
@@ -293,6 +323,18 @@ function changeBorder(decl) {
     case ".alert-warning":
     case ".alert-danger":
       decl.remove();
+      break;
+    // default:
+    //   console.log(`- "${decl.parent.selector}"`);
+  }
+}
+
+function changeBorder(decl) {
+  switch (decl.parent.selector) {
+    case ".form-control":
+    case ".form-select":
+    case ".input-group-text":
+      decl.value = "1px solid var(--btn-secondary-border-color)";
       break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);

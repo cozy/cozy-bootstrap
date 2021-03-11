@@ -1,6 +1,7 @@
 // Do not use the bootstrap system for dynamically sizing fonts according to
 // the browser width.
 $enable-rfs: false;
+$enable-validation-icons: false;
 
 // Use Lato
 html {
@@ -29,6 +30,24 @@ $display-font-sizes: (1: 5rem);
 // Reduce the number of breakpoints as each breakpoint increase the size of the
 // generated CSS.
 $grid-breakpoints: (xs: 0, md: 768px);
+
+// Forms
+$form-text-margin-top: .5rem;
+
+$input-btn-padding-y: .75rem;
+$input-btn-padding-x: 1rem;
+$input-btn-font-size: 1rem;
+$input-btn-line-height: 1.5;
+
+$input-btn-padding-y-sm: .25rem;
+$input-btn-padding-x-sm: .5rem;
+$input-btn-font-size-sm: 1rem;
+
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 1rem;
+$input-btn-font-size-lg: 1rem;
+
+$input-disabled-bg: var(--dividerColor);
 
 // Buttons
 $btn-padding-x: 1rem;
