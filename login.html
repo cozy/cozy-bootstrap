@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cozy Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="cozy-bs.css" />
+    <link rel="stylesheet" href="theme-dark.css" />
+    <link rel="stylesheet" href="icons/icons.css" />
+  </head>
+  <body class="theme-inverted">
+    <!-- https://zpl.io/2E5dJxD & https://zpl.io/VKxEZLE -->
+    <form class="d-contents">
+      <main class="wrapper">
+        <header
+          class="position-md-absolute top-0 start-0 end-0 full-bleed d-flex justify-content-center align-items-center bg-dark"
+        >
+          <p class="m-3">
+            Best practice: fill your password only if the address in your browser matches the one of
+            your Cozy and comes with a padlock.
+          </p>
+        </header>
+        <div class="d-flex flex-column align-items-center">
+          <img
+            src="images/avatar.png"
+            alt=""
+            class="avatar mb-3 border border-primary border-2 rounded-circle"
+          />
+          <h1 class="h4">Isabelle</h1>
+          <p>isabelledurand.mycozy.cloud</p>
+          <div class="form-floating w-100 mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="passwordInput"
+              autofocus
+              autocomplete="current-password"
+            />
+            <label for="passwordInput">Password</label>
+          </div>
+          <a href="." class="btn btn-link align-self-start">I forgot my password</a>
+          <div class="form-check align-self-start">
+            <input class="form-check-input" type="checkbox" value="" id="rememberInput" />
+            <label class="form-check-label" for="rememberInput">Remember me</label>
+          </div>
+        </div>
+        <footer>
+          <button class="btn btn-primary w-100 my-3" type="button">Log in</button>
+        </footer>
+      </main>
+    </form>
+  </body>
+</html>

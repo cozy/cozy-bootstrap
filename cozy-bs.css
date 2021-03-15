@@ -67,6 +67,8 @@ html {
   --alert-info-color: var(--primaryTextColor);
   --alert-info-background-color: #f4f5f6;
   --alert-info-title-color: var(--primaryTextColor);
+  /* Others */
+  --dark-color: #0f5cc7;
 }
 
 .theme-inverted {
@@ -651,6 +653,17 @@ img {
   margin-left: calc(50% - 50vw);
 }
 
+.avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    width: 6rem;
+    height: 6rem;
+  }
+}
 .form-text {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -1956,6 +1969,10 @@ textarea.form-control-lg {
   display: none !important;
 }
 
+.d-contents {
+  display: contents !important;
+}
+
 .shadow {
   box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.08) !important;
 }
@@ -2863,6 +2880,10 @@ textarea.form-control-lg {
   background-color: var(--paperBackgroundColor) !important;
 }
 
+.bg-dark {
+  background-color: var(--dark-color) !important;
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -2958,6 +2979,10 @@ textarea.form-control-lg {
 
   .d-md-none {
     display: none !important;
+  }
+
+  .d-md-contents {
+    display: contents !important;
   }
 
   .position-md-static {
