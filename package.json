@@ -14,7 +14,7 @@
     "css-vars": "postcss --replace dist/cozy-bs.css --config ./postcss-cozy-vars/postcss.config.js",
     "docs": "ln -sf ../dist/cozy-bs.css docs/ && npm-run-all --parallel docs-serve watch",
     "docs-lint": "npm-run-all --parallel docs-prettier docs-vnu",
-	"docs-prettier": "prettier --print-width=100 -c docs/*.html",
+    "docs-prettier": "prettier --print-width=100 -c docs/*.html",
     "docs-serve": "serve --symlinks --listen 3000 docs/",
     "docs-vnu": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html --Werror docs",
     "gh-pages": "cp -r docs gh-pages && cp dist/cozy-bs.css* gh-pages/",

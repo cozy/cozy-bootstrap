@@ -45,7 +45,6 @@ $utilities: map-merge(
       )
     ),
     "position": (
-      responsive: true, // Added for Cozy
       property: position,
       values: static relative absolute fixed sticky
     ),
@@ -485,7 +484,6 @@ $utilities: map-merge(
           "body": $body-bg,
           "paper": $white,
           // "white": $white,
-          "dark": var(--dark-color),
           "transparent": transparent
         )
       )

@@ -37,6 +37,9 @@ html {
   --paperBackgroundColor: #fff;                // White
   --dividerColor: rgba(29, 33, 42, .12);       // Grey 900 + alpha 0.12
 
+  /* Banner */
+  --banner-color: #0f5cc7; // Primary 700
+
   /* Buttons */
   --btn-disabled-text-color: rgba(29, 33, 42, .32);           // Grey 900 + alpha 0.32
   --btn-secondary-border-color: rgba(29, 33, 42, .16);        // Grey 900 + alpha 0.16
@@ -68,9 +71,6 @@ html {
   --alert-info-color: var(--primaryTextColor);
   --alert-info-background-color: #f4f5f6;      // Grey 100
   --alert-info-title-color: var(--primaryTextColor);
-
-  /* Others */
-  --dark-color: #0f5cc7; // Primary 700
 }
 
 .theme-inverted {
