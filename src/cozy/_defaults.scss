@@ -8,26 +8,85 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+@mixin h1 {
+  font-size: 3rem;
   line-height: 1.087;
   letter-spacing: -.8px;
 }
 
-h2 {
+h1 {
+  @include h1();
+}
+
+@mixin h2 {
+  font-size: 2rem;
   line-height: $headings-line-height;
   letter-spacing: -.4px;
 }
 
-h3,
-h4 {
+h2 {
+  @include h2();
+}
+
+@mixin h3 {
+  font-size: 1.5rem;
   line-height: $headings-line-height;
   letter-spacing: 0;
 }
 
-h5,
-h6 {
+h3 {
+  @include h3();
+}
+
+@mixin h4 {
+  font-size: 1.25rem;
+  line-height: $headings-line-height;
+  letter-spacing: 0;
+}
+
+h4 {
+  @include h4();
+}
+
+@mixin h5 {
+  font-size: 1.125rem;
   line-height: $line-height-base;
   letter-spacing: 0;
+}
+
+h5 {
+  @include h5();
+}
+
+@mixin h6 {
+  font-size: 1rem;
+  line-height: $line-height-base;
+  letter-spacing: 0;
+}
+
+h6 {
+  @include h6();
+}
+
+@include media-breakpoint-up(md) {
+  .h1-md {
+    @include h1();
+  }
+  .h2-md {
+    @include h2();
+  }
+  .h3-md {
+    @include h3();
+  }
+  .h4-md {
+    @include h4();
+  }
+  .h5-md {
+    @include h5();
+  }
+  .h6-md {
+    @include h6();
+  }
 }
 
 img {
