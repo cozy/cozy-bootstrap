@@ -160,7 +160,7 @@ html {
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.313;
   color: var(--primaryTextColor);
@@ -275,7 +275,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 mark, .mark {
@@ -327,7 +327,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 pre code {
   font-size: inherit;
@@ -336,7 +336,7 @@ pre code {
 }
 
 code {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #0b3672;
   word-wrap: break-word;
 }
@@ -346,7 +346,7 @@ a > code {
 
 kbd {
   padding: 0.2rem 0.4rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #fff;
   background-color: #212529;
   border-radius: 0.2rem;
@@ -623,13 +623,17 @@ h6, .h6 {
     letter-spacing: 0;
   }
 }
+caption {
+  font-size: 0.75rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 .lead {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -657,13 +661,13 @@ img {
 }
 
 .initialism {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -672,7 +676,7 @@ img {
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #6c757d;
 }
 .blockquote-footer::before {
@@ -731,9 +735,14 @@ img {
     left: 0;
   }
 }
+.form-check-input:hover,
+.form-control:hover {
+  border-color: var(--primaryColor);
+}
+
 .form-text {
   margin-top: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--disabledTextColor);
 }
 
@@ -970,7 +979,7 @@ textarea.form-control-lg {
 
 .form-check {
   display: block;
-  min-height: 1.148875rem;
+  min-height: 1.313rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -996,7 +1005,7 @@ textarea.form-control-lg {
           color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
-  border-radius: 0.25em;
+  border-radius: 0.2rem;
 }
 .form-check-input[type=radio] {
   border-radius: 50%;
@@ -1015,7 +1024,8 @@ textarea.form-control-lg {
   border-color: var(--primaryColor);
 }
 .form-check-input:checked[type=checkbox] {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  -webkit-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cdefs%3e%3cmask id='hole'%3e%3crect width='100%' height='100%' fill='white'/%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/mask%3e%3c/defs%3e%3crect fill='black' width='100%' height='100%' mask='url(%23hole)' /%3e%3c/svg%3e");
+          mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cdefs%3e%3cmask id='hole'%3e%3crect width='100%' height='100%' fill='white'/%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/mask%3e%3c/defs%3e%3crect fill='black' width='100%' height='100%' mask='url(%23hole)' /%3e%3c/svg%3e");
 }
 .form-check-input:checked[type=radio] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
@@ -1203,7 +1213,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--successColor);
 }
 
@@ -1215,7 +1225,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.25rem;
@@ -1263,7 +1273,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--errorColor);
 }
 
@@ -1275,7 +1285,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -1287,7 +1297,7 @@ textarea.form-control-lg {
 }
 
 .form-control.is-invalid {
-  border-color: #dc3545;
+  border-color: var(--btn-intent-outlined-text-color);
 }
 .form-control.is-invalid:focus {
   border-color: #dc3545;
@@ -1941,7 +1951,7 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.65625rem;
+  font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
