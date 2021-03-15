@@ -89,6 +89,10 @@ h6 {
   }
 }
 
+caption {
+  font-size: .75rem;
+}
+
 img {
   @include img-fluid();
 }
