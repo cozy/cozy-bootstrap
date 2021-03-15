@@ -1,3 +1,9 @@
 .icon-back {
   mask: url(back.svg);
 }
+.icon-logo {
+  display: inline-block;
+  width: 6.875rem;
+  height: 3rem;
+  mask: url(logo-dark.svg);
+}
