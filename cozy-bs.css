@@ -37,6 +37,8 @@ html {
   --defaultBackgroundColor: #f4f5f6;
   --paperBackgroundColor: #fff;
   --dividerColor: rgba(29, 33, 42, .12);
+  /* Banner */
+  --banner-color: #0f5cc7;
   /* Buttons */
   --btn-disabled-text-color: rgba(29, 33, 42, .32);
   --btn-secondary-border-color: rgba(29, 33, 42, .16);
@@ -67,8 +69,6 @@ html {
   --alert-info-color: var(--primaryTextColor);
   --alert-info-background-color: #f4f5f6;
   --alert-info-title-color: var(--primaryTextColor);
-  /* Others */
-  --dark-color: #0f5cc7;
 }
 
 .theme-inverted {
@@ -551,29 +551,78 @@ body {
 }
 
 h1, .h1 {
+  font-size: 3rem;
   line-height: 1.087;
   letter-spacing: -0.8px;
 }
 
 h2, .h2 {
+  font-size: 2rem;
   line-height: 1.167;
   letter-spacing: -0.4px;
 }
 
-h3, .h3,
-h4,
-.h4 {
+h3, .h3 {
+  font-size: 1.5rem;
   line-height: 1.167;
   letter-spacing: 0;
 }
 
-h5, .h5,
-h6,
-.h6 {
+h4, .h4 {
+  font-size: 1.25rem;
+  line-height: 1.167;
+  letter-spacing: 0;
+}
+
+h5, .h5 {
+  font-size: 1.125rem;
   line-height: 1.313;
   letter-spacing: 0;
 }
 
+h6, .h6 {
+  font-size: 1rem;
+  line-height: 1.313;
+  letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+  .h1-md {
+    font-size: 3rem;
+    line-height: 1.087;
+    letter-spacing: -0.8px;
+  }
+
+  .h2-md {
+    font-size: 2rem;
+    line-height: 1.167;
+    letter-spacing: -0.4px;
+  }
+
+  .h3-md {
+    font-size: 1.5rem;
+    line-height: 1.167;
+    letter-spacing: 0;
+  }
+
+  .h4-md {
+    font-size: 1.25rem;
+    line-height: 1.167;
+    letter-spacing: 0;
+  }
+
+  .h5-md {
+    font-size: 1.125rem;
+    line-height: 1.313;
+    letter-spacing: 0;
+  }
+
+  .h6-md {
+    font-size: 1rem;
+    line-height: 1.313;
+    letter-spacing: 0;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -630,6 +679,26 @@ img {
   content: "— ";
 }
 
+.avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+.banner {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  background-color: var(--banner-color);
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -647,21 +716,19 @@ img {
     justify-content: center;
   }
 }
-/* https://piccalil.li/tutorial/creating-a-full-bleed-css-utility/ */
-.full-bleed {
+.wrapper-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
 
-.avatar {
-  width: 4rem;
-  height: 4rem;
-}
-
 @media (min-width: 768px) {
-  .avatar {
-    width: 6rem;
-    height: 6rem;
+  .wrapper-top {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 .form-text {
@@ -2880,10 +2947,6 @@ textarea.form-control-lg {
   background-color: var(--paperBackgroundColor) !important;
 }
 
-.bg-dark {
-  background-color: var(--dark-color) !important;
-}
-
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -2983,27 +3046,6 @@ textarea.form-control-lg {
 
   .d-md-contents {
     display: contents !important;
-  }
-
-  .position-md-static {
-    position: static !important;
-  }
-
-  .position-md-relative {
-    position: relative !important;
-  }
-
-  .position-md-absolute {
-    position: absolute !important;
-  }
-
-  .position-md-fixed {
-    position: fixed !important;
-  }
-
-  .position-md-sticky {
-    position: -webkit-sticky !important;
-    position: sticky !important;
   }
 
   .flex-md-fill {
