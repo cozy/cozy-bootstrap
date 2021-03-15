@@ -10,3 +10,8 @@
     }
   }
 }
+
+.form-check-input:hover,
+.form-control:hover {
+  border-color: var(--primaryColor);
+}

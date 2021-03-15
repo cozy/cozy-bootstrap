@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cozy Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="cozy-bs.css" />
+    <link rel="stylesheet" href="theme-dark.css" />
+    <link rel="stylesheet" href="icons/icons.css" />
+  </head>
+  <body class="bg-paper">
+    <div class="wrapper-top">
+      <a href="." class="btn btn-icon">
+        <span class="icon icon-back"></span>
+        <span class="visually-hidden">Back to main screen</span>
+      </a>
+    </div>
+    <main class="d-flex justify-content-center py-4">
+      <section class="wrapper m-0 w-25 border">
+        <h1 class="my-4">Forms</h1>
+        <div class="my-3">
+          <h2>Checkbox</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="lightCheckDefault" />
+            <label class="form-check-label" for="lightCheckDefault"> Default checkbox </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="lightCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="lightCheckChecked"> Checked checkbox </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="lightCheckDisabled"
+              disabled
+            />
+            <label class="form-check-label" for="lightCheckDisabled"> Disabled checkbox </label>
+          </div>
+        </div>
+        <div class="my-3">
+          <h2>Radios</h2>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="lightRadioDefault"
+              id="lightRadioDefault1"
+            />
+            <label class="form-check-label" for="lightRadioDefault1"> Default radio </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="lightRadioDefault"
+              id="lightRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="lightRadioDefault2"> Default checked radio </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="lightRadioDisabled"
+              id="lightRadioDisabled"
+              disabled
+            />
+            <label class="form-check-label" for="lightRadioDisabled"> Disabled radio </label>
+          </div>
+        </div>
+        <div class="my-3">
+          <h2>Floating labels</h2>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="lightFloatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="lightFloatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="lightFloatingPassword"
+              placeholder="Password"
+            />
+            <label for="lightFloatingPassword">Password</label>
+          </div>
+          <form class="form-floating my-2">
+            <input
+              type="email"
+              class="form-control is-invalid"
+              id="lightFloatingInputInvalid"
+              placeholder="name@example.com"
+              value="test@example.com"
+            />
+            <label for="lightFloatingInputInvalid">Invalid input</label>
+          </form>
+        </div>
+      </section>
+      <section class="wrapper m-0 w-25 border-top border-bottom theme-inverted">
+        <h1 class="invisible my-4">Forms</h1>
+        <div class="my-3">
+          <h2>Checks</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invertedCheckDefault" />
+            <label class="form-check-label" for="invertedCheckDefault"> Default checkbox </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invertedCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="invertedCheckChecked"> Checked checkbox </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invertedCheckDisabled"
+              disabled
+            />
+            <label class="form-check-label" for="invertedCheckDisabled"> Disabled checkbox </label>
+          </div>
+        </div>
+        <div class="my-3">
+          <h2>Radios</h2>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="invertedRadioDefault"
+              id="invertedRadioDefault1"
+            />
+            <label class="form-check-label" for="invertedRadioDefault1"> Default radio </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="invertedRadioDefault"
+              id="invertedRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="invertedRadioDefault2">
+              Default checked radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="invertedRadioDisabled"
+              id="invertedRadioDisabled"
+              disabled
+            />
+            <label class="form-check-label" for="invertedRadioDisabled"> Disabled radio </label>
+          </div>
+        </div>
+        <div class="my-3">
+          <h2>Floating labels</h2>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="invertedFloatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="invertedFloatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="invertedFloatingPassword"
+              placeholder="Password"
+            />
+            <label for="invertedFloatingPassword">Password</label>
+          </div>
+          <form class="form-floating my-2">
+            <input
+              type="email"
+              class="form-control is-invalid"
+              id="invertedFloatingInputInvalid"
+              placeholder="name@example.com"
+              value="test@example.com"
+            />
+            <label for="invertedFloatingInputInvalid">Invalid input</label>
+          </form>
+        </div>
+      </section>
+      <section class="wrapper m-0 w-25 border border-start-0 theme-dark">
+        <h1 class="invisible my-4">Forms</h1>
+        <div class="my-3">
+          <h2>Checks</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="darkCheckDefault" />
+            <label class="form-check-label" for="darkCheckDefault"> Default checkbox </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="darkCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="darkCheckChecked"> Checked checkbox </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="darkCheckDisabled"
+              disabled
+            />
+            <label class="form-check-label" for="darkCheckDisabled"> Disabled checkbox </label>
+          </div>
+        </div>
+        <div class="my-3">
+          <h2>Radios</h2>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="darkRadioDefault"
+              id="darkRadioDefault1"
+            />
+            <label class="form-check-label" for="darkRadioDefault1"> Default radio </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="darkRadioDefault"
+              id="darkRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="darkRadioDefault2"> Default checked radio </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="darkRadioDisabled"
+              id="darkRadioDisabled"
+              disabled
+            />
+            <label class="form-check-label" for="darkRadioDisabled"> Disabled radio </label>
+          </div>
+        </div>
+        <div class="my-3">
+          <h2>Floating labels</h2>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="darkFloatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="darkFloatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="darkFloatingPassword"
+              placeholder="Password"
+            />
+            <label for="darkFloatingPassword">Password</label>
+          </div>
+          <form class="form-floating my-2">
+            <input
+              type="email"
+              class="form-control is-invalid"
+              id="darkFloatingInputInvalid"
+              placeholder="name@example.com"
+              value="test@example.com"
+            />
+            <label for="darkFloatingInputInvalid">Invalid input</label>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
