@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/cozy/cozy-bootstrap/compare/v1.1.0...v1.1.1) (2021-03-16)
+
+
+### Bug Fixes
+
+* List files for npm publication in package.json ([8aa34a5](https://github.com/cozy/cozy-bootstrap/commit/8aa34a520c47aa9b703d0fc5cb3e0013772e812f))
+
 # [1.1.0](https://github.com/cozy/cozy-bootstrap/compare/v1.0.0...v1.1.0) (2021-03-16)
 
 
