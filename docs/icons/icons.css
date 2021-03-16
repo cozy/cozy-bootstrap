@@ -2,10 +2,3 @@
   -webkit-mask: url(back.svg);
   mask: url(back.svg);
 }
-.icon-logo {
-  display: inline-block;
-  width: 6.875rem;
-  height: 3rem;
-  -webkit-mask: url(logo-dark.svg);
-  mask: url(logo-dark.svg);
-}

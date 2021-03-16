@@ -437,16 +437,16 @@ $utilities: map-merge(
       class: text,
       values: lowercase uppercase capitalize
     ),
-    // "text-align": (
-    //   responsive: true,
-    //   property: text-align,
-    //   class: text,
-    //   values: (
-    //     start: left,
-    //     end: right,
-    //     center: center,
-    //   )
-    // ),
+    "text-align": (
+      // responsive: true,
+      property: text-align,
+      class: text,
+      values: (
+        // start: left,
+        // end: right,
+        center: center,
+      )
+    ),
     // scss-docs-start utils-color
     "color": (
       property: color,

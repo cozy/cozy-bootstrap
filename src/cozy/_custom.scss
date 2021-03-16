@@ -1,0 +1,32 @@
+// https://twitter.com/chriscoyier/status/1124064712067624960
+.icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primaryColor);
+  mask-size: cover;
+}
+
+.logo {
+  display: inline-block;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.illustration {
+  display: inline-block;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+@include media-breakpoint-up(md) {
+  .avatar {
+    width: 6rem;
+    height: 6rem;
+  }
+}
