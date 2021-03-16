@@ -19,6 +19,10 @@
     "docs-vnu": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html --Werror docs",
     "gh-pages": "cp -r docs gh-pages && cp dist/cozy-bs.css* gh-pages/",
     "lint": "npm-run-all --parallel css-lint docs-lint",
+	"test": "backstop test --docker",
+	"test:approve": "backstop approve",
+	"test:clean": "sudo rm -rf screenshots/test",
+	"test:open": "backstop openReport",
     "watch": "nodemon --watch src/ --ext scss --exec \"npm-run-all css-compile css-vars css-prefix\""
   },
   "style": "dist/cozy-bs.css",
@@ -31,6 +35,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.2.5",
+    "backstopjs": "5.1.0",
     "browserslist-config-cozy": "0.4.0",
     "clean-css-cli": "5.2.1",
     "nodemon": "2.0.7",

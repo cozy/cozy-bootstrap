@@ -1,0 +1,70 @@
+{
+  "id": "docs",
+  "viewports": [
+    {
+      "label": "reference",
+      "width": 1600,
+      "height": 800
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Alerts",
+      "url": "http://localhost:3000/alerts.html",
+      "delay": 100
+    },
+    {
+      "label": "Buttons",
+      "url": "http://localhost:3000/buttons.html",
+      "delay": 100
+    },
+    {
+      "label": "Cards",
+      "url": "http://localhost:3000/cards.html",
+      "delay": 100
+    },
+    {
+      "label": "Forms",
+      "url": "http://localhost:3000/forms.html",
+      "delay": 100
+    },
+    {
+      "label": "Login",
+      "url": "http://localhost:3000/login.html",
+      "delay": 100,
+      "viewports": [
+        {
+          "label": "phone",
+          "width": 360,
+          "height": 740
+        },
+        {
+          "label": "desktop",
+          "width": 1280,
+          "height": 720
+        }
+      ]
+    },
+    {
+      "label": "Typography",
+      "url": "http://localhost:3000/typography.html",
+      "delay": 100
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "screenshots/reference",
+    "bitmaps_test": "screenshots/test",
+    "html_report": "screenshots/html_report",
+    "ci_report": "screenshots/ci_report"
+  },
+  "report": ["CI"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "dockerCommandTemplate": "docker run --rm -i --network host --mount type=bind,source=\"{cwd}\",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}",
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

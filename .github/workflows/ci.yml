@@ -26,6 +26,8 @@ jobs:
         run: yarn lint
       - name: Docs
         run: yarn gh-pages
+      - name: Test
+        run: node_modules/.bin/serve --listen 3000 gh-pages/ & yarn test
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.event_name == 'push'
