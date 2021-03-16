@@ -37,6 +37,6 @@ jobs:
       - name: Publish npm
         if: github.event_name == 'push'
         run: yarn release
-        with:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
