@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/cozy/cozy-bootstrap/compare/v1.0.0...v1.1.0) (2021-03-16)
+
+
+### Features
+
+* Add the logo and illustration CSS classes ([ce2babf](https://github.com/cozy/cozy-bootstrap/commit/ce2babf17425631619138820b020fe1bd85a4963))
+
 # 1.0.0 (2021-03-16)
 
 
