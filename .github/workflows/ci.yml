@@ -28,9 +28,15 @@ jobs:
         run: yarn gh-pages
       - name: Test
         run: node_modules/.bin/serve --listen 3000 gh-pages/ & yarn test
-      - name: Deploy
+      - name: Deploy docs
         uses: peaceiris/actions-gh-pages@v3
         if: github.event_name == 'push'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./gh-pages
+      - name: Publish npm
+        if: github.event_name == 'push'
+        run: yarn release
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
