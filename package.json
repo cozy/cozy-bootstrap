@@ -1,5 +1,5 @@
 {
-  "name": "@mycozycloud/bootstrap",
+  "name": "cozy-bootstrap",
   "version": "0.1.0",
   "description": "A cozy theme for bootstrap",
   "repository": "https://github.com/cozy/cozy-bootstrap",
@@ -26,11 +26,18 @@
     "test:open": "backstop openReport",
     "watch": "nodemon --watch src/ --ext scss --exec \"npm-run-all css-compile css-vars css-prefix\""
   },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "package.json",
+    "dist/",
+    "postcss-cozy-vars",
+    "src/"
+  ],
   "style": "dist/cozy-bs.css",
   "sass": "src/cozy-bs.scss",
-  "browserslist": [
-    "extends browserslist-config-cozy"
-  ],
+  "browserslist": ["extends browserslist-config-cozy"],
   "dependencies": {
     "bootstrap": "5.0.0-beta2"
   },
