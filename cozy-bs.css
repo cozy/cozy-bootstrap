@@ -683,6 +683,27 @@ img {
   content: "— ";
 }
 
+.icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primaryColor);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+
+.logo {
+  display: inline-block;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.illustration {
+  display: inline-block;
+  height: 6rem;
+  object-fit: contain;
+}
+
 .avatar {
   width: 4rem;
   height: 4rem;
@@ -1640,15 +1661,6 @@ textarea.form-control-lg {
 
 .btn-icon:hover {
   background-color: rgba(0, 0, 0, 0.06);
-}
-
-.icon {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background: var(--primaryTextColor);
-  -webkit-mask-size: cover;
-          mask-size: cover;
 }
 
 .btn {
@@ -2872,6 +2884,10 @@ textarea.form-control-lg {
 
 .text-capitalize {
   text-transform: capitalize !important;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .text-primary {
