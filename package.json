@@ -19,7 +19,7 @@
     "docs-vnu": "java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html --Werror docs",
     "gh-pages": "cp -r docs gh-pages && cp dist/cozy-bs.css* gh-pages/",
     "lint": "npm-run-all --parallel css-lint docs-lint",
-	"release": "semantic-release",
+    "release": "semantic-release",
     "test": "backstop test --docker",
     "test:approve": "backstop approve",
     "test:clean": "sudo rm -rf screenshots/test",
@@ -35,6 +35,9 @@
     "bootstrap": "5.0.0-beta2"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/npm": "7.0.10",
     "autoprefixer": "10.2.5",
     "backstopjs": "5.1.0",
     "browserslist-config-cozy": "0.4.0",
