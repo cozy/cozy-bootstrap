@@ -40,6 +40,7 @@ html {
   /* Banner */
   --banner-color: #0f5cc7;
   /* Buttons */
+  --btn-primary-shadow-color: rgba(41, 126, 242, .08);
   --btn-disabled-text-color: rgba(29, 33, 42, .32);
   --btn-secondary-border-color: rgba(29, 33, 42, .16);
   --btn-secondary-hover-color: rgba(29, 33, 42, .04);
@@ -77,11 +78,11 @@ html {
   --primaryColorDark: #eaf3ff;
   --primaryTextColor: #fff;
   --primaryTextContrastColor: #297ef2;
-  --errorColor: #ea3f3f;
-  --errorColorDark: #d31f1f;
+  --disabledTextColor: rgba(255, 255, 255, .64);
   --paperBackgroundColor: #297ef2;
   --dividerColor: rgba(255, 255, 255, .12);
   /* Buttons */
+  --btn-primary-shadow-color: rgba(255, 255, 255, .08);
   --btn-disabled-text-color: rgba(255, 255, 255, .4);
   --btn-secondary-border-color: rgba(255, 255, 255, .24);
   --btn-secondary-hover-color: rgba(255, 255, 255, .08);
@@ -96,9 +97,9 @@ html {
   --alert-primary-color: #fff;
   --alert-primary-background-color: #579eff;
   --alert-primary-title-color: #fff;
-  --alert-secondary-color: rgba(29, 33, 42, .9);
-  --alert-secondary-background-color: #fff;
-  --alert-secondary-title-color: var(--alert-secondary-color);
+  --alert-secondary-color: #ffd3d3;
+  --alert-secondary-background-color: rgba(234, 63, 63, .24);
+  --alert-secondary-title-color: #fff;
   --alert-error-color: #fff;
   --alert-error-background-color: #f96b6b;
   --alert-error-title-color: #fff;
@@ -715,6 +716,11 @@ img {
     height: 6rem;
   }
 }
+@media (max-width: 767.98px) {
+  .d-sm-none {
+    display: none !important;
+  }
+}
 .banner {
   width: 100%;
   padding: 0.75rem 1rem;
@@ -761,7 +767,10 @@ img {
   cursor: pointer;
 }
 
-.form-check-input:hover,
+.form-check-input:hover {
+  box-shadow: 0 0 0 0.5rem var(--btn-primary-shadow-color);
+}
+
 .form-control:hover {
   border-color: var(--primaryColor);
 }
@@ -1023,7 +1032,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--btn-secondary-border-color);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1043,7 +1052,7 @@ textarea.form-control-lg {
 .form-check-input:focus {
   border-color: var(--primaryColor);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem var(--btn-primary-shadow-color);
 }
 .form-check-input:checked {
   background-color: var(--primaryColor);
@@ -1667,8 +1676,6 @@ textarea.form-control-lg {
   position: relative;
   overflow: hidden;
   text-transform: uppercase;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
 }
 .btn::after {
   position: absolute;
@@ -1679,21 +1686,21 @@ textarea.form-control-lg {
   height: 100%;
   pointer-events: none;
   content: "";
-  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.5) 60%, transparent 70%);
   background-repeat: no-repeat;
   background-position: 50%;
   opacity: 0;
-  transition: opacity 1s, -webkit-transform 0.5s;
-  transition: transform 0.5s, opacity 1s;
-  transition: transform 0.5s, opacity 1s, -webkit-transform 0.5s;
-  -webkit-transform: scale(10, 10);
-          transform: scale(10, 10);
+  transition: opacity 0.6s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.6s;
+  transition: transform 0.3s, opacity 0.6s, -webkit-transform 0.3s;
+  -webkit-transform: scale(4);
+          transform: scale(4);
 }
 .btn:active::after {
-  opacity: 0.2;
+  opacity: 0.5;
   transition: 0s;
-  -webkit-transform: scale(0, 0);
-          transform: scale(0, 0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .card {
@@ -2976,6 +2983,10 @@ textarea.form-control-lg {
 
 .bg-paper {
   background-color: var(--paperBackgroundColor) !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
 }
 
 .bg-transparent {

@@ -1,4 +1,9 @@
 .icon-back {
-  -webkit-mask: url(back.svg);
-  mask: url(back.svg);
+  -webkit-mask-image: url(back.svg);
+  mask-image: url(back.svg);
+}
+.icon-answer {
+  -webkit-mask: url(answer.svg) space no-repeat bottom;
+  mask: url(answer.svg) space no-repeat bottom;
+  width: 0.813rem;
 }
