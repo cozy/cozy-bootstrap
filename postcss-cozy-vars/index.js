@@ -45,9 +45,11 @@ module.exports = (opts = {}) => {
         decl[processed] = true;
       },
       "box-shadow": (decl) => {
-        if (decl.parent.selector.match(/\.btn-check/)) {
-          decl.parent.remove();
+        if (decl[processed]) {
+          return;
         }
+        changeBoxShadow(decl);
+        decl[processed] = true;
       },
     },
   };
@@ -345,6 +347,23 @@ function changeBorder(decl) {
     case ".form-select":
     case ".input-group-text":
       decl.value = "1px solid var(--btn-secondary-border-color)";
+      break;
+    case ".form-check-input":
+      decl.value = "2px solid var(--btn-secondary-border-color)";
+      break;
+    // default:
+    //   console.log(`- "${decl.parent.selector}"`);
+  }
+}
+
+function changeBoxShadow(decl) {
+  if (decl.parent.selector.match(/\.btn-check/)) {
+    decl.parent.remove();
+    return;
+  }
+  switch (decl.parent.selector) {
+    case ".form-check-input:focus":
+      decl.value = "0 0 0 0.25rem var(--btn-primary-shadow-color)";
       break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);

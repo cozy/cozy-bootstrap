@@ -41,6 +41,7 @@ html {
   --banner-color: #0f5cc7; // Primary 700
 
   /* Buttons */
+  --btn-primary-shadow-color: rgba(41, 126, 242, .08);        // Primary 600 + alpha 0.08
   --btn-disabled-text-color: rgba(29, 33, 42, .32);           // Grey 900 + alpha 0.32
   --btn-secondary-border-color: rgba(29, 33, 42, .16);        // Grey 900 + alpha 0.16
   --btn-secondary-hover-color: rgba(29, 33, 42, .04);         // Grey 900 + alpha 0.04
@@ -86,6 +87,7 @@ html {
   --dividerColor: rgba(255, 255, 255, .12);
 
   /* Buttons */
+  --btn-primary-shadow-color: rgba(255, 211, 211, .08);
   --btn-disabled-text-color: rgba(255, 255, 255, .4);
   --btn-secondary-border-color: rgba(255, 255, 255, .24);
   --btn-secondary-hover-color: rgba(255, 255, 255, .08);
