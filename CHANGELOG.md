@@ -1,3 +1,18 @@
+# [1.2.0](https://github.com/cozy/cozy-bootstrap/compare/v1.1.1...v1.2.0) (2021-03-17)
+
+
+### Bug Fixes
+
+* Change the alert-secondary colors ([19591cc](https://github.com/cozy/cozy-bootstrap/commit/19591cc2a961eeb83ae44392bd22e6e5b6b6a11c))
+* Improve the ripple effect on Chrome ([317eeda](https://github.com/cozy/cozy-bootstrap/commit/317eeda64f0ba6e0d619cafbe24f1d92f2504fc0))
+* Make the ripple effect faster ([1ec651a](https://github.com/cozy/cozy-bootstrap/commit/1ec651a34086ca3921c050c10fbd3a8f5602478f))
+* Tweak the checkbox ([d4057f5](https://github.com/cozy/cozy-bootstrap/commit/d4057f544560fc96d674d396a4ae40e9e9f82b00))
+
+
+### Features
+
+* Add .d-sm-none utility ([7447f37](https://github.com/cozy/cozy-bootstrap/commit/7447f37645a7b11c9a1dbe71100632e776474ff8))
+
 ## [1.1.1](https://github.com/cozy/cozy-bootstrap/compare/v1.1.0...v1.1.1) (2021-03-16)
 
 
