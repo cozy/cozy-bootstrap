@@ -30,3 +30,9 @@
     height: 6rem;
   }
 }
+
+@include media-breakpoint-down(md) {
+  .d-sm-none {
+    display: none if($enable-important-utilities, !important, null);
+  }
+}
