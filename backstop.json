@@ -10,27 +10,27 @@
   "scenarios": [
     {
       "label": "Alerts",
-      "url": "http://localhost:3000/alerts.html",
+      "url": "http://localhost:3000/alerts",
       "delay": 200
     },
     {
       "label": "Buttons",
-      "url": "http://localhost:3000/buttons.html",
+      "url": "http://localhost:3000/buttons",
       "delay": 200
     },
     {
       "label": "Cards",
-      "url": "http://localhost:3000/cards.html",
+      "url": "http://localhost:3000/cards",
       "delay": 200
     },
     {
       "label": "Forms",
-      "url": "http://localhost:3000/forms.html",
+      "url": "http://localhost:3000/forms",
       "delay": 200
     },
     {
       "label": "Login",
-      "url": "http://localhost:3000/login.html",
+      "url": "http://localhost:3000/login",
       "delay": 200,
       "viewports": [
         {
@@ -46,8 +46,13 @@
       ]
     },
     {
+      "label": "Login partner",
+      "url": "http://localhost:3000/login?theme=partner",
+      "delay": 200
+    },
+    {
       "label": "Unavailable application",
-      "url": "http://localhost:3000/error-app.html",
+      "url": "http://localhost:3000/error-app",
       "delay": 200,
       "viewports": [
         {
@@ -64,7 +69,7 @@
     },
     {
       "label": "Typography",
-      "url": "http://localhost:3000/typography.html",
+      "url": "http://localhost:3000/typography",
       "delay": 200
     }
   ],
