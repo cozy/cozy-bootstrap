@@ -40,7 +40,6 @@
   position: relative;
   overflow: hidden;
   text-transform: uppercase;
-  transform: translate3d(0, 0, 0);
 
   &::after {
     position: absolute;
@@ -51,17 +50,17 @@
     height: 100%;
     pointer-events: none;
     content: "";
-    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+    background-image: radial-gradient(circle, rgba(0,0,0,.2) 0, rgba(0,0,0,.3) 40%, rgba(0,0,0,.4) 50%, rgba(0,0,0,.5) 60%, transparent 70%);
     background-repeat: no-repeat;
     background-position: 50%;
     opacity: 0;
     transition: transform .3s, opacity .6s;
-    transform: scale(10, 10);
+    transform: scale(4);
   }
 
   &:active::after {
-    opacity: .2;
+    opacity: .5;
     transition: 0s;
-    transform: scale(0, 0);
+    transform: scale(0);
   }
 }
