@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="cozy-bs.css" />
     <link rel="stylesheet" href="icons/icons.css" />
+    <script src="themes/loader.js"></script>
   </head>
   <body class="theme-inverted">
     <!-- https://zpl.io/2E5dJxD & https://zpl.io/VKxEZLE -->
@@ -14,10 +15,13 @@
       <main class="wrapper">
         <header class="wrapper-top">
           <p class="banner">
-            <strong>Best practice:</strong> fill your password only if the address in your browser
-            matches the one of your Cozy and comes with a padlock.
+            <span class="icon icon-answer"></span>
+            <strong>Best practice:</strong>
+            <br class="d-sm-none" />
+            fill your password only if the address in your browser matches the one of your Cozy and
+            comes with a padlock.
           </p>
-          <a href="https://cozy.io/" class="btn p-2 d-none d-md-block">
+          <a href="https://cozy.io/" class="btn p-2 d-sm-none">
             <img src="icons/logo-dark.svg" alt="Cozy Cloud" class="logo" />
           </a>
         </header>
@@ -27,8 +31,8 @@
             alt=""
             class="avatar my-3 border border-primary border-2 rounded-circle"
           />
-          <h1 class="h4 h2-md">Isabelle</h1>
-          <p>isabelledurand.mycozy.cloud</p>
+          <h1 class="h4 h2-md mb-0">Isabelle</h1>
+          <p class="mb-4 mb-md-5 text-muted">isabelledurand.mycozy.cloud</p>
           <div class="form-floating w-100">
             <input
               type="password"
@@ -46,7 +50,7 @@
           </div>
         </div>
         <footer>
-          <button class="btn btn-primary w-100 my-3" type="button">Log in</button>
+          <button class="btn btn-primary w-100 my-4 mt-md-5" type="button">Log in</button>
         </footer>
       </main>
     </form>

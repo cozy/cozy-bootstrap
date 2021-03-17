@@ -16,7 +16,10 @@
   cursor: pointer;
 }
 
-.form-check-input:hover,
+.form-check-input:hover {
+  box-shadow: 0 0 0 .5rem var(--btn-primary-shadow-color);
+}
+
 .form-control:hover {
   border-color: var(--primaryColor);
 }
