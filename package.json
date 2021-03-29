@@ -31,9 +31,7 @@
     "LICENSE",
     "CHANGELOG.md",
     "package.json",
-    "dist/",
-    "postcss-cozy-vars",
-    "src/"
+    "dist/"
   ],
   "style": "dist/cozy-bs.css",
   "sass": "src/cozy-bs.scss",
