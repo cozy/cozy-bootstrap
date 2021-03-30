@@ -35,9 +35,11 @@
   ],
   "style": "dist/cozy-bs.css",
   "sass": "src/cozy-bs.scss",
-  "browserslist": ["extends browserslist-config-cozy"],
+  "browserslist": [
+    "extends browserslist-config-cozy"
+  ],
   "dependencies": {
-    "bootstrap": "5.0.0-beta2"
+    "bootstrap": "5.0.0-beta3"
   },
   "devDependencies": {
     "@semantic-release/changelog": "5.0.1",
