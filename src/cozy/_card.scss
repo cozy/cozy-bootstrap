@@ -1,0 +1,14 @@
+.card-simple {
+  border-color: var(--card-simple-border-color);
+}
+
+.card-elevation {
+  color: var(--card-elevation-text-color);
+  background-color: var(--card-elevation-background-color);
+}
+
+.card-intent {
+  color: var(--card-intent-text-color);
+  background-color: var(--card-intent-background-color);
+  border: 0;
+}
