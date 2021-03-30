@@ -132,22 +132,22 @@ function changeColor(decl) {
       decl.value = "var(--disabledTextColor)";
       break;
     case ".alert-primary":
-      decl.value = "var(--alert-primary-color)";
+      decl.value = "var(--primaryColorDarkest)";
       break;
     case ".alert-secondary":
-      decl.value = "var(--alert-secondary-color)";
+      decl.value = "var(--secondaryColorDarkest)";
       break;
     case ".alert-danger":
-      decl.value = "var(--alert-error-color)";
+      decl.value = "var(--errorColorDarkest)";
       break;
     case ".alert-warning":
-      decl.value = "var(--alert-warning-color)";
+      decl.value = "var(--warningColorDarkest)";
       break;
     case ".alert-success":
-      decl.value = "var(--alert-success-color)";
+      decl.value = "var(--successColorDarkest)";
       break;
     case ".alert-info":
-      decl.value = "var(--alert-info-color)";
+      decl.value = "var(--primaryTextColor)";
       break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);
@@ -227,36 +227,36 @@ function changeBackground(decl) {
     case ".form-control::placeholder":
       decl.value = "var(--secondaryTextColor)";
       break;
-    case ".btn-danger":
     case ".bg-danger":
       decl.value = "var(--errorColor)";
+      break;
+    case ".btn-danger":
+      decl.value = "var(--btn-intent-background-color)";
       break;
     case ".btn-danger:hover":
       decl.value = "var(--errorColorDark)";
       break;
-    case ".bg-body":
-      decl.value = "var(--defaultBackgroundColor)";
-      break;
     case ".alert-primary":
-      decl.value = "var(--alert-primary-background-color)";
+      decl.value = "var(--primaryColorLightest)";
       break;
     case ".alert-secondary":
     case ".btn-outline-secondary:hover":
-      decl.value = "var(--alert-secondary-background-color)";
+      decl.value = "var(--secondaryColorLightest)";
       break;
     case ".alert-danger":
-      decl.value = "var(--alert-error-background-color)";
+      decl.value = "var(--errorColorLightest)";
       break;
     case ".alert-warning":
     case ".btn-outline-warning:hover":
-      decl.value = "var(--alert-warning-background-color)";
+      decl.value = "var(--warningColorLightest)";
       break;
     case ".alert-success":
     case ".btn-outline-success:hover":
-      decl.value = "var(--alert-success-background-color)";
+      decl.value = "var(--successColorLightest)";
       break;
     case ".alert-info":
-      decl.value = "var(--alert-info-background-color)";
+    case ".bg-body":
+      decl.value = "var(--defaultBackgroundColor)";
       break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);

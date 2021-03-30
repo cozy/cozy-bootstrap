@@ -19,26 +19,36 @@ html {
   /* Also used by cozy-ui */
   --primaryColor: #297ef2;                     // Primary 600
   --primaryColorDark: #0f5cc7;                 // Primary 700
+  --primaryColorDarkest: #081d39;              // Primary 900
   --primaryColorLight: #579eff;                // Primary 500
-  --secondaryColor: #a346cd;                   // Secondary 600
-  --secondaryColorDark: #7a349a;               // Secondary 700
-  --secondaryColorLight: #c27ae3;              // Secondary 500
+  --primaryColorLightest: #eaf3ff;             // Primary 100
   --primaryTextColor: rgba(29, 33, 42, .9);    // Grey 900 + alpha 0.9
   --primaryTextContrastColor: #fff;            // Primary contrastText
+  --secondaryColor: #a346cd;                   // Secondary 600
+  --secondaryColorDark: #7a349a;               // Secondary 700
+  --secondaryColorDarkest: #230c2e;            // Secondary 900
+  --secondaryColorLight: #c27ae3;              // Secondary 500
+  --secondaryColorLightest: #f8eefd;           // Secondary 100
   --secondaryTextColor: rgba(29, 33, 42, .48); // Grey 900 + alpha 0.48
   --secondaryTextContrastColor: #fff;          // Secondary contrastText
-  --disabledTextColor: rgba(29, 33, 42, .32);  // Grey 900 + alpha 0.32
-  --successColor: #09ae1c;                     // Success 600
-  --infoColor: #7c8086;                        // Grey 600
-  --warningColor: #cb8100;                     // Warning 600
   --errorColor: #ea3f3f;                       // Error 600
   --errorColorDark: #d31f1f;                   // Error 700
+  --errorColorDarkest: #340b0b;                // Error 900
+  --errorColorLightest: #ffecec;               // Error 100
+  --warningColor: #cb8100;                     // Warning 600
+  --warningColorDarkest: #281c07;              // Warning 900
+  --warningColorLightest: #fff3dd;             // Warning 100
+  --successColor: #09ae1c;                     // Success 600
+  --successColorDarkest: #08250b;              // Success 900
+  --successColorLightest: #e3ffe7;             // Success 100
+  --infoColor: #7c8086;                        // Grey 600
+  --disabledTextColor: rgba(29, 33, 42, .32);  // Grey 900 + alpha 0.32
   --defaultBackgroundColor: #f4f5f6;           // Grey 100
   --paperBackgroundColor: #fff;                // White
   --dividerColor: rgba(29, 33, 42, .12);       // Grey 900 + alpha 0.12
 
   /* Banner */
-  --banner-color: #0f5cc7; // Primary 700
+  --banner-color: #f4f5f6; // Grey 100
 
   /* Buttons */
   --btn-primary-shadow-color: rgba(41, 126, 242, .08);        // Primary 600 + alpha 0.08
@@ -49,40 +59,37 @@ html {
   --btn-ghost-background-color: #eaf3ff;                      // Primary 100
   --btn-ghost-hover-color: #e3efff;                           // Primary 100 + Primary 600, alpha 0.04
   --btn-intent-text-color: #fff;
+  --btn-intent-background-color: #ea3f3f;                       // Error 600
   --btn-intent-outlined-border-color: rgba(234, 63, 63, .24); // Error 600 + alpha 0.24
   --btn-intent-outlined-text-color: #ea3f3f;                  // Error 600
   --btn-intent-outlined-hover-color: rgba(234, 63, 63, .04);  // Error 600 + alpha 0.04
-
-  /* Alerts */
-  --alert-primary-color: #081d39;              // Primary 900
-  --alert-primary-background-color: #eaf3ff;   // Primary 100
-  --alert-primary-title-color: var(--primaryColor);
-  --alert-secondary-color: #230c2e;            // Secondary 900
-  --alert-secondary-background-color: #f8eefd; // Secondary 100
-  --alert-secondary-title-color: var(--secondaryColor);
-  --alert-error-color: #340b0b;                // Error 900
-  --alert-error-background-color: #ffecec;     // Error 100
-  --alert-error-title-color: var(--errorColor);
-  --alert-warning-color: #281c07;              // Warning 900
-  --alert-warning-background-color: #fff3dd;   // Warning 100
-  --alert-warning-title-color: var(--warningColor);
-  --alert-success-color: #08250b;              // Success 900
-  --alert-success-background-color: #e3ffe7;   // Success 100
-  --alert-success-title-color: var(--successColor);
-  --alert-info-color: var(--primaryTextColor);
-  --alert-info-background-color: #f4f5f6;      // Grey 100
-  --alert-info-title-color: var(--primaryTextColor);
 }
 
 .theme-inverted {
   /* Also used by cozy-ui */
   --primaryColor: #fff;
   --primaryColorDark: #eaf3ff;         // Primary 100
+  --primaryColorDarkest: #fff;
+  --primaryColorLightest: #579eff;     // Primary 500
   --primaryTextColor: #fff;
   --primaryTextContrastColor: #297ef2; // Primary 600
+  --errorColor: #fff;
+  --errorColorDarkest: #fff;
+  --errorColorLightest: #f96b6b;       // Error 500
+  --warningColor: #fff;
+  --warningColorDarkest: #fff;
+  --warningColorLightest: #efa82d;     // Warning 500
+  --successColor: #fff;
+  --successColorDarkest: #fff;
+  --successColorLightest: #38c949;     // Success 500
+  --infoColor: #579eff;                // Primary 500
   --disabledTextColor: rgba(255, 255, 255, .64);
+  --defaultBackgroundColor: #579eff;   // Primary 500
   --paperBackgroundColor: #297ef2;     // Primary 600
   --dividerColor: rgba(255, 255, 255, .12);
+
+  /* Banner */
+  --banner-color: #0f5cc7; // Primary 700
 
   /* Buttons */
   --btn-primary-shadow-color: rgba(255, 255, 255, .08);
@@ -93,27 +100,8 @@ html {
   --btn-ghost-background-color: #579eff;                        // Primary 500
   --btn-ghost-hover-color: #64a6ff;
   --btn-intent-text-color: #fff;
+  --btn-intent-background-color: #ea3f3f;                       // Error 600
   --btn-intent-outlined-border-color: rgba(255, 211, 211, .32); // Error 200 + alpha 0.32
   --btn-intent-outlined-text-color: #ffd3d3;                    // Error 200
   --btn-intent-outlined-hover-color: rgba(255, 211, 211, .08);
-
-  /* Alerts */
-  --alert-primary-color: #fff;
-  --alert-primary-background-color: #579eff; // Primary 500
-  --alert-primary-title-color: #fff;
-  --alert-secondary-color: #ffd3d3;
-  --alert-secondary-background-color: rgba(234, 63, 63, .24);
-  --alert-secondary-title-color: #fff;
-  --alert-error-color: #fff;
-  --alert-error-background-color: #f96b6b;
-  --alert-error-title-color: #fff;
-  --alert-warning-color: #fff;
-  --alert-warning-background-color: #efa82d;
-  --alert-warning-title-color: #fff;
-  --alert-success-color: #fff;
-  --alert-success-background-color: #38c949;
-  --alert-success-title-color: #fff;
-  --alert-info-color: #fff;
-  --alert-info-background-color: #579eff;
-  --alert-info-title-color: #fff;
 }
