@@ -37,13 +37,18 @@
 
 .form-check-input[type="checkbox"]:checked ~ label::after {
   position: absolute;
-  top: ($line-height-base - $form-check-input-width) / 2;
+  top: 0.175em;
   left: $form-check-padding-start * -1;
   display: block;
-  mask: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>"));
+  mask: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' clip-rule='evenodd' d='M2.29 8.29C2.68 7.9 3.32 7.9 3.7 8.29L6 10.59L13.29 3.29C13.68 2.9 14.31 2.9 14.7 3.29C15.1 3.68 15.1 4.32 14.71 4.71L6.71 12.71C6.31 13.1 5.68 13.1 5.29 12.7L2.29 9.71C1.9 9.32 1.9 8.68 2.29 8.29Z' fill='#000'/></svg>"));
   mask-size: cover;
   width: $form-check-input-width;
   height: $form-check-input-width;
   content: "";
   background-color: var(--primaryTextContrastColor);
 }
+
+.form-check-input:disabled {
+  background-color: var(--btn-secondary-hover-color);
+}
+
