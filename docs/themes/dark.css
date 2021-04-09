@@ -9,6 +9,7 @@
   --secondaryColor: #d79df2;
   --secondaryColorDarkest: #f8eefd;
   --secondaryColorLightest: #230c2e;
+  --secondaryTextColor: rgba(255, 255, 255, .64);
   --errorColor: #ff9b9b;
   --errorColorDark: #f96b6b;
   --errorColorDarkest: #ffecec;
