@@ -19,6 +19,7 @@
 .invalid-tooltip .tooltip-arrow {
   position: absolute;
   top: 0;
+  left: .75rem;
   display: block;
   width: $tooltip-arrow-width;
   height: $tooltip-arrow-height;
