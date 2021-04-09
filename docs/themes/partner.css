@@ -1,28 +1,25 @@
 html {
-  --primaryFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+  --primaryFont: "Helvetica Neue", helvetica, arial, sans-serif;
   --primaryColor: #c62222;
   --primaryColorDark: #951919;
+  --primaryColorDarkest: #320808;
   --primaryColorLight: #d14e4e;
+  --primaryColorLightest: #f9e9e9;
   --secondaryColor: #2e404f;
   --secondaryColorDark: #22303b;
+  --secondaryColorDarkest: #0b1014;
   --secondaryColorLight: #586672;
-  --banner-color: #951919;
-  --btn-primary-shadow-color: rgba(198, 34, 34, 0.08);
-  --btn-ghost-border-color: rgba(198, 34, 34, 0.5);
+  --secondaryColorLightest: #eaeced;
+  --btn-primary-shadow-color: rgba(198, 34, 34, .08);
+  --btn-ghost-border-color: rgba(198, 34, 34, .5);
   --btn-ghost-background-color: #f9e9e9;
   --btn-ghost-hover-color: #f4d3d3;
-  --alert-primary-color: #320808;
-  --alert-primary-background-color: #f9e9e9;
-  --alert-primary-title-color: var(--primaryColor);
-  --alert-secondary-color: #0b1014;
-  --alert-secondary-background-color: #eaeced;
-  --alert-secondary-title-color: var(--secondaryColor);
 }
 
 .theme-inverted.theme-inverted {
   --primaryColorDark: #f9e9e9;
+  --primaryColorLightest: #d14e4e;
   --primaryTextContrastColor: #c62222;
   --paperBackgroundColor: #c62222;
-  --alert-primary-background-color: #d14e4e;
+  --banner-color: #951919;
 }

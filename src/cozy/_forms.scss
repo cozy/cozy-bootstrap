@@ -1,16 +1,3 @@
-// XXX overwrittent to avoid the .was-validated stuff
-@mixin form-validation-state-selector($state) {
-  @if ($state == "valid" or $state == "invalid") {
-    #{if(&, "&", "")}.is-#{$state} {
-      @content;
-    }
-  } @else {
-    #{if(&, "&", "")}.is-#{$state} {
-      @content;
-    }
-  }
-}
-
 .form-check-input,
 .form-check-label {
   cursor: pointer;
@@ -22,4 +9,84 @@
 
 .form-control:hover {
   border-color: var(--primaryColor);
+}
+
+// XXX we want to make the check able to use a color from the theme, via the
+// CSS variables. Bootstrap uses a background image with a SVG but I didn't
+// find how to use a CSS variable for that (url() escapes custom properties).
+// So, I decided to use a mask with the SVG. But the mask on the input hides
+// the border and the floating on hover. We can use an ::after pseudo element
+// and apply the mask on it. The input is a replaced element, so it can't have
+// an ::after pseudo element, but we can put it on the nearby label. Yikes!
+.form-check-input[type="checkbox"] ~ label {
+  position: relative;
+}
+
+.form-check-input[type="checkbox"]:checked ~ label::after {
+  position: absolute;
+  top: .175em;
+  left: $form-check-padding-start * -1;
+  display: block;
+  mask: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' clip-rule='evenodd' d='M2.29 8.29C2.68 7.9 3.32 7.9 3.7 8.29L6 10.59L13.29 3.29C13.68 2.9 14.31 2.9 14.7 3.29C15.1 3.68 15.1 4.32 14.71 4.71L6.71 12.71C6.31 13.1 5.68 13.1 5.29 12.7L2.29 9.71C1.9 9.32 1.9 8.68 2.29 8.29Z' fill='#000'/></svg>"));
+  mask-size: cover;
+  width: $form-check-input-width;
+  height: $form-check-input-width;
+  content: "";
+  background-color: var(--primaryTextContrastColor);
+}
+
+.form-check-input:disabled {
+  background-color: var(--btn-secondary-hover-color);
+}
+
+// Inputs with a Material UI style
+.form-floating {
+  position: relative;
+
+  > .form-control {
+    height: $form-floating-height;
+    padding: $form-floating-padding-y $form-floating-padding-x;
+
+    &::placeholder {
+      color: transparent;
+    }
+    &:focus::placeholder {
+      color: var(--secondaryTextColor);
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      padding-top: $form-floating-input-padding-t;
+      padding-bottom: $form-floating-input-padding-b;
+    }
+    // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+    &:-webkit-autofill {
+      padding-top: $form-floating-input-padding-t;
+      padding-bottom: $form-floating-input-padding-b;
+    }
+  }
+
+  > label {
+    position: absolute;
+    top: 1rem;
+    left: .75rem;
+    padding: 0 .25rem;
+    pointer-events: none;
+    background-color: var(--paperBackgroundColor);
+    border: $input-border-width solid transparent; // Required for aligning label's text with the input as it affects inner box model
+    transform-origin: 0 0;
+    @include transition($form-floating-transition);
+  }
+
+  > .form-control:focus ~ label,
+  > .form-control:not(:placeholder-shown) ~ label {
+    transform: $form-floating-label-transform;
+  }
+  // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+  > .form-control:-webkit-autofill ~ label {
+    transform: $form-floating-label-transform;
+  }
+  > .form-control:focus ~ label {
+    color: var(--primaryColor);
+  }
 }

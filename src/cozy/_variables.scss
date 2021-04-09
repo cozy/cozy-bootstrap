@@ -49,6 +49,11 @@ $input-btn-font-size-lg: 1rem;
 
 $input-disabled-bg: var(--dividerColor);
 
+$form-floating-height: add(3rem, 2px);
+$form-floating-input-padding-t: 1rem;
+$form-floating-input-padding-b: 1rem;
+$form-floating-label-transform: scale(.8) translateY(-2rem) translateX(.15rem);
+
 // Buttons
 $btn-padding-x: 1rem;
 $btn-padding-y: .688rem;
@@ -67,6 +72,7 @@ $btn-border-radius-lg: .125rem;
 
 // Cards
 $card-border-color: rgba(0, 0, 0, .08);
+$card-border-radius: .5rem;
 
 // Alerts
 $alert-border-width: 0;

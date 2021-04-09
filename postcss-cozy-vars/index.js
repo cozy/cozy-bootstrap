@@ -15,12 +15,8 @@ module.exports = (opts = {}) => {
         if (decl.parent.selector.match(/\.form-switch/)) {
           decl.parent.remove();
         }
-        // XXX we want to make the SVG check able to use a color from the
-        // theme, and a CSS mask that use a SVG with the check as a SVG mask
-        // was what I found.
-        if (decl.parent.selector.match(/:checked\[type=checkbox\]/)) {
-          decl.prop = "mask";
-          decl.value = `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cdefs%3e%3cmask id='hole'%3e%3crect width='100%' height='100%' fill='white'/%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/mask%3e%3c/defs%3e%3crect fill='black' width='100%' height='100%' mask='url(%23hole)' /%3e%3c/svg%3e")`;
+        if (decl.parent.selector.match(/:checked\[type=/)) {
+          decl.remove();
         }
       },
       "background-color": (decl) => {
@@ -136,22 +132,22 @@ function changeColor(decl) {
       decl.value = "var(--disabledTextColor)";
       break;
     case ".alert-primary":
-      decl.value = "var(--alert-primary-color)";
+      decl.value = "var(--primaryColorDarkest)";
       break;
     case ".alert-secondary":
-      decl.value = "var(--alert-secondary-color)";
+      decl.value = "var(--secondaryColorDarkest)";
       break;
     case ".alert-danger":
-      decl.value = "var(--alert-error-color)";
+      decl.value = "var(--errorColorDarkest)";
       break;
     case ".alert-warning":
-      decl.value = "var(--alert-warning-color)";
+      decl.value = "var(--warningColorDarkest)";
       break;
     case ".alert-success":
-      decl.value = "var(--alert-success-color)";
+      decl.value = "var(--successColorDarkest)";
       break;
     case ".alert-info":
-      decl.value = "var(--alert-info-color)";
+      decl.value = "var(--primaryTextColor)";
       break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);
@@ -231,36 +227,36 @@ function changeBackground(decl) {
     case ".form-control::placeholder":
       decl.value = "var(--secondaryTextColor)";
       break;
-    case ".btn-danger":
     case ".bg-danger":
       decl.value = "var(--errorColor)";
+      break;
+    case ".btn-danger":
+      decl.value = "var(--btn-intent-background-color)";
       break;
     case ".btn-danger:hover":
       decl.value = "var(--errorColorDark)";
       break;
-    case ".bg-body":
-      decl.value = "var(--defaultBackgroundColor)";
-      break;
     case ".alert-primary":
-      decl.value = "var(--alert-primary-background-color)";
+      decl.value = "var(--primaryColorLightest)";
       break;
     case ".alert-secondary":
     case ".btn-outline-secondary:hover":
-      decl.value = "var(--alert-secondary-background-color)";
+      decl.value = "var(--secondaryColorLightest)";
       break;
     case ".alert-danger":
-      decl.value = "var(--alert-error-background-color)";
+      decl.value = "var(--errorColorLightest)";
       break;
     case ".alert-warning":
     case ".btn-outline-warning:hover":
-      decl.value = "var(--alert-warning-background-color)";
+      decl.value = "var(--warningColorLightest)";
       break;
     case ".alert-success":
     case ".btn-outline-success:hover":
-      decl.value = "var(--alert-success-background-color)";
+      decl.value = "var(--successColorLightest)";
       break;
     case ".alert-info":
-      decl.value = "var(--alert-info-background-color)";
+    case ".bg-body":
+      decl.value = "var(--defaultBackgroundColor)";
       break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);
