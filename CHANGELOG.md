@@ -1,3 +1,19 @@
+# [1.3.0](https://github.com/cozy/cozy-bootstrap/compare/v1.2.0...v1.3.0) (2021-04-09)
+
+
+### Bug Fixes
+
+* Fix the hover effect on checkboxes ([5bb185a](https://github.com/cozy/cozy-bootstrap/commit/5bb185a76890248b09c85938704df3ab218f09cc))
+
+
+### Features
+
+* Change the CSS variables for colors ([db4eb90](https://github.com/cozy/cozy-bootstrap/commit/db4eb90e786b74795344c157e70d0eb21021f1aa))
+* Improve the checkbox to match the Cozy style ([5bdc216](https://github.com/cozy/cozy-bootstrap/commit/5bdc2161b4816d6ec06f065ea64775f393dc474d))
+* Make text fields look more like Material UI ([ed34c6a](https://github.com/cozy/cozy-bootstrap/commit/ed34c6a18564d92fa86c657554c4a43b252abf85))
+* Rework the cards and add the dark theme ([6303c65](https://github.com/cozy/cozy-bootstrap/commit/6303c65110ceb4ede0ecbc15bb7625224d140363))
+* Style the invalid tooltip ([61d9d99](https://github.com/cozy/cozy-bootstrap/commit/61d9d99631ab4f22a1eaca0add1d378a5e6a0945))
+
 # [1.2.0](https://github.com/cozy/cozy-bootstrap/compare/v1.1.1...v1.2.0) (2021-03-17)
 
 
