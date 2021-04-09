@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/cozy/cozy-bootstrap/compare/v1.3.0...v1.3.1) (2021-04-09)
+
+
+### Bug Fixes
+
+* Fix secondaryTextColor on inverted theme ([cfe82b1](https://github.com/cozy/cozy-bootstrap/commit/cfe82b1afed6beffbbe9c8f8a1fcae99e5d66dc6))
+
 # [1.3.0](https://github.com/cozy/cozy-bootstrap/compare/v1.2.0...v1.3.0) (2021-04-09)
 
 
