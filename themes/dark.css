@@ -2,12 +2,27 @@
   /* Also used by cozy-ui */
   --primaryColor: #91bfff;
   --primaryColorDark: #579eff;
+  --primaryColorDarkest: #eaf3ff;
+  --primaryColorLightest: #081d39;
   --primaryTextColor: #fff;
   --primaryTextContrastColor: rgba(8, 29, 57, .9);
+  --secondaryColor: #d79df2;
+  --secondaryColorDarkest: #f8eefd;
+  --secondaryColorLightest: #230c2e;
+  --secondaryTextColor: rgba(255, 255, 255, .64);
   --errorColor: #ff9b9b;
   --errorColorDark: #f96b6b;
+  --errorColorDarkest: #ffecec;
+  --errorColorLightest: #340b0b;
+  --warningColor: #ffc35c;
+  --warningColorDarkest: #fff3dd;
+  --warningColorLightest: #281c07;
+  --successColor: #66e475;
+  --successColorDarkest: #e3ffe7;
+  --successColorLightest: #08250b;
+  --infoColor: #1d212a;
+  --defaultBackgroundColor: #1d212a;
   --paperBackgroundColor: #2c3039;
-  --defaultBackgroundColor: #5d6169;
   --dividerColor: rgba(255, 255, 255, .12);
 
   /* Buttons */
@@ -19,27 +34,13 @@
   --btn-ghost-background-color: #081d39;
   --btn-ghost-hover-color: #0a2447;
   --btn-intent-text-color: #000;
+  --btn-intent-background-color: #ff9b9b;
   --btn-intent-outlined-border-color: rgba(255, 211, 211, .32);
   --btn-intent-outlined-text-color: #ff9b9b;
   --btn-intent-outlined-hover-color: rgba(255, 155, 155, .08);
 
-  /* Alerts */
-  --alert-primary-color: #eaf3ff;
-  --alert-primary-background-color: #081d39;
-  --alert-primary-title-color: #91bfff;
-  --alert-secondary-color: #f8eefd;
-  --alert-secondary-background-color: #230c2e;
-  --alert-secondary-title-color: #d79df2;
-  --alert-error-color: #ffecec;
-  --alert-error-background-color: #340b0b;
-  --alert-error-title-color: #ff9b9b;
-  --alert-warning-color: #fff3dd;
-  --alert-warning-background-color: #281c07;
-  --alert-warning-title-color: #ffc35c;
-  --alert-success-color: #e3ffe7;
-  --alert-success-background-color: #08250b;
-  --alert-success-title-color: #66e475;
-  --alert-info-color: #fff;
-  --alert-info-background-color: #1d212a;
-  --alert-info-title-color: #fff;
+  /* Cards */
+  --card-simple-border-color: rgba(255, 255, 255, .32);
+  --card-elevation-background-color: rgba(255, 255, 255, .07);
+  --card-intent-background-color: rgba(255, 155, 155, .16);
 }
