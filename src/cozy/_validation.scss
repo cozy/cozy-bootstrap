@@ -1,0 +1,35 @@
+.invalid-tooltip {
+  position: relative;
+  display: none;
+  max-width: max-content;
+  padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
+  margin-top: .25rem;
+  @include font-size($form-feedback-tooltip-font-size);
+  font-weight: $font-weight-bold;
+  line-height: $form-feedback-tooltip-line-height;
+  color: var(--errorColor);
+  background-color: var(--errorColorLightest);
+  @include border-radius($form-feedback-tooltip-border-radius);
+}
+
+.is-invalid ~ .invalid-tooltip {
+  display: block;
+}
+
+.invalid-tooltip .tooltip-arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: $tooltip-arrow-width;
+  height: $tooltip-arrow-height;
+
+  &::before {
+    position: absolute;
+    bottom: add($tooltip-arrow-height, -1px);
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
+    border-bottom-color: var(--errorColorLightest);
+  }
+}
