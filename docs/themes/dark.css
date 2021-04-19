@@ -13,6 +13,7 @@
   --errorColor: #ff9b9b;
   --errorColorDark: #f96b6b;
   --errorColorDarkest: #ffecec;
+  --errorColorLight: #ea3f3f;
   --errorColorLightest: #340b0b;
   --warningColor: #ffc35c;
   --warningColorDarkest: #fff3dd;
@@ -21,6 +22,7 @@
   --successColorDarkest: #e3ffe7;
   --successColorLightest: #08250b;
   --infoColor: #1d212a;
+  --disabledTextColor: rgba(255, 255, 255, .4);
   --defaultBackgroundColor: #1d212a;
   --paperBackgroundColor: #2c3039;
   --dividerColor: rgba(255, 255, 255, .12);

@@ -70,6 +70,7 @@
     position: absolute;
     top: 1rem;
     left: .75rem;
+    z-index: 3; // needed for input-group
     padding: 0 .25rem;
     pointer-events: none;
     background-color: var(--paperBackgroundColor);

@@ -115,9 +115,11 @@ function changeColor(decl) {
     case ".btn-outline-warning:hover":
       decl.value = "var(--warningColor)";
       break;
-    case ".text-danger":
     case ".invalid-feedback":
       decl.value = "var(--errorColor)";
+      break;
+    case ".text-danger":
+      decl.value = "var(--errorColorLight)";
       break;
     case ".btn-outline-danger":
     case ".btn-outline-danger:hover":
@@ -175,6 +177,7 @@ function changeBackground(decl) {
     case ".form-select":
     case ".form-select:focus":
     case ".form-check-input":
+    case ".input-group-text":
     case ".card":
       decl.value = "var(--paperBackgroundColor)";
       break;

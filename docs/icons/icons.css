@@ -1,3 +1,7 @@
+.icon-alert {
+  -webkit-mask-image: url(alert.svg);
+  mask-image: url(alert.svg);
+}
 .icon-back {
   -webkit-mask-image: url(back.svg);
   mask-image: url(back.svg);
