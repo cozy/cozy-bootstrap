@@ -39,3 +39,8 @@
 .invalid-tooltip .icon {
   margin: .25rem .375rem .25rem 0;
 }
+
+.input-group .invalid-tooltip {
+  flex-basis: 100%;
+  max-width: 100%;
+}

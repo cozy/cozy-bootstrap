@@ -177,6 +177,7 @@ function changeBackground(decl) {
     case ".form-select":
     case ".form-select:focus":
     case ".form-check-input":
+    case ".input-group-text":
     case ".card":
       decl.value = "var(--paperBackgroundColor)";
       break;
