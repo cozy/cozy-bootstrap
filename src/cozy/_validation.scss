@@ -13,7 +13,8 @@
 }
 
 .is-invalid ~ .invalid-tooltip {
-  display: block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .invalid-tooltip .tooltip-arrow {
@@ -33,4 +34,8 @@
     border-width: 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
     border-bottom-color: var(--errorColorLightest);
   }
+}
+
+.invalid-tooltip .icon {
+  margin: .25rem .375rem .25rem 0;
 }

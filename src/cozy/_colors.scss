@@ -34,6 +34,7 @@ html {
   --errorColor: #ea3f3f;                       // Error 600
   --errorColorDark: #d31f1f;                   // Error 700
   --errorColorDarkest: #340b0b;                // Error 900
+  --errorColorLight: #ff9b9b;                  // Error 400
   --errorColorLightest: #ffecec;               // Error 100
   --warningColor: #cb8100;                     // Warning 600
   --warningColorDarkest: #281c07;              // Warning 900
@@ -83,6 +84,7 @@ html {
   --secondaryTextColor: rgba(255, 255, 255, .64);
   --errorColor: #fff;
   --errorColorDarkest: #fff;
+  --errorColorLight: #ffd3d3;          // Error 200
   --errorColorLightest: #f96b6b;       // Error 500
   --warningColor: #fff;
   --warningColorDarkest: #fff;
