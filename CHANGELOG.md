@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/cozy/cozy-bootstrap/compare/v1.3.1...v1.4.0) (2021-04-19)
+
+
+### Bug Fixes
+
+* Make input-group compatible with form-floating ([491949c](https://github.com/cozy/cozy-bootstrap/commit/491949c5bbe40c026f5f42c29c7246ffe55c5301))
+
+
+### Features
+
+* Rework the error messages ([d663b09](https://github.com/cozy/cozy-bootstrap/commit/d663b09c9b1a7b5b87c8dd44f60c4e26562bcfb1))
+
 ## [1.3.1](https://github.com/cozy/cozy-bootstrap/compare/v1.3.0...v1.3.1) (2021-04-09)
 
 
