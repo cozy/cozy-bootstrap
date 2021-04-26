@@ -80,4 +80,14 @@ $card-border-radius: .5rem;
 $alert-border-width: 0;
 
 // Utility
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2, // <-- add one more level
+  6: $spacer * 3,
+);
 $box-shadow: 0 0 0 .5px rgba(0, 0, 0, .12), 0 .125rem .25rem rgba(0, 0, 0, .08), 0 .25rem 1rem rgba(0, 0, 0, .06);
