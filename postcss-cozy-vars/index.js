@@ -48,6 +48,11 @@ module.exports = (opts = {}) => {
         decl[processed] = true;
       },
     },
+    Rule: (rule) => {
+      if (rule.selector === ".form-check-input:focus") {
+        rule.selector = ".form-check-input:focus-visible";
+      }
+    },
   };
 };
 
@@ -276,6 +281,7 @@ function changeBorderColor(decl) {
     case ".form-control:focus":
     case ".form-select:focus":
     case ".form-check-input:focus":
+    case ".form-check-input:focus-visible":
     case ".form-check-input:checked":
       decl.value = "var(--primaryColor)";
       break;

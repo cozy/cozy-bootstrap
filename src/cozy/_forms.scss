@@ -1,10 +1,20 @@
 .form-check-input,
 .form-check-label {
+  position: relative;
   cursor: pointer;
 }
 
-.form-check-input:hover {
-  box-shadow: 0 0 0 .5rem var(--btn-primary-shadow-color);
+.form-check-input:hover::after {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  display: block;
+  width: 300%;
+  height: 300%;
+  pointer-events: none;
+  content: "";
+  background: var(--btn-primary-shadow-color);
+  border-radius: 50%;
 }
 
 .form-control:hover {
