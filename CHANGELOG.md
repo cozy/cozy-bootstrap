@@ -1,3 +1,18 @@
+# [1.5.0](https://github.com/cozy/cozy-bootstrap/compare/v1.4.0...v1.5.0) (2021-04-26)
+
+
+### Bug Fixes
+
+* Avoid the whitespace issue inside the .btn-icon ([34f3be8](https://github.com/cozy/cozy-bootstrap/commit/34f3be84fbfdcb43e592dc49a511080f5c2a9254))
+* Fix the box-shadow for elevated cards ([66d487d](https://github.com/cozy/cozy-bootstrap/commit/66d487d606a08544ae19067deaba8009895f6dc0))
+* Fix the hover effect for checkboxes ([015d921](https://github.com/cozy/cozy-bootstrap/commit/015d921a4b804710ca8d4ff9d8e4c3ce07849ad4))
+* Make the ripple effect a bit slower ([77b8263](https://github.com/cozy/cozy-bootstrap/commit/77b82631f89ea39e500183012f9d1eaf78011ec8))
+
+
+### Features
+
+* Add one more level of spacing ([043d5f0](https://github.com/cozy/cozy-bootstrap/commit/043d5f05391934d8a89c3a5400ef749ede9132d2))
+
 # [1.4.0](https://github.com/cozy/cozy-bootstrap/compare/v1.3.1...v1.4.0) (2021-04-19)
 
 
