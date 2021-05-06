@@ -14,8 +14,9 @@ module.exports = (opts = {}) => {
       "background-image": (decl) => {
         if (decl.parent.selector.match(/\.form-switch/)) {
           decl.parent.remove();
-        }
-        if (decl.parent.selector.match(/:checked\[type=/)) {
+        } else if (decl.parent.selector.match(/:checked\[type=/)) {
+          decl.remove();
+        } else if (decl.parent.selector.match(/\.form-select/)) {
           decl.remove();
         }
       },
