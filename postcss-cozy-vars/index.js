@@ -71,6 +71,9 @@ function changeColor(decl) {
     case ".form-select":
     case ".form-select:focus":
     case ".input-group-text":
+    case ".dropdown-menu":
+    case ".dropdown-item":
+    case ".dropdown-item:hover, .dropdown-item:focus":
       decl.value = "var(--primaryTextColor)";
       break;
     case ".btn":
@@ -183,6 +186,7 @@ function changeBackground(decl) {
     case ".form-select:focus":
     case ".form-check-input":
     case ".input-group-text":
+    case ".dropdown-menu":
     case ".card":
       decl.value = "var(--paperBackgroundColor)";
       break;
@@ -224,6 +228,7 @@ function changeBackground(decl) {
       decl.value = "var(--primaryTextColor)";
       break;
     case ".btn-outline-info:hover":
+    case ".dropdown-item:hover, .dropdown-item:focus":
       decl.value = "var(--btn-secondary-hover-color)";
       break;
     case ".bg-warning":

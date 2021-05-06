@@ -38,7 +38,7 @@
 }
 
 // https://github.com/mladenplavsic/css-ripple-effect
-.btn {
+.btn:not(.dropdown-toggle) {
   position: relative;
   overflow: hidden;
   text-transform: uppercase;
