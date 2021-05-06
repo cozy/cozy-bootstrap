@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/cozy/cozy-bootstrap/compare/v1.5.0...v1.6.0) (2021-05-06)
+
+
+### Features
+
+* Add dropdown within input-group ([6925b7d](https://github.com/cozy/cozy-bootstrap/commit/6925b7dc431c2e8ce29f625b23281c8410e2ccef))
+
 # [1.5.0](https://github.com/cozy/cozy-bootstrap/compare/v1.4.0...v1.5.0) (2021-04-26)
 
 
