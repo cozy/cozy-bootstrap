@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/cozy/cozy-bootstrap/compare/v1.6.0...v1.7.0) (2021-05-06)
+
+
+### Features
+
+* Add a w-min-content utility ([8291faa](https://github.com/cozy/cozy-bootstrap/commit/8291faa249943db2df3d4cf5fc56d2124976f386))
+* Style selects inside input-groups ([a1128a3](https://github.com/cozy/cozy-bootstrap/commit/a1128a3ebc0fc94751271b324185cf702b313cc2))
+
 # [1.6.0](https://github.com/cozy/cozy-bootstrap/compare/v1.5.0...v1.6.0) (2021-05-06)
 
 
