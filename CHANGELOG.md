@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/cozy/cozy-bootstrap/compare/v1.7.0...v1.8.0) (2021-05-17)
+
+
+### Features
+
+* Update bootstrap to 5.0.1 ([2f0dd95](https://github.com/cozy/cozy-bootstrap/commit/2f0dd95b31ceaa9e2c1c7a670912f4c33ecaaf09))
+
 # [1.7.0](https://github.com/cozy/cozy-bootstrap/compare/v1.6.0...v1.7.0) (2021-05-06)
 
 
