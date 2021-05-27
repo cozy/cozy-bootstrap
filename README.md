@@ -19,7 +19,7 @@ look and colors.
 
 You can reach the Cozy Community by:
 
-* Chatting with us on IRC #cozycloud on irc.freenode.net
+* Chatting with us on IRC #cozycloud on [Libera.Chat](https://web.libera.chat/#cozycloud)
 * Posting on our [Forum](https://forum.cozy.io)
 * Posting issues on the [Github repos](https://github.com/cozy/)
 * Mentioning us on [Twitter](https://twitter.com/cozycloud)
