@@ -1,8 +1,26 @@
+const fs = require("fs");
+
 const processed = Symbol("processed");
 
 module.exports = (opts = {}) => {
   return {
     postcssPlugin: "postcss-cozy-vars",
+    AtRule: {
+      media: (rule, { Root }) => {
+        if (rule.params == "(prefers-color-scheme: dark)") {
+          const cloned = rule.nodes[0].clone();
+          cloned.selector = ".theme-dark";
+          const root = new Root();
+          root.append(cloned);
+          root.cleanRaws();
+          for (const decl of cloned.nodes) {
+            decl.raws.before = "\n  ";
+          }
+          const css = root.toResult({ to: "dark.css" }).css;
+          fs.writeFileSync("docs/themes/dark.css", css);
+        }
+      },
+    },
     Declaration: {
       color: (decl) => {
         if (decl[processed]) {
