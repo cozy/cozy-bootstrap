@@ -4,12 +4,12 @@ $utilities: () !default;
 
 $utilities: map-merge(
   (
-    // Not needed for Cozy
-    // "align": (
-    //   property: vertical-align,
-    //   class: align,
-    //   values: baseline top middle bottom text-bottom text-top
-    // ),
+    "align": (
+      property: vertical-align,
+      class: align,
+      // Removed values for Cozy: baseline text-bottom text-top
+      values: top middle bottom
+    ),
     "float": (
       responsive: true,
       property: float,
