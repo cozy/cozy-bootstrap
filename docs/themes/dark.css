@@ -39,6 +39,7 @@
   --btn-intent-outlined-border-color: rgba(255, 211, 211, .32);
   --btn-intent-outlined-text-color: #ff9b9b;
   --btn-intent-outlined-hover-color: rgba(255, 155, 155, .08);
+  --btn-text-hover-color: rgba(145, 191, 255, .08);
   /* Cards */
   --card-simple-border-color: rgba(255, 255, 255, .32);
   --card-elevation-background-color: rgba(255, 255, 255, .07);

@@ -26,6 +26,15 @@
   border-color: var(--dividerColor);
 }
 
+.btn-text {
+  color: var(--primaryColor);
+  border-color: transparent;
+}
+.btn-text:hover {
+  color: var(--primaryColor);
+  background-color: var(--btn-text-hover-color);
+}
+
 .btn-icon {
   display: inline-flex;
   padding: 1rem;

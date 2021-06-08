@@ -64,6 +64,7 @@ html {
   --btn-intent-outlined-border-color: rgba(234, 63, 63, .24); // Error 600 + alpha 0.24
   --btn-intent-outlined-text-color: #ea3f3f;                  // Error 600
   --btn-intent-outlined-hover-color: rgba(234, 63, 63, .04);  // Error 600 + alpha 0.04
+  --btn-text-hover-color: rgba(41, 126, 242, .04);            // Primary 600, alpha 0.04
 
   /* Cards */
   --card-simple-border-color: rgba(29, 33, 42, .16);      // Grey 900 + alpha 0.16
@@ -114,6 +115,7 @@ html {
   --btn-intent-outlined-border-color: rgba(255, 211, 211, .32); // Error 200 + alpha 0.32
   --btn-intent-outlined-text-color: #ffd3d3;                    // Error 200
   --btn-intent-outlined-hover-color: rgba(255, 211, 211, .08);
+  --btn-text-hover-color: rgba(255, 255, 255, .08);
 
   /* Cards */
   --card-simple-border-color: transparent;
@@ -166,6 +168,7 @@ html {
     --btn-intent-outlined-border-color: rgba(255, 211, 211, .32);
     --btn-intent-outlined-text-color: #ff9b9b;
     --btn-intent-outlined-hover-color: rgba(255, 155, 155, .08);
+    --btn-text-hover-color: rgba(145, 191, 255, .08);
 
     /* Cards */
     --card-simple-border-color: rgba(255, 255, 255, .32);
