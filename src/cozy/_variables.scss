@@ -49,10 +49,9 @@ $input-btn-font-size-lg: 1rem;
 
 $input-disabled-bg: var(--dividerColor);
 
-$form-floating-height: add(3rem, 2px);
-$form-floating-input-padding-t: 1rem;
-$form-floating-input-padding-b: 1rem;
+$form-floating-padding-y-lg: 1.25rem;
 $form-floating-label-transform: scale(.8) translateY(-2rem) translateX(.15rem);
+$form-floating-transition: opacity .2s ease-in-out, transform .2s ease-in-out;
 
 $form-feedback-tooltip-font-size: .75rem;
 

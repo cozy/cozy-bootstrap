@@ -54,25 +54,14 @@
   position: relative;
 
   > .form-control {
-    height: $form-floating-height;
     padding: $form-floating-padding-y $form-floating-padding-x;
+    line-height: 1rem;
 
     &::placeholder {
       color: transparent;
     }
     &:focus::placeholder {
       color: var(--secondaryTextColor);
-    }
-
-    &:focus,
-    &:not(:placeholder-shown) {
-      padding-top: $form-floating-input-padding-t;
-      padding-bottom: $form-floating-input-padding-b;
-    }
-    // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
-    &:-webkit-autofill {
-      padding-top: $form-floating-input-padding-t;
-      padding-bottom: $form-floating-input-padding-b;
     }
   }
 
@@ -99,6 +88,26 @@
   }
   > .form-control:focus ~ label {
     color: var(--primaryColor);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .form-floating {
+    > .form-control-md-lg {
+      padding-top: $form-floating-padding-y-lg;
+      padding-bottom: $form-floating-padding-y-lg;
+    }
+    > .form-control-md-lg + label {
+      top: $form-floating-padding-y-lg;
+    }
+    > .form-control-md-lg:focus ~ label,
+    > .form-control-md-lg:not(:placeholder-shown) ~ label {
+      top: 1rem;
+    }
+    // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+    > .form-control-md-lg:-webkit-autofill ~ label {
+      top: 1rem;
+    }
   }
 }
 
