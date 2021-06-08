@@ -75,3 +75,17 @@
     transform: scale(0);
   }
 }
+
+@include media-breakpoint-up(md) {
+  .btn-md-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+  }
+
+  .btn-md-md {
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  }
+
+  .btn-md-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+  }
+}
