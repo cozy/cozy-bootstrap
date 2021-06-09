@@ -26,6 +26,15 @@
   border-color: var(--dividerColor);
 }
 
+.btn-text {
+  color: var(--primaryColor);
+  border-color: transparent;
+}
+.btn-text:hover {
+  color: var(--primaryColor);
+  background-color: var(--btn-text-hover-color);
+}
+
 .btn-icon {
   display: inline-flex;
   padding: 1rem;
@@ -64,5 +73,19 @@
     opacity: .5;
     transition: 0s;
     transform: scale(0);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .btn-md-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+  }
+
+  .btn-md-md {
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  }
+
+  .btn-md-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
   }
 }
