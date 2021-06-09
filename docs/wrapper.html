@@ -15,9 +15,15 @@
         <p class="banner">
           Full-bleed header with <code>.wrapper-top &gt; .banner</code> to take the full width
         </p>
-        <a href="." class="btn btn-icon" aria-label="Back to main screen">
-          <span class="icon icon-back"></span>
-        </a>
+        <div class="d-flex flex-row align-items-center mt-2">
+          <a href="." class="btn btn-icon" aria-label="Back to main screen">
+            <span class="icon icon-back"></span>
+          </a>
+          <div class="vertical-separator" role="separator"></div>
+          <a href="https://cozy.io/" class="btn p-0 d-sm-none">
+            <img src="icons/logo-light.svg" alt="Cozy Cloud" class="logo" />
+          </a>
+        </div>
       </header>
       <p class="mb-3">
         The <code>.wrapper</code> class makes the content centered in desktop, and pushing the

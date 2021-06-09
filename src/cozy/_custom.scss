@@ -8,6 +8,12 @@
   transform: scaleY(-1);
 }
 
+.vertical-separator {
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--dividerColor);
+}
+
 // https://twitter.com/chriscoyier/status/1124064712067624960
 .icon {
   display: inline-block;
