@@ -63,6 +63,7 @@ html {
   --btn-intent-outlined-border-color: rgba(234, 63, 63, .24);
   --btn-intent-outlined-text-color: #ea3f3f;
   --btn-intent-outlined-hover-color: rgba(234, 63, 63, .04);
+  --btn-text-hover-color: rgba(41, 126, 242, .04);
   /* Cards */
   --card-simple-border-color: rgba(29, 33, 42, .16);
   --card-elevation-text-color: inherit;
@@ -110,6 +111,7 @@ html {
   --btn-intent-outlined-border-color: rgba(255, 211, 211, .32);
   --btn-intent-outlined-text-color: #ffd3d3;
   --btn-intent-outlined-hover-color: rgba(255, 211, 211, .08);
+  --btn-text-hover-color: rgba(255, 255, 255, .08);
   /* Cards */
   --card-simple-border-color: transparent;
   --card-elevation-text-color: rgba(29, 33, 42, .9);
@@ -118,6 +120,55 @@ html {
   --card-intent-background-color: rgba(255, 155, 155, .4);
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    /* Also used by cozy-ui */
+    --primaryColor: #91bfff;
+    --primaryColorDark: #579eff;
+    --primaryColorDarkest: #eaf3ff;
+    --primaryColorLightest: #081d39;
+    --primaryTextColor: #fff;
+    --primaryTextContrastColor: rgba(8, 29, 57, .9);
+    --secondaryColor: #d79df2;
+    --secondaryColorDarkest: #f8eefd;
+    --secondaryColorLightest: #230c2e;
+    --secondaryTextColor: rgba(255, 255, 255, .64);
+    --errorColor: #ff9b9b;
+    --errorColorDark: #f96b6b;
+    --errorColorDarkest: #ffecec;
+    --errorColorLight: #ea3f3f;
+    --errorColorLightest: #340b0b;
+    --warningColor: #ffc35c;
+    --warningColorDarkest: #fff3dd;
+    --warningColorLightest: #281c07;
+    --successColor: #66e475;
+    --successColorDarkest: #e3ffe7;
+    --successColorLightest: #08250b;
+    --infoColor: #1d212a;
+    --disabledTextColor: rgba(255, 255, 255, .4);
+    --defaultBackgroundColor: #1d212a;
+    --paperBackgroundColor: #2c3039;
+    --dividerColor: rgba(255, 255, 255, .12);
+    /* Buttons */
+    --btn-primary-shadow-color: rgba(145, 191, 255, .08);
+    --btn-disabled-text-color: rgba(255, 255, 255, .4);
+    --btn-secondary-border-color: rgba(255, 255, 255, .24);
+    --btn-secondary-hover-color: rgba(255, 255, 255, .08);
+    --btn-ghost-border-color: rgba(145, 191, 255, .5);
+    --btn-ghost-background-color: #081d39;
+    --btn-ghost-hover-color: #0a2447;
+    --btn-intent-text-color: #000;
+    --btn-intent-background-color: #ff9b9b;
+    --btn-intent-outlined-border-color: rgba(255, 211, 211, .32);
+    --btn-intent-outlined-text-color: #ff9b9b;
+    --btn-intent-outlined-hover-color: rgba(255, 155, 155, .08);
+    --btn-text-hover-color: rgba(145, 191, 255, .08);
+    /* Cards */
+    --card-simple-border-color: rgba(255, 255, 255, .32);
+    --card-elevation-background-color: rgba(255, 255, 255, .07);
+    --card-intent-background-color: rgba(255, 155, 155, .16);
+  }
+}
 html {
   --primaryFont: lato, sans-serif;
 }
@@ -626,8 +677,17 @@ h6, .h6 {
     line-height: 1.313;
     letter-spacing: 0;
   }
+
+  .body1-md {
+    font-size: 1rem;
+  }
+
+  .small-md {
+    font-size: 0.875rem;
+  }
 }
-caption {
+caption,
+.caption {
   font-size: 0.75rem;
 }
 
@@ -685,6 +745,22 @@ img {
 }
 .blockquote-footer::before {
   content: "— ";
+}
+
+.fullbleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.reverse-y {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.vertical-separator {
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--dividerColor);
 }
 
 .icon {
@@ -815,8 +891,8 @@ img {
   position: relative;
 }
 .form-floating > .form-control {
-  height: add(3rem, 2px);
   padding: 1rem 1rem;
+  line-height: 1rem;
 }
 .form-floating > .form-control::-webkit-input-placeholder {
   color: transparent;
@@ -830,14 +906,6 @@ img {
 .form-floating > .form-control:focus::placeholder {
   color: var(--secondaryTextColor);
 }
-.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.form-floating > .form-control:-webkit-autofill {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .form-floating > label {
   position: absolute;
   top: 1rem;
@@ -849,9 +917,9 @@ img {
   border: 1px solid transparent;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-floating > label {
@@ -871,6 +939,22 @@ img {
   color: var(--primaryColor);
 }
 
+@media (min-width: 768px) {
+  .form-floating > .form-control-md-lg {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .form-floating > .form-control-md-lg + label {
+    top: 1.25rem;
+  }
+  .form-floating > .form-control-md-lg:focus ~ label,
+.form-floating > .form-control-md-lg:not(:placeholder-shown) ~ label {
+    top: 1rem;
+  }
+  .form-floating > .form-control-md-lg:-webkit-autofill ~ label {
+    top: 1rem;
+  }
+}
 .input-group .btn {
   font-weight: 400;
   border-radius: 0.25rem;
@@ -1658,6 +1742,16 @@ textarea.form-control-lg {
   border-color: var(--dividerColor);
 }
 
+.btn-text {
+  color: var(--primaryColor);
+  border-color: transparent;
+}
+
+.btn-text:hover {
+  color: var(--primaryColor);
+  background-color: var(--btn-text-hover-color);
+}
+
 .btn-icon {
   display: inline-flex;
   padding: 1rem;
@@ -1700,6 +1794,25 @@ textarea.form-control-lg {
           transform: scale(0);
 }
 
+@media (min-width: 768px) {
+  .btn-md-lg {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.9375rem;
+    border-radius: 0.125rem;
+  }
+
+  .btn-md-md {
+    padding: 0.688rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.125rem;
+  }
+
+  .btn-md-sm {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+    border-radius: 0.125rem;
+  }
+}
 .dropup,
 .dropend,
 .dropdown,
@@ -2274,6 +2387,18 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+.align-top {
+  vertical-align: top !important;
+}
+
+.align-middle {
+  vertical-align: middle !important;
+}
+
+.align-bottom {
+  vertical-align: bottom !important;
 }
 
 .float-start {
@@ -3206,6 +3331,14 @@ textarea.form-control-lg {
 
 .text-capitalize {
   text-transform: capitalize !important;
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+.text-end {
+  text-align: right !important;
 }
 
 .text-center {
