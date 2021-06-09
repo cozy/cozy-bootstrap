@@ -88,9 +88,16 @@ h6 {
   .h6-md {
     @include h6();
   }
+  .body1-md {
+    @include font-size($font-size-base);
+  }
+  .small-md {
+    @include font-size($small-font-size);
+  }
 }
 
-caption {
+caption,
+.caption {
   font-size: .75rem;
 }
 
