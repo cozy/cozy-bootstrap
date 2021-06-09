@@ -1,3 +1,17 @@
+# [1.9.0](https://github.com/cozy/cozy-bootstrap/compare/v1.8.0...v1.9.0) (2021-06-09)
+
+
+### Features
+
+* Add btn-text variant of buttons ([0bf4626](https://github.com/cozy/cozy-bootstrap/commit/0bf462680b3a32d24e4c2a990660d778b1d9bb32))
+* Add form-control-md-lg for Material UI inputs ([d68885b](https://github.com/cozy/cozy-bootstrap/commit/d68885b775f4778f04cb335e13eb71a53f6f8cbe))
+* Add responsive size variants for buttons ([fc69160](https://github.com/cozy/cozy-bootstrap/commit/fc69160f102d25d711acb1f2b51f2c96980875ec))
+* Add responsive variants for typography ([69494cf](https://github.com/cozy/cozy-bootstrap/commit/69494cfce50c3dfe149d2049ced3db751e96a3ed))
+* Add some utilities ([6920bd6](https://github.com/cozy/cozy-bootstrap/commit/6920bd65cab0db520b8495273620cf7d6af15b15))
+* Add the .fullbleed and .reverse-y classes ([62b65af](https://github.com/cozy/cozy-bootstrap/commit/62b65aff09e0c563e7b2b0b6a3a924b48bbe4f58))
+* Add the .vertical-separator class ([09bb994](https://github.com/cozy/cozy-bootstrap/commit/09bb994c89b83e1f9e70063dfb6b997aa058607e))
+* Add the vertical-align utilities ([8ec559a](https://github.com/cozy/cozy-bootstrap/commit/8ec559a82e5f906764e961f1e399a91ef7bd8dd9))
+
 # [1.8.0](https://github.com/cozy/cozy-bootstrap/compare/v1.7.0...v1.8.0) (2021-05-17)
 
 
