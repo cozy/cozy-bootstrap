@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/cozy/cozy-bootstrap/compare/v1.9.0...v1.10.0) (2021-06-18)
+
+
+### Features
+
+* Add modals ([#26](https://github.com/cozy/cozy-bootstrap/issues/26)) ([4622f79](https://github.com/cozy/cozy-bootstrap/commit/4622f79032127fcdbdc13abe9c5fce6c129797c5))
+
 # [1.9.0](https://github.com/cozy/cozy-bootstrap/compare/v1.8.0...v1.9.0) (2021-06-09)
 
 
