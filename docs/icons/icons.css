@@ -2,9 +2,17 @@
   -webkit-mask-image: url(alert.svg);
   mask-image: url(alert.svg);
 }
+.icon-auth {
+  -webkit-mask-image: url(auth.svg);
+  mask-image: url(auth.svg);
+}
 .icon-back {
   -webkit-mask-image: url(back.svg);
   mask-image: url(back.svg);
+}
+.icon-cross {
+  -webkit-mask-image: url(cross.svg);
+  mask-image: url(cross.svg);
 }
 .icon-answer {
   -webkit-mask: url(answer.svg) space no-repeat bottom;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cozy Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="cozy-bs.css" />
+    <link rel="stylesheet" href="icons/icons.css" />
+    <link rel="stylesheet" href="themes/dark.css" />
+    <script src="themes/loader.js"></script>
+  </head>
+  <body class="bg-paper modal-open">
+    <!-- https://zpl.io/aMEPPJR -->
+    <div class="modal d-block theme-inverted" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-icon">
+            <span class="icon icon-auth"></span>
+          </div>
+          <div class="modal-body mt-md-1 p-md-5">
+            <h1 class="modal-title h4 h3-md text-center mb-0">Authentication</h1>
+            <p class="small text-center text-muted mb-4">
+              Please type your password to install the application
+            </p>
+            <div class="form-floating w-100 mb-4">
+              <input
+                type="password"
+                class="form-control form-control-md-lg"
+                id="passwordInput"
+                autofocus
+                autocomplete="current-password"
+              />
+              <label for="passwordInput">Password</label>
+            </div>
+            <button class="btn btn-primary w-100" type="button">Unlock</button>
+          </div>
+          <a href="." class="btn btn-icon position-absolute top-0 end-0" aria-label="Close">
+            <span class="icon icon-cross"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+  </body>
+</html>

@@ -78,6 +78,24 @@ $card-border-radius: .5rem;
 // Alerts
 $alert-border-width: 0;
 
+// Modals
+$modal-content-color: var(--primaryColor);
+$modal-content-bg: var(--paperBackgroundColor);
+$modal-content-border-color:        rgba(29, 33, 42, .1);
+$modal-content-border-width: 1px;
+$modal-content-border-radius: .5rem;
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
+$modal-content-box-shadow-xs: 0 .5rem 1rem rgba(29, 33, 42, .15);
+$modal-content-box-shadow-sm-up: $modal-content-box-shadow-xs;
+
+$modal-backdrop-bg: rgb(29, 33, 42); // grey-900
+$modal-backdrop-opacity:            .5;
+
+$modal-sm: 26rem;
+$modal-md: 34rem;
+$modal-lg: 42rem;
+$modal-xl: 58rem;
+
 // Utility
 $spacer: 1rem;
 $spacers: (
