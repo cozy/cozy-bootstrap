@@ -29,6 +29,11 @@
       "delay": 200
     },
     {
+      "label": "Modals",
+      "url": "http://localhost:3000/modals",
+      "delay": 200
+    },
+    {
       "label": "Login",
       "url": "http://localhost:3000/login",
       "delay": 200,

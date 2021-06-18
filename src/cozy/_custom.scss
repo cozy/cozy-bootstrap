@@ -14,6 +14,23 @@
   background-color: var(--dividerColor);
 }
 
+.modal-icon {
+  top: 0;
+  width: 4.8rem;
+  height: 4.8rem;
+  padding: .75rem;
+  margin: -2.4rem auto -1.9rem;
+  background: var(--primaryColor);
+  border-radius: 50%;
+  box-shadow: 0 .25rem .75rem 0 rgba(0, 0, 0, .08);
+}
+
+.modal-icon .icon {
+  width: 3.3rem;
+  height: 3.3rem;
+  background: var(--paperBackgroundColor);
+}
+
 // https://twitter.com/chriscoyier/status/1124064712067624960
 .icon {
   display: inline-block;

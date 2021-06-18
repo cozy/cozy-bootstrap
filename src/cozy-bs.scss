@@ -54,7 +54,12 @@
 // @import "bootstrap/scss/list-group";
 // @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-// @import "bootstrap/scss/modal";
+
+// XXX we want shadows only for modals, not for buttons and other components
+$enable-shadows: true;
+@import "bootstrap/scss/modal";
+$enable-shadows: false;
+
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
