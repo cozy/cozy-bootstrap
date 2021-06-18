@@ -31,7 +31,19 @@
     {
       "label": "Modals",
       "url": "http://localhost:3000/modals",
-      "delay": 200
+      "delay": 200,
+      "viewports": [
+        {
+          "label": "phone",
+          "width": 360,
+          "height": 740
+        },
+        {
+          "label": "desktop",
+          "width": 1280,
+          "height": 720
+        }
+      ]
     },
     {
       "label": "Login",
