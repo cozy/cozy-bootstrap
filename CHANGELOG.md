@@ -1,3 +1,13 @@
+## [1.10.1](https://github.com/cozy/cozy-bootstrap/compare/v1.10.0...v1.10.1) (2021-06-21)
+
+
+### Bug Fixes
+
+* Add the margin for modals on mobile ([777aebc](https://github.com/cozy/cozy-bootstrap/commit/777aebc7801ecb776f03320cca0779e782d8a2a1))
+* Fix the arrow position for select on Chrome ([4dc58dc](https://github.com/cozy/cozy-bootstrap/commit/4dc58dc982f8d4e79ab2d1af3ad6e2edf38821e1))
+* Fix the button sizes ([fdbbd01](https://github.com/cozy/cozy-bootstrap/commit/fdbbd01061eabe4a31e87e225497166fe63092ee))
+* Make the box-shadow for form-control themeable ([489c3fd](https://github.com/cozy/cozy-bootstrap/commit/489c3fd16a32ba0ae4c594abd0d2a5cbe597e6ab))
+
 # [1.10.0](https://github.com/cozy/cozy-bootstrap/compare/v1.9.0...v1.10.0) (2021-06-18)
 
 
