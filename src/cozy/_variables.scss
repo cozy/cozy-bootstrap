@@ -56,9 +56,11 @@ $form-floating-transition: opacity .2s ease-in-out, transform .2s ease-in-out;
 $form-feedback-tooltip-font-size: .75rem;
 
 // Buttons
+$btn-font-size: .875rem;
 $btn-padding-x: 1rem;
 $btn-padding-y: .688rem;
 $btn-border-radius: .125rem;
+$btn-line-height: 1rem;
 $btn-font-weight: bold;
 
 $btn-font-size-sm: .8125rem;
@@ -68,7 +70,7 @@ $btn-border-radius-sm: .125rem;
 
 $btn-font-size-lg: .9375rem;
 $btn-padding-x-lg: 1.25rem;
-$btn-padding-y-lg: .875rem;
+$btn-padding-y-lg: .8125rem;
 $btn-border-radius-lg: .125rem;
 
 // Cards
