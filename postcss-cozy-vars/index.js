@@ -394,6 +394,9 @@ function changeBoxShadow(decl) {
     case ".form-check-input:focus":
       decl.value = "0 0 0 0.25rem var(--btn-primary-shadow-color)";
       break;
+    case ".form-control:focus":
+      decl.value = "0 0 0 0.25rem var(--primaryColorLightest)";
+      break;
     // default:
     //   console.log(`- "${decl.parent.selector}"`);
   }

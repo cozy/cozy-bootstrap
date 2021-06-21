@@ -135,7 +135,7 @@
     right: $form-select-padding-x;
     display: block;
     mask: escape-svg($form-select-indicator);
-    mask-position-y: center;
+    mask-position: center;
     mask-repeat: no-repeat;
     mask-size: contain;
     width: .875rem;
