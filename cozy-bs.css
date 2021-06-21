@@ -997,7 +997,8 @@ img {
   display: block;
   -webkit-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
           mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-  mask-position-y: center;
+  -webkit-mask-position: center;
+          mask-position: center;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -1048,7 +1049,7 @@ img {
   background-color: var(--paperBackgroundColor);
   border-color: var(--primaryColor);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem var(--primaryColorLightest);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -1463,7 +1464,7 @@ textarea.form-control-lg {
 .btn {
   display: inline-block;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1rem;
   color: var(--primaryTextContrastColor);
   text-align: center;
   text-decoration: none;
@@ -1474,7 +1475,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.688rem 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   border-radius: 0.125rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -1720,7 +1721,7 @@ textarea.form-control-lg {
 }
 
 .btn-lg {
-  padding: 0.875rem 1.25rem;
+  padding: 0.8125rem 1.25rem;
   font-size: 0.9375rem;
   border-radius: 0.125rem;
 }
@@ -1813,14 +1814,14 @@ textarea.form-control-lg {
 
 @media (min-width: 768px) {
   .btn-md-lg {
-    padding: 0.875rem 1.25rem;
+    padding: 0.8125rem 1.25rem;
     font-size: 0.9375rem;
     border-radius: 0.125rem;
   }
 
   .btn-md-md {
     padding: 0.688rem 1rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
     border-radius: 0.125rem;
   }
 
@@ -2523,7 +2524,7 @@ textarea.form-control-lg {
 }
 
 .modal-dialog {
-  max-width: 34rem;
+  max-width: min(34rem, calc(100vw - 2rem));
   margin: 1.75rem auto;
 }
 
@@ -2540,7 +2541,7 @@ textarea.form-control-lg {
 }
 
 .modal-sm {
-  max-width: 26rem;
+  max-width: min(26rem, calc(100vw - 2rem));
 }
 
 .modal-lg,
