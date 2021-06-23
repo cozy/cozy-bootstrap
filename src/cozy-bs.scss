@@ -15,7 +15,6 @@
 @import "bootstrap/scss/type";
 
 // Components
-@import "cozy/custom";
 @import "cozy/banner";
 @import "cozy/wrapper";
 // @import "bootstrap/scss/images";
@@ -64,6 +63,8 @@ $enable-shadows: false;
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
+
+@import "cozy/custom";
 
 // Helpers
 // @import "bootstrap/scss/helpers";
