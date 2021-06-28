@@ -1,3 +1,14 @@
+## [1.10.2](https://github.com/cozy/cozy-bootstrap/compare/v1.10.1...v1.10.2) (2021-06-28)
+
+
+### Bug Fixes
+
+* Do not shrink the icon in the error tooltip ([096ba8d](https://github.com/cozy/cozy-bootstrap/commit/096ba8d47b51a972a3334da8727b8bfa2a2e579c))
+* Fix modal with icon ([8e4d8f7](https://github.com/cozy/cozy-bootstrap/commit/8e4d8f7081893a5d3146d103c617c5383a8c2660))
+* Fix padding for form-select ([0b37966](https://github.com/cozy/cozy-bootstrap/commit/0b3796653ce571173cbf267aba353f8c12309f79))
+* Fix the large border-radius value ([5eb9bba](https://github.com/cozy/cozy-bootstrap/commit/5eb9bba4dd1088ecf523fbce46a9a7b491f3e4bf))
+* Put custom.scss at the end ([621091c](https://github.com/cozy/cozy-bootstrap/commit/621091c14015186d20695b84e74073bc4fa79aa2))
+
 ## [1.10.1](https://github.com/cozy/cozy-bootstrap/compare/v1.10.0...v1.10.1) (2021-06-21)
 
 
