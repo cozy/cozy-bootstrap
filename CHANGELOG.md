@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/cozy/cozy-bootstrap/compare/v1.10.2...v1.10.3) (2021-07-06)
+
+
+### Bug Fixes
+
+* Fix padding for error tooltip ([#34](https://github.com/cozy/cozy-bootstrap/issues/34)) ([62c937d](https://github.com/cozy/cozy-bootstrap/commit/62c937db4cfd31cc262dd345975327dd6bc06821))
+
 ## [1.10.2](https://github.com/cozy/cozy-bootstrap/compare/v1.10.1...v1.10.2) (2021-06-28)
 
 
