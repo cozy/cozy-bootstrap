@@ -9,6 +9,10 @@ html {
 }
 $font-family-sans-serif: var(--primaryFont);
 
+// Links
+$link-decoration: var(--link-decoration);
+$link-hover-decoration: underline;
+
 // Normal texts
 $font-size-root: 1rem;
 $font-size-base: 1rem;
@@ -84,6 +88,7 @@ $card-border-radius: .5rem;
 
 // Alerts
 $alert-border-width: 0;
+$alert-border-radius: .5rem;
 
 // Modals
 $modal-content-color: var(--primaryColor);

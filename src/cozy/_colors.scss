@@ -48,6 +48,9 @@ html {
   --paperBackgroundColor: #fff;                // White
   --dividerColor: rgba(29, 33, 42, .12);       // Grey 900 + alpha 0.12
 
+  /* Links */
+  --link-decoration: none;
+
   /* Banner */
   --banner-color: #f4f5f6; // Grey 100
 
@@ -98,6 +101,9 @@ html {
   --defaultBackgroundColor: #579eff;   // Primary 500
   --paperBackgroundColor: #297ef2;     // Primary 600
   --dividerColor: rgba(255, 255, 255, .12);
+
+  /* Links */
+  --link-decoration: underline;
 
   /* Banner */
   --banner-color: #0f5cc7; // Primary 700
@@ -154,6 +160,9 @@ html {
     --defaultBackgroundColor: #1d212a;
     --paperBackgroundColor: #2c3039;
     --dividerColor: rgba(255, 255, 255, .12);
+
+    /* Links */
+    --link-decoration: none;
 
     /* Buttons */
     --btn-primary-shadow-color: rgba(145, 191, 255, .08);

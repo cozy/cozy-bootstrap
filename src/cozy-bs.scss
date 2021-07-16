@@ -68,6 +68,7 @@ $enable-shadows: false;
 
 // Helpers
 // @import "bootstrap/scss/helpers";
+@import "bootstrap/scss/helpers/text-truncation";
 @import "bootstrap/scss/helpers/visually-hidden";
 
 // Utilities

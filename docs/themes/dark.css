@@ -26,6 +26,8 @@
   --defaultBackgroundColor: #1d212a;
   --paperBackgroundColor: #2c3039;
   --dividerColor: rgba(255, 255, 255, .12);
+  /* Links */
+  --link-decoration: none;
   /* Buttons */
   --btn-primary-shadow-color: rgba(145, 191, 255, .08);
   --btn-disabled-text-color: rgba(255, 255, 255, .4);
