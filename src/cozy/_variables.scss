@@ -9,6 +9,10 @@ html {
 }
 $font-family-sans-serif: var(--primaryFont);
 
+// Links
+$link-decoration: var(--link-decoration);
+$link-hover-decoration: underline;
+
 // Normal texts
 $font-size-root: 1rem;
 $font-size-base: 1rem;
