@@ -1,3 +1,16 @@
+# [1.11.0](https://github.com/cozy/cozy-bootstrap/compare/v1.10.3...v1.11.0) (2021-07-16)
+
+
+### Bug Fixes
+
+* Fix the modal dimensions ([925b75f](https://github.com/cozy/cozy-bootstrap/commit/925b75fd7a9a3773557d27a459643ec7e9bdad3d))
+
+
+### Features
+
+* Add the text-truncation helper ([1fdd588](https://github.com/cozy/cozy-bootstrap/commit/1fdd58896cd767d0569c2372a49240b681954106))
+* Use the theme for link decorations ([ef3fddf](https://github.com/cozy/cozy-bootstrap/commit/ef3fddf5804608c1f7a25acb063416a4a39ccc20))
+
 ## [1.10.3](https://github.com/cozy/cozy-bootstrap/compare/v1.10.2...v1.10.3) (2021-07-06)
 
 
