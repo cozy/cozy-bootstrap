@@ -48,6 +48,8 @@ html {
   --defaultBackgroundColor: #f4f5f6;
   --paperBackgroundColor: #fff;
   --dividerColor: rgba(29, 33, 42, .12);
+  /* Links */
+  --link-decoration: none;
   /* Banner */
   --banner-color: #f4f5f6;
   /* Buttons */
@@ -96,6 +98,8 @@ html {
   --defaultBackgroundColor: #579eff;
   --paperBackgroundColor: #297ef2;
   --dividerColor: rgba(255, 255, 255, .12);
+  /* Links */
+  --link-decoration: underline;
   /* Banner */
   --banner-color: #0f5cc7;
   /* Buttons */
@@ -149,6 +153,8 @@ html {
     --defaultBackgroundColor: #1d212a;
     --paperBackgroundColor: #2c3039;
     --dividerColor: rgba(255, 255, 255, .12);
+    /* Links */
+    --link-decoration: none;
     /* Buttons */
     --btn-primary-shadow-color: rgba(145, 191, 255, .08);
     --btn-disabled-text-color: rgba(255, 255, 255, .4);
@@ -352,10 +358,12 @@ sup {
 
 a {
   color: var(--primaryColor);
-  text-decoration: underline;
+  -webkit-text-decoration: var(--link-decoration);
+          text-decoration: var(--link-decoration);
 }
 a:hover {
   color: var(--primaryColorDark);
+  text-decoration: underline;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -1424,6 +1432,7 @@ textarea.form-control-lg {
 }
 .btn:hover {
   color: var(--primaryTextContrastColor);
+  text-decoration: none;
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -1649,10 +1658,15 @@ textarea.form-control-lg {
 .btn-link {
   font-weight: 400;
   color: var(--primaryColor);
-  text-decoration: underline;
+  -webkit-text-decoration: var(--link-decoration);
+          text-decoration: var(--link-decoration);
 }
 .btn-link:hover {
   color: var(--primaryColorDark);
+  text-decoration: underline;
+}
+.btn-link:focus {
+  text-decoration: underline;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -1946,6 +1960,7 @@ textarea.form-control-lg {
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: var(--primaryTextColor);
+  text-decoration: none;
   background-color: var(--btn-secondary-hover-color);
 }
 .dropdown-item.active, .dropdown-item:active {
@@ -2185,7 +2200,7 @@ textarea.form-control-lg {
   padding: 1rem 1rem;
   margin-bottom: 1rem;
   border: 0 solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .alert-heading {
@@ -2550,10 +2565,18 @@ textarea.form-control-lg {
   background-color: var(--dividerColor);
 }
 
+.modal-dialog {
+  margin-top: 2.75rem;
+}
+
+.modal-dialog-centered {
+  min-height: calc(100% - 4.5rem);
+}
+
 .modal-icon {
   top: 0;
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 4.5rem;
+  height: 4.5rem;
   padding: 0.75rem;
   margin: -2.4rem auto -1.9rem;
   background: var(--primaryColor);
@@ -2561,13 +2584,9 @@ textarea.form-control-lg {
   box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.08);
 }
 
-.modal-dialog {
-  margin-top: 2.75rem;
-}
-
 .modal-icon .icon {
-  width: 3.3rem;
-  height: 3.3rem;
+  width: 3rem;
+  height: 3rem;
   background: var(--paperBackgroundColor);
 }
 
@@ -2608,6 +2627,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute !important;
