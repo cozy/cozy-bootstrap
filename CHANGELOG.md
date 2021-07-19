@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/cozy/cozy-bootstrap/compare/v1.11.0...v1.11.1) (2021-07-19)
+
+
+### Bug Fixes
+
+* Fix caret color for iOS ([#36](https://github.com/cozy/cozy-bootstrap/issues/36)) ([b3f7e0c](https://github.com/cozy/cozy-bootstrap/commit/b3f7e0cd505b12e31a9efc8ac3d516f422d956b0))
+
 # [1.11.0](https://github.com/cozy/cozy-bootstrap/compare/v1.10.3...v1.11.0) (2021-07-16)
 
 
