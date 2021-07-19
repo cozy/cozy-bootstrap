@@ -815,6 +815,10 @@ img {
   border-radius: 50%;
 }
 
+.form-control {
+  caret-color: var(--primaryColor);
+}
+
 .form-control:hover {
   border-color: var(--primaryColor);
 }
