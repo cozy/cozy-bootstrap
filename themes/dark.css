@@ -21,7 +21,7 @@
   --successColor: #66e475;
   --successColorDarkest: #e3ffe7;
   --successColorLightest: #08250b;
-  --infoColor: #1d212a;
+  --infoColor: rgba(255, 255, 255, .64);
   --disabledTextColor: rgba(255, 255, 255, .4);
   --defaultBackgroundColor: #1d212a;
   --paperBackgroundColor: #2c3039;
