@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/cozy/cozy-bootstrap/compare/v1.11.1...v1.11.2) (2021-08-11)
+
+
+### Bug Fixes
+
+* Fix info color for dark theme ([#40](https://github.com/cozy/cozy-bootstrap/issues/40)) ([817d363](https://github.com/cozy/cozy-bootstrap/commit/817d36347ed1370598326bc274ccc4ee43a7b789))
+
 ## [1.11.1](https://github.com/cozy/cozy-bootstrap/compare/v1.11.0...v1.11.1) (2021-07-19)
 
 
