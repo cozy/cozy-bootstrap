@@ -1812,6 +1812,7 @@ textarea.form-control-lg {
     padding: 0.8125rem 1.25rem;
     font-size: 0.9375rem;
     border-radius: 0.125rem;
+    line-height: 1.25rem;
   }
 
   .btn-md-md {
