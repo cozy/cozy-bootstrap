@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/cozy/cozy-bootstrap/compare/v1.11.2...v1.11.3) (2021-09-27)
+
+
+### Bug Fixes
+
+* Fix line-height for .btn-md-lg ([#47](https://github.com/cozy/cozy-bootstrap/issues/47)) ([614ad93](https://github.com/cozy/cozy-bootstrap/commit/614ad9326452c4e51b91c7a8a9d5fc054913d5eb))
+
 ## [1.11.2](https://github.com/cozy/cozy-bootstrap/compare/v1.11.1...v1.11.2) (2021-08-11)
 
 
