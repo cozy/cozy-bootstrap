@@ -987,10 +987,10 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-backstopjs@5.3.7:
-  version "5.3.7"
-  resolved "https://registry.yarnpkg.com/backstopjs/-/backstopjs-5.3.7.tgz#49afea95155d933d9cfa4b570efc42ef0dfdcc70"
-  integrity sha512-rnYK4zNsmIfWrBmVfVgVw2W9HgMpaojsedcKweNwNz+8YfRDZCOQGn+ns8daS4YsxjX7mkgtiyhRfa8V5rNvEA==
+backstopjs@5.4.4:
+  version "5.4.4"
+  resolved "https://registry.yarnpkg.com/backstopjs/-/backstopjs-5.4.4.tgz#6e3945fb456a8d9a30650321985e125cbac78b0b"
+  integrity sha512-RpfR7PKuKEciUvfIznZPdS2AU9UKlSIiELCguv7XkS7rX0HSbq9WH6Qo8mRh3A62uSB1w12fTbvoBQGY4D07qw==
   dependencies:
     "@mirzazeyrek/node-resemble-js" "^1.2.1"
     chalk "^1.1.3"
