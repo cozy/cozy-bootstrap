@@ -1,3 +1,11 @@
+## [1.11.4](https://github.com/cozy/cozy-bootstrap/compare/v1.11.3...v1.11.4) (2022-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency autoprefixer to v10.4.2 ([#58](https://github.com/cozy/cozy-bootstrap/issues/58)) ([6f3b660](https://github.com/cozy/cozy-bootstrap/commit/6f3b66007cf6812829f0751a8a7d7e64dea08103))
+* **deps:** update dependency clean-css-cli to v5.5.2 ([#59](https://github.com/cozy/cozy-bootstrap/issues/59)) ([034dc0b](https://github.com/cozy/cozy-bootstrap/commit/034dc0b25ed27ac07e073150d2ccda70b9a20304))
+
 ## [1.11.3](https://github.com/cozy/cozy-bootstrap/compare/v1.11.2...v1.11.3) (2021-09-27)
 
 
