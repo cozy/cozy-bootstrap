@@ -7913,10 +7913,10 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vnu-jar@21.2.5:
-  version "21.2.5"
-  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-21.2.5.tgz#fa695237f112e2d4e8539b1d9539767ad612ea79"
-  integrity sha512-mVBXRui9jAkZwXyiqofprrDIAB91F5S0xRic49elb5sutx/L3JFICVut4rMlOoX5Jwqv7lAMHGnl7RMOFdSkVA==
+vnu-jar@21.10.12:
+  version "21.10.12"
+  resolved "https://registry.yarnpkg.com/vnu-jar/-/vnu-jar-21.10.12.tgz#45c26e4beada32e85f7771182b6699da7ee7675c"
+  integrity sha512-tC+BEIWbLW0duLlQl75j9jWcrkPH+hSNGOe5D/FhT21c+JBqVk7Zc7gkDswT6VRlt7skJe4e31wnoAFoLDSg0Q==
 
 walk-up-path@^1.0.0:
   version "1.0.0"
