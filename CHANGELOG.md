@@ -1,3 +1,10 @@
+## [1.11.9](https://github.com/cozy/cozy-bootstrap/compare/v1.11.8...v1.11.9) (2022-02-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-twbs-bootstrap to v3 ([#71](https://github.com/cozy/cozy-bootstrap/issues/71)) ([0711896](https://github.com/cozy/cozy-bootstrap/commit/071189644ca41879d8aae96d31719105b71dae86))
+
 ## [1.11.8](https://github.com/cozy/cozy-bootstrap/compare/v1.11.7...v1.11.8) (2022-02-14)
 
 
