@@ -1,3 +1,13 @@
+## [1.11.5](https://github.com/cozy/cozy-bootstrap/compare/v1.11.4...v1.11.5) (2022-02-14)
+
+
+### Bug Fixes
+
+* **deps:** update actions/checkout action to v2 ([#66](https://github.com/cozy/cozy-bootstrap/issues/66)) ([5c51381](https://github.com/cozy/cozy-bootstrap/commit/5c51381c68938c6aa05bc3d2bca41946e9cd6635))
+* **deps:** update dependency postcss-cli to v9 ([#68](https://github.com/cozy/cozy-bootstrap/issues/68)) ([4befa01](https://github.com/cozy/cozy-bootstrap/commit/4befa0136447412337e31e77f0d6bbe1360be076))
+* **deps:** update dependency serve to v13 ([#69](https://github.com/cozy/cozy-bootstrap/issues/69)) ([d17da10](https://github.com/cozy/cozy-bootstrap/commit/d17da109cd13116a3ccdb123ed6febb253d94a16))
+* **deps:** update dependency vnu-jar to v21.10.12 ([#65](https://github.com/cozy/cozy-bootstrap/issues/65)) ([d06b87b](https://github.com/cozy/cozy-bootstrap/commit/d06b87b5676fcbff0be12c62688f888a80a3c8e2))
+
 ## [1.11.4](https://github.com/cozy/cozy-bootstrap/compare/v1.11.3...v1.11.4) (2022-02-01)
 
 
