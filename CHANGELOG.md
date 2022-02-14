@@ -1,3 +1,12 @@
+## [1.11.6](https://github.com/cozy/cozy-bootstrap/compare/v1.11.5...v1.11.6) (2022-02-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss to v8.4.6 ([#60](https://github.com/cozy/cozy-bootstrap/issues/60)) ([01c43be](https://github.com/cozy/cozy-bootstrap/commit/01c43be6438970511170793cede38217ec0f23b7))
+* **deps:** update dependency prettier to v2.5.1 ([#61](https://github.com/cozy/cozy-bootstrap/issues/61)) ([27e19e4](https://github.com/cozy/cozy-bootstrap/commit/27e19e44eb35830bae03db86150d9263e7567abc))
+* **deps:** update dependency stylelint to v13.13.1 ([#63](https://github.com/cozy/cozy-bootstrap/issues/63)) ([1d20424](https://github.com/cozy/cozy-bootstrap/commit/1d204241c5129417d1b944fc84eb3375a9f54248))
+
 ## [1.11.5](https://github.com/cozy/cozy-bootstrap/compare/v1.11.4...v1.11.5) (2022-02-14)
 
 
