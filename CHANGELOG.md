@@ -1,3 +1,11 @@
+## [1.11.7](https://github.com/cozy/cozy-bootstrap/compare/v1.11.6...v1.11.7) (2022-02-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass to v1.49.7 ([#62](https://github.com/cozy/cozy-bootstrap/issues/62)) ([db4248f](https://github.com/cozy/cozy-bootstrap/commit/db4248f9c1639c2782517c93ea9c596a78b8610c))
+* **deps:** update dependency stylelint-config-twbs-bootstrap to v2.2.4 ([#64](https://github.com/cozy/cozy-bootstrap/issues/64)) ([2e47d45](https://github.com/cozy/cozy-bootstrap/commit/2e47d4517f308c59af60847bb389fbdd1d1360b5))
+
 ## [1.11.6](https://github.com/cozy/cozy-bootstrap/compare/v1.11.5...v1.11.6) (2022-02-14)
 
 
