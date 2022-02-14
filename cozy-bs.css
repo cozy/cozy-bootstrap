@@ -2552,7 +2552,7 @@ textarea.form-control-lg {
 }
 
 .modal-dialog {
-  max-width: min(34rem, calc(100vw - 2rem));
+  max-width: min(34rem, 100vw - 2rem);
   margin: 1.75rem auto;
 }
 
@@ -2569,7 +2569,7 @@ textarea.form-control-lg {
 }
 
 .modal-sm {
-  max-width: min(26rem, calc(100vw - 2rem));
+  max-width: min(26rem, 100vw - 2rem);
 }
 
 .modal-lg,
