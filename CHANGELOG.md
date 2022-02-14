@@ -1,3 +1,10 @@
+## [1.11.8](https://github.com/cozy/cozy-bootstrap/compare/v1.11.7...v1.11.8) (2022-02-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency backstopjs to v6 ([#67](https://github.com/cozy/cozy-bootstrap/issues/67)) ([6f00f5f](https://github.com/cozy/cozy-bootstrap/commit/6f00f5fc90df72a5c7c867d3b1cef1d16a2687f0))
+
 ## [1.11.7](https://github.com/cozy/cozy-bootstrap/compare/v1.11.6...v1.11.7) (2022-02-14)
 
 
