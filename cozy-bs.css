@@ -1003,7 +1003,6 @@ img {
   background-clip: padding-box;
   border: 1px solid var(--btn-secondary-border-color);
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1223,7 +1222,6 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1285,7 +1283,6 @@ textarea.form-control-lg {
   background-size: contain;
   border: 2px solid var(--btn-secondary-border-color);
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
           color-adjust: exact;
