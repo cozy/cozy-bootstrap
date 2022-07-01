@@ -1,3 +1,10 @@
+## [1.11.14](https://github.com/cozy/cozy-bootstrap/compare/v1.11.13...v1.11.14) (2022-07-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nodemon to v2.0.18 ([#76](https://github.com/cozy/cozy-bootstrap/issues/76)) ([8ded0a8](https://github.com/cozy/cozy-bootstrap/commit/8ded0a8a64463749549938efc38ae1cd985dbe40))
+
 ## [1.11.13](https://github.com/cozy/cozy-bootstrap/compare/v1.11.12...v1.11.13) (2022-06-01)
 
 
