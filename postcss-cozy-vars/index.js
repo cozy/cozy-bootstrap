@@ -117,7 +117,7 @@ function changeColor(decl) {
       decl.value = "var(--primaryColor)";
       break;
     case "code":
-      decl.value = "#0b3672"; // Primary 800, only used in docs
+      decl.value = "var(--primaryColorDarkest)"; // Only used in docs
       break;
     case "a:hover":
     case ".btn-link:hover":
