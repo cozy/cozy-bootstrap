@@ -1,3 +1,10 @@
+## [1.11.19](https://github.com/cozy/cozy-bootstrap/compare/v1.11.18...v1.11.19) (2022-11-24)
+
+
+### Bug Fixes
+
+* Avoid stick hover on mobile ([db2b611](https://github.com/cozy/cozy-bootstrap/commit/db2b611c7858df563e99a3c144d93aa19c6bd188))
+
 ## [1.11.18](https://github.com/cozy/cozy-bootstrap/compare/v1.11.17...v1.11.18) (2022-11-02)
 
 
