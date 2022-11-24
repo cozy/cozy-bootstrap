@@ -425,7 +425,7 @@ pre code {
 
 code {
   font-size: 0.875rem;
-  color: #0b3672;
+  color: var(--primaryColorDarkest);
   word-wrap: break-word;
 }
 a > code {
@@ -835,19 +835,20 @@ img {
   cursor: pointer;
 }
 
-.form-check-input:hover::after {
-  position: absolute;
-  top: -100%;
-  left: -100%;
-  display: block;
-  width: 300%;
-  height: 300%;
-  pointer-events: none;
-  content: "";
-  background: var(--btn-primary-shadow-color);
-  border-radius: 50%;
+@media (hover: hover) {
+  .form-check-input:hover::after {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    display: block;
+    width: 300%;
+    height: 300%;
+    pointer-events: none;
+    content: "";
+    background: var(--btn-primary-shadow-color);
+    border-radius: 50%;
+  }
 }
-
 .form-control {
   caret-color: var(--primaryColor);
 }
