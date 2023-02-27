@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/cozy/cozy-bootstrap/compare/v1.11.19...v1.12.0) (2023-02-27)
+
+
+### Features
+
+* Add the .horizontal-separator class ([#83](https://github.com/cozy/cozy-bootstrap/issues/83)) ([99b3039](https://github.com/cozy/cozy-bootstrap/commit/99b30394f564b91d8c3e49de674e2d4a5bb9db71))
+
 ## [1.11.19](https://github.com/cozy/cozy-bootstrap/compare/v1.11.18...v1.11.19) (2022-11-24)
 
 
