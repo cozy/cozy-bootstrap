@@ -2638,6 +2638,29 @@ textarea.form-control-lg {
   background-color: var(--dividerColor);
 }
 
+.horizontal-separator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--primaryTextColor);
+  text-align: center;
+}
+
+.horizontal-separator::before,
+.horizontal-separator::after {
+  flex: 1;
+  content: "";
+  border-bottom: 1px solid var(--dividerColor);
+}
+
+.horizontal-separator::before {
+  margin-right: 1.25em;
+}
+
+.horizontal-separator::after {
+  margin-left: 1.25em;
+}
+
 .modal-dialog {
   margin-top: 2.75rem;
 }
