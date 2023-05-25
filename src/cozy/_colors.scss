@@ -15,7 +15,8 @@
  *
  * Cf https://github.com/cozy/cozy-ui/blob/master/stylus/settings/palette.styl
  */
-html {
+html,
+.theme-light {
   /* Also used by cozy-ui */
   --primaryColor: #297ef2;                     // Primary 600
   --primaryColorDark: #0f5cc7;                 // Primary 700
