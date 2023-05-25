@@ -1,6 +1,7 @@
 /.cache
 /dist
 /docs/cozy-bs.css
+/docs/cozy-bs.js
 /gh-pages
 /node_modules
 /screenshots/ci_report
