@@ -123,3 +123,23 @@ $border-radius-lg: .5rem;
 $box-shadow: 0 0 0 .5px rgba(0, 0, 0, .12), 0 .125rem .25rem rgba(0, 0, 0, .08), 0 .25rem 1rem rgba(0, 0, 0, .06);
 $enable-grid-classes: false;
 $enable-cssgrid: true;
+
+// Accordions
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.5rem;
+$accordion-bg: var(--defaultBackgroundColor);
+$accordion-border-width: 0;
+$accordion-border-radius: 1rem;
+
+$accordion-body-padding-y: 0;
+
+$accordion-button-bg: $accordion-bg;
+$accordion-button-active-bg: $accordion-bg;
+$accordion-button-active-color: var(--primaryTextColor);
+
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: unset;
+
+$accordion-icon-width: 1rem;
+$accordion-button-icon: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.70711 5.29289C2.31658 4.90237 1.68342 4.90237 1.29289 5.29289C0.902369 5.68342 0.902369 6.31658 1.29289 6.70711L7.29289 12.7071C7.68342 13.0976 8.31658 13.0976 8.70711 12.7071L14.7071 6.70711C15.0976 6.31658 15.0976 5.68342 14.7071 5.29289C14.3166 4.90237 13.6834 4.90237 13.2929 5.29289L8 10.5858L2.70711 5.29289Z' fill='%231D212A' fill-opacity='0.72'/%3E%3C/svg%3E");
+$accordion-button-active-icon: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.70711 5.29289C2.31658 4.90237 1.68342 4.90237 1.29289 5.29289C0.902369 5.68342 0.902369 6.31658 1.29289 6.70711L7.29289 12.7071C7.68342 13.0976 8.31658 13.0976 8.70711 12.7071L14.7071 6.70711C15.0976 6.31658 15.0976 5.68342 14.7071 5.29289C14.3166 4.90237 13.6834 4.90237 13.2929 5.29289L8 10.5858L2.70711 5.29289Z' fill='%231D212A' fill-opacity='0.72'/%3E%3C/svg%3E");
