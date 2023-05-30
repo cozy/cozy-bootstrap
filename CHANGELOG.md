@@ -1,3 +1,14 @@
+# [1.13.0](https://github.com/cozy/cozy-bootstrap/compare/v1.12.2...v1.13.0) (2023-05-30)
+
+
+### Features
+
+* Add accordions ([fb0fa6f](https://github.com/cozy/cozy-bootstrap/commit/fb0fa6f589e9e9aaa8a15a69ad9f2d8d968573a5))
+* Add light theme class ([7bdcbdb](https://github.com/cozy/cozy-bootstrap/commit/7bdcbdb032b4e22c1a934259af9967b9eec582fd))
+* Extends utility class ([48e0987](https://github.com/cozy/cozy-bootstrap/commit/48e09879e1ac3aa9a6fcc2273f64dee38e9e01d8))
+* Extract only the javascript needed for accordions from Bootstrap ([1450580](https://github.com/cozy/cozy-bootstrap/commit/1450580d0a771799ea8d05ac8d239290e4a1266c))
+* Minimum node version updated to 14 ([ff86082](https://github.com/cozy/cozy-bootstrap/commit/ff86082a0d72ea34ecd4f3d747d40900f3a6ada7))
+
 ## [1.12.2](https://github.com/cozy/cozy-bootstrap/compare/v1.12.1...v1.12.2) (2023-05-02)
 
 
