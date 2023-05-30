@@ -58,5 +58,8 @@
     "stylelint": "14.1.0",
     "stylelint-config-twbs-bootstrap": "3.0.1",
     "vnu-jar": "21.10.12"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
