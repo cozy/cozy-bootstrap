@@ -9,6 +9,11 @@
   ],
   "scenarios": [
     {
+      "label": "Accordions",
+      "url": "http://localhost:3000/accordions",
+      "delay": 200
+    },
+    {
       "label": "Alerts",
       "url": "http://localhost:3000/alerts",
       "delay": 200
