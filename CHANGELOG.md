@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/cozy/cozy-bootstrap/compare/v1.13.0...v1.13.1) (2023-05-31)
+
+
+### Bug Fixes
+
+* Remove minimal version of node for the package ([ea4da19](https://github.com/cozy/cozy-bootstrap/commit/ea4da195dd866c7dd28af956df9463fbbcb7d3c8))
+
 # [1.13.0](https://github.com/cozy/cozy-bootstrap/compare/v1.12.2...v1.13.0) (2023-05-30)
 
 
