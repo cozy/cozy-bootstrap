@@ -40,7 +40,7 @@
     "extends browserslist-config-cozy"
   ],
   "devDependencies": {
-    "@rspack/cli": "^0.1.12",
+    "@rspack/cli": "0.1.12",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.1",
     "@semantic-release/npm": "7.1.3",
