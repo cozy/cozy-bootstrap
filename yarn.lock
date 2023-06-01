@@ -433,7 +433,7 @@
     "@rspack/binding-win32-ia32-msvc" "0.1.12"
     "@rspack/binding-win32-x64-msvc" "0.1.12"
 
-"@rspack/cli@^0.1.12":
+"@rspack/cli@0.1.12":
   version "0.1.12"
   resolved "https://registry.yarnpkg.com/@rspack/cli/-/cli-0.1.12.tgz#072b42ce08f79271c1a51da58cae0981b2b493bd"
   integrity sha512-I5vBAVY414F2mcMQ031lgMtHyC1FW3vROUjTwfKAHTELx7Ou4dEcRHPiUk4Nrd+8itfVnDy3ipstqDu7OEt0hg==
