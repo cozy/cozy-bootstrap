@@ -1,3 +1,10 @@
+## [1.13.2](https://github.com/cozy/cozy-bootstrap/compare/v1.13.1...v1.13.2) (2023-06-01)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency @rspack/cli to 0.1.12 ([#88](https://github.com/cozy/cozy-bootstrap/issues/88)) ([56836fc](https://github.com/cozy/cozy-bootstrap/commit/56836fc88007c15d15176a995b299645a0eb4096))
+
 ## [1.13.1](https://github.com/cozy/cozy-bootstrap/compare/v1.13.0...v1.13.1) (2023-05-31)
 
 
