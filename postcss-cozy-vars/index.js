@@ -124,6 +124,8 @@ function changeColor(decl) {
       decl.value = "var(--primaryColorDark)";
       break;
     case ".text-secondary":
+      decl.value = "var(--secondaryTextColor)";
+      break;
     case ".btn-outline-secondary":
     case ".btn-outline-secondary:hover":
       decl.value = "var(--secondaryColor)";
