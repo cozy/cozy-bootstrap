@@ -1,3 +1,10 @@
+## [1.13.3](https://github.com/cozy/cozy-bootstrap/compare/v1.13.2...v1.13.3) (2023-06-05)
+
+
+### Bug Fixes
+
+* Use secondaryTextColor var for text-secondary ([d09ac64](https://github.com/cozy/cozy-bootstrap/commit/d09ac6417e7c518c64e15962247ff88c9a779e62))
+
 ## [1.13.2](https://github.com/cozy/cozy-bootstrap/compare/v1.13.1...v1.13.2) (2023-06-01)
 
 
