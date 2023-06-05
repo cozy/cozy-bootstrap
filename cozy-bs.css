@@ -4011,7 +4011,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: var(--secondaryColor) !important;
+  color: var(--secondaryTextColor) !important;
 }
 
 .text-success {
