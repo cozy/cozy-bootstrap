@@ -219,6 +219,13 @@ $utilities: map-merge(
       class: gap,
       values: $spacers
     ),
+    "gutter-x": (
+      responsive: true,
+      css-var: true,
+      css-variable-name: gutter-x,
+      class: gutter-x,
+      values: $spacers
+    ),
     "justify-content": (
       responsive: true,
       property: justify-content,
