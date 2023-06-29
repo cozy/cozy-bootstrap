@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/cozy/cozy-bootstrap/compare/v1.13.3...v1.14.0) (2023-06-29)
+
+
+### Features
+
+* Use webpack instead rspack ([0166f37](https://github.com/cozy/cozy-bootstrap/commit/0166f37526c0c9e72e04e8178769a6318bc794f1))
+
 ## [1.13.3](https://github.com/cozy/cozy-bootstrap/compare/v1.13.2...v1.13.3) (2023-06-05)
 
 
