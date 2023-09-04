@@ -1,3 +1,13 @@
+## [1.14.2](https://github.com/cozy/cozy-bootstrap/compare/v1.14.1...v1.14.2) (2023-09-04)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([#92](https://github.com/cozy/cozy-bootstrap/issues/92)) ([cd044ba](https://github.com/cozy/cozy-bootstrap/commit/cd044ba1524d29688f56d98448bbb91d755b35c1))
+* **deps:** update dependency autoprefixer to v10.4.15 ([#94](https://github.com/cozy/cozy-bootstrap/issues/94)) ([a8abcc1](https://github.com/cozy/cozy-bootstrap/commit/a8abcc155f36f141e2f6af833a880ec7fe1f7cc4))
+* **deps:** update dependency browserslist-config-cozy to v0.5.0 ([#82](https://github.com/cozy/cozy-bootstrap/issues/82)) ([4ddbd38](https://github.com/cozy/cozy-bootstrap/commit/4ddbd38d789c4fa9997f1abe58a2040ad23a9c07))
+* **deps:** update dependency postcss to v8.4.29 ([#95](https://github.com/cozy/cozy-bootstrap/issues/95)) ([b9b0db7](https://github.com/cozy/cozy-bootstrap/commit/b9b0db78af5df3d46723bb321d86729595315b69))
+
 ## [1.14.1](https://github.com/cozy/cozy-bootstrap/compare/v1.14.0...v1.14.1) (2023-08-01)
 
 
