@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/cozy/cozy-bootstrap/compare/v1.14.2...v1.14.3) (2023-10-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency autoprefixer to v10.4.16 ([#96](https://github.com/cozy/cozy-bootstrap/issues/96)) ([8396419](https://github.com/cozy/cozy-bootstrap/commit/8396419b30bbe77b6e68f8299900211906dbb2bd))
+
 ## [1.14.2](https://github.com/cozy/cozy-bootstrap/compare/v1.14.1...v1.14.2) (2023-09-04)
 
 
