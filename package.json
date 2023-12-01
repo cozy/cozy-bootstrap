@@ -55,7 +55,7 @@
     "prettier": "2.5.1",
     "sass": "1.49.7",
     "semantic-release": "17.4.7",
-    "serve": "13.0.2",
+    "serve": "13.0.4",
     "stylelint": "14.1.0",
     "stylelint-config-twbs-bootstrap": "3.0.1",
     "vnu-jar": "21.10.12",
