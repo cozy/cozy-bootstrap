@@ -1,3 +1,10 @@
+## [1.14.5](https://github.com/cozy/cozy-bootstrap/compare/v1.14.4...v1.14.5) (2023-12-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency serve to v13.0.4 ([#98](https://github.com/cozy/cozy-bootstrap/issues/98)) ([6e55906](https://github.com/cozy/cozy-bootstrap/commit/6e55906ce944319ed6581ade62be16acecc02218))
+
 ## [1.14.4](https://github.com/cozy/cozy-bootstrap/compare/v1.14.3...v1.14.4) (2023-11-02)
 
 
