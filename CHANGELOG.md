@@ -1,3 +1,10 @@
+## [1.14.6](https://github.com/cozy/cozy-bootstrap/compare/v1.14.5...v1.14.6) (2024-01-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss to v8.4.32 ([#99](https://github.com/cozy/cozy-bootstrap/issues/99)) ([bee7c64](https://github.com/cozy/cozy-bootstrap/commit/bee7c647242adf789baa6497b8eee8d97d8b34a5))
+
 ## [1.14.5](https://github.com/cozy/cozy-bootstrap/compare/v1.14.4...v1.14.5) (2023-12-04)
 
 
