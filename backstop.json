@@ -108,9 +108,11 @@
     "ci_report": "screenshots/ci_report"
   },
   "report": ["CI"],
-  "engine": "puppeteer",
+  "onBeforeScript": "playwright/onBefore.js",
+  "onReadyScript": "playwright/onReady.js",
+  "engine": "playwright",
   "engineOptions": {
-    "args": ["--no-sandbox"]
+    "browser": "chromium"
   },
   "dockerCommandTemplate": "docker run --rm -i --network host --mount type=bind,source=\"{cwd}\",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}",
   "asyncCaptureLimit": 5,
