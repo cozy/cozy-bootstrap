@@ -1,3 +1,16 @@
+# [1.15.0](https://github.com/cozy/cozy-bootstrap/compare/v1.14.6...v1.15.0) (2024-01-09)
+
+
+### Bug Fixes
+
+* Use playwright as the tests were flakyy with puppeteer ([e506161](https://github.com/cozy/cozy-bootstrap/commit/e506161f5b61ca07a610d4ee6a02263196ddb792))
+* **deps:** update dependency backstopjs to v6.3.3 ([a7e8566](https://github.com/cozy/cozy-bootstrap/commit/a7e8566961c6d2d24f6e69f5bb06966b0cd4ac2d))
+
+
+### Features
+
+* Use node 20 for CI ([2aa9455](https://github.com/cozy/cozy-bootstrap/commit/2aa9455c5009f66cb570b5bd0cfe7c6c45018838))
+
 ## [1.14.6](https://github.com/cozy/cozy-bootstrap/compare/v1.14.5...v1.14.6) (2024-01-02)
 
 
