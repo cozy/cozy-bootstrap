@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/cozy/cozy-bootstrap/compare/v1.15.0...v1.15.1) (2024-02-01)
+
+
+### Bug Fixes
+
+* **deps:** replace dependency npm-run-all with npm-run-all2 5.0.0 ([436e1f1](https://github.com/cozy/cozy-bootstrap/commit/436e1f1772c083fd284837d93335b69fdfa69bf9))
+
 # [1.15.0](https://github.com/cozy/cozy-bootstrap/compare/v1.14.6...v1.15.0) (2024-01-09)
 
 
