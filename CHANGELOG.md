@@ -1,3 +1,11 @@
+## [1.15.2](https://github.com/cozy/cozy-bootstrap/compare/v1.15.1...v1.15.2) (2024-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency autoprefixer to v10.4.19 ([525e9bf](https://github.com/cozy/cozy-bootstrap/commit/525e9bf43ec2b5eda2baaa755c942684c12f7794))
+* **deps:** update dependency npm-run-all2 to v5.0.2 ([4a99ea9](https://github.com/cozy/cozy-bootstrap/commit/4a99ea96a719b0b0c307bddcc1393abf6a690008))
+
 ## [1.15.1](https://github.com/cozy/cozy-bootstrap/compare/v1.15.0...v1.15.1) (2024-02-01)
 
 
