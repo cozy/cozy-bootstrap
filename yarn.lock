@@ -1494,20 +1494,20 @@ cidr-regex@^3.1.1:
   dependencies:
     ip-regex "^4.1.0"
 
-clean-css-cli@5.5.2:
-  version "5.5.2"
-  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-5.5.2.tgz#c7931f89255561200be2ff5a3cf2688343234d87"
-  integrity sha512-4y5FD+ayRz7IWqZRCCMvFxNUhluc1Yv8mNPmrHbrm2NjKsv9uaQZedZKN4L+QMkTqANL1RfOwhpe22neDEgEMA==
+clean-css-cli@5.6.3:
+  version "5.6.3"
+  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-5.6.3.tgz#be2d65c9b17bba01a598d7eeb5ce68f4119f07b5"
+  integrity sha512-MUAta8pEqA/d2DKQwtZU5nm0Og8TCyAglOx3GlWwjhGdKBwY4kVF6E5M6LU/jmmuswv+HbYqG/dKKkq5p1dD0A==
   dependencies:
     chokidar "^3.5.2"
-    clean-css "^5.2.4"
+    clean-css "^5.3.3"
     commander "7.x"
     glob "^7.1.6"
 
-clean-css@^5.2.4:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.2.4.tgz#982b058f8581adb2ae062520808fb2429bd487a4"
-  integrity sha512-nKseG8wCzEuji/4yrgM/5cthL9oTDc5UOQyFMvW/Q53oP6gLH690o1NbuTh6Y18nujr7BxlsFuS7gXLnLzKJGg==
+clean-css@^5.3.3:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.3.3.tgz#b330653cd3bd6b75009cc25c714cae7b93351ccd"
+  integrity sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==
   dependencies:
     source-map "~0.6.0"
 
