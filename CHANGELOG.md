@@ -1,3 +1,11 @@
+## [1.15.4](https://github.com/cozy/cozy-bootstrap/compare/v1.15.3...v1.15.4) (2024-06-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency clean-css-cli to v5.6.3 ([5ad9edc](https://github.com/cozy/cozy-bootstrap/commit/5ad9edc96894addeb790a55fcbe2b6a3d70e6f2f))
+* **deps:** update dependency prettier to v2.8.8 ([20cc955](https://github.com/cozy/cozy-bootstrap/commit/20cc955d64f69c2a55bc90aca0b40173db7f7d83))
+
 ## [1.15.3](https://github.com/cozy/cozy-bootstrap/compare/v1.15.2...v1.15.3) (2024-05-02)
 
 
