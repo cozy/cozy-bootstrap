@@ -18,23 +18,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn
       - name: Install dependencies
-        run: |
-          n=0
-          until [ $n -ge 3 ]
-          do
-            yarn install && echo "done" && break
-            n=$((n+1))
-            echo "Retry $n/3..."
-            sleep 15
-          done
+        run: npm ci
       - name: Build
-        run: yarn build
+        run: npm run build
       - name: Lint
-        run: yarn lint
+        run: npm run lint
       - name: Docs
-        run: yarn gh-pages
+        run: npm run gh-pages
       - name: Test
         run: node_modules/.bin/serve --listen 3000 gh-pages/ & yarn test
       - name: Deploy docs
@@ -45,7 +36,7 @@ jobs:
           publish_dir: ./gh-pages
       - name: Publish npm
         if: github.event_name == 'push'
-        run: yarn release
+        run: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
