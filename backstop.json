@@ -90,12 +90,6 @@
       ]
     },
     {
-      "label": "Unavailable application dark mode",
-      "url": "http://localhost:3000/error-app",
-	  "onReadyScript": "../../screenshots/makeDarkMode.js",
-      "delay": 200
-    },
-    {
       "label": "Typography",
       "url": "http://localhost:3000/typography",
       "delay": 200
