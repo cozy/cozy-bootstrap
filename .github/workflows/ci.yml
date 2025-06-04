@@ -19,7 +19,9 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm config set loglevel verbose
+          timeout 300s npm install --no-fund --no-audit
       - name: Build
         run: npm run build
       - name: Lint
