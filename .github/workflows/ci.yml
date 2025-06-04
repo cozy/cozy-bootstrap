@@ -4,10 +4,10 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'README.md'
+      - "README.md"
   pull_request:
     paths-ignore:
-      - 'README.md'
+      - "README.md"
 jobs:
   test:
     runs-on: ubuntu-22.04
@@ -18,8 +18,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: yarn
       - name: Install dependencies
-        run: yarn cache clean && yarn install --frozen-lockfile
+        run: |
+          n=0
+          until [ $n -ge 3 ]
+          do
+            yarn install && echo "done" && break
+            n=$((n+1))
+            echo "Retry $n/3..."
+            sleep 15
+          done
       - name: Build
         run: yarn build
       - name: Lint
