@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/cozy/cozy-bootstrap/compare/v1.15.4...v1.16.0) (2025-06-04)
+
+
+### Features
+
+* Remove dark mode ([53f135a](https://github.com/cozy/cozy-bootstrap/commit/53f135a0a2158c6cf32b1dbe80907eae20ed6174))
+
 ## [1.15.4](https://github.com/cozy/cozy-bootstrap/compare/v1.15.3...v1.15.4) (2024-06-03)
 
 
