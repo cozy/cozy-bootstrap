@@ -15,6 +15,22 @@ hardware where no one profiles you.
 Cozy Bootstrap is a theme for [Bootstrap](https://getbootstrap.com/) with Cozy
 look and colors.
 
+## Commit message
+
+We follow [cozy guidelines](https://docs.cozy.io/cozy-guidelines/#commit-messages).
+
+## Tests
+
+We are using backstopjs to run some tests, with screenshots compared to a
+reference.
+
+To run the test, we need to execute `npm run docs` in one terminal, and `npm
+test` in another. If there are some differences, we can review them by using
+`npm run test:open` to open a browser tab with the screenshots and the diffs.
+If it looks good, we can then run `npm run test:approve` to copy the new
+screenshots and make them the new reference. Don't forget to commit them to
+keep the CI green.
+
 ## Community
 
 You can reach the Cozy Community by:
