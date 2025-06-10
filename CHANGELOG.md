@@ -1,3 +1,11 @@
+# [1.17.0](https://github.com/cozy/cozy-bootstrap/compare/v1.16.0...v1.17.0) (2025-06-10)
+
+
+### Features
+
+* Update button style - border radius to 100px ([1184531](https://github.com/cozy/cozy-bootstrap/commit/1184531cf875d12df59da763070352525ba9bafc))
+* Update button style - border radius to 100px ([89eb135](https://github.com/cozy/cozy-bootstrap/commit/89eb1352770db9f54abfa3fb8614735c5ecf4fef))
+
 # [1.16.0](https://github.com/cozy/cozy-bootstrap/compare/v1.15.4...v1.16.0) (2025-06-04)
 
 
