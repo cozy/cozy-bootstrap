@@ -2080,7 +2080,6 @@ textarea.form-control-lg {
 .btn:not(.dropdown-toggle) {
   position: relative;
   overflow: hidden;
-  text-transform: uppercase;
 }
 .btn:not(.dropdown-toggle)::after {
   position: absolute;
