@@ -59,7 +59,7 @@
     "stylelint": "14.16.1",
     "stylelint-config-twbs-bootstrap": "3.0.1",
     "vnu-jar": "21.10.12",
-    "webpack": "5.88.0",
+    "webpack": "5.99.9",
     "webpack-cli": "5.1.4"
   }
 }
